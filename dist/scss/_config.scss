@@ -1,0 +1,38 @@
+// _config.scss
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@600;900&display=swap'); 
+@import 'oswald-style';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+$primary-font: 'Comfortaa',cursive;
+$title-font:  'Montserrat', sans-serif;
+
+$primary-color: #ff9900;
+$secondary-color:#f1c232;
+$tersiary-color: #f6b26b;
+$quatorsiary-color: #00ffff;
+* {
+    height: 100%;
+    margin: 0;
+  }
+
+@mixin backSet{
+    /* Full height */
+    height: 100%; 
+      /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+@mixin media-768 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}

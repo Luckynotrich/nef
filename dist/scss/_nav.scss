@@ -1,0 +1,25 @@
+ul {
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    padding: 20px;
+    padding-left: 30px;
+    background-color: transparent;
+    font-size: 28px;
+    color:$secondary-color;
+    font-family: $title-font;
+  }
+  

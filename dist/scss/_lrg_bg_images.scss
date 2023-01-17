@@ -1,0 +1,21 @@
+//l_images
+.bg__1{
+background-image: url("./l_images/01_Bridge_w_Bunny_web.jpg");
+@include backSet;
+}
+.bg__2{
+background-image: url("./l_images/02_South_Pasture_web.jpg");
+@include backSet;
+}
+.bg__3{
+background-image: url("./l_images/03_Barn_wideshot_web.jpg");
+@include backSet;
+}
+.bg__4{
+background-image: url("./l_images/04_Back_Pasture_web.jpg");
+@include backSet;
+}
+.bg__5{
+background-image: url("./l_images/05_Newport-Oregon.jpg");
+@include backSet;
+}
