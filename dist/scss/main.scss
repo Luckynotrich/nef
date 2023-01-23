@@ -1,9 +1,9 @@
-//main.scss
 @import 'config';
-@import 'lrg_bg_images';
-@import 'sml_bg_images';
-@import 'nav';
+@import 'bg_images_1024';
+@import '_nav';
 @import 'home'; 
+@import 'nav_responsive';
+@import 'bg_images_640';
+@import 'bg_images_420';
+@import 'bg_images_240';
 @import 'responsive';
-
-

@@ -7,7 +7,7 @@ const { appendFile } = require('fs');
         console.log('appendfile ', err)
         throw err;
   }
-   console.log(mess);
+   //console.log(mess);
   });
   }
   module.exports = apndFile;
