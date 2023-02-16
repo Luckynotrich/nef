@@ -1,0 +1,435 @@
+node:internal/modules/cjs/loader:959
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:956:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:804:27)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/richar65/newledohub.org/app.js:2:17)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/richar65/newledohub.org/app.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+node:internal/modules/cjs/loader:959
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:956:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:804:27)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/home/richar65/newledohub.org/app.js:2:17)
+    at Module._compile (node:internal/modules/cjs/loader:1126:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/richar65/newledohub.org/app.js',
+    '/usr/local/lsws/fcgi-bin/lsnode.js'
+  ]
+}
+
+/home/richar65/newledohub.org/app.js:47
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/richar65/newledohub.org/app.js:47
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:47
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/richar65/newledohub.org/app.js:47
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:47
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+Exception ignored in: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+BrokenPipeError: [Errno 32] Broken pipe
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+/home/richar65/newledohub.org/app.js:45
+);
+^
+
+SyntaxError: Unexpected token ')'
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1055:15)
+    at Module._compile (node:internal/modules/cjs/loader:1090:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1180:10)
+    at Module.load (node:internal/modules/cjs/loader:1004:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:839:12)
+    at Module.require (node:internal/modules/cjs/loader:1028:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at startApplication (/usr/local/lsws/fcgi-bin/lsnode.js:48:15)
+    at Object.<anonymous> (/usr/local/lsws/fcgi-bin/lsnode.js:16:1)
+
+ReferenceError: apndfile is not defined
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+ReferenceError: apndfile is not defined
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+ReferenceError: apndfile is not defined
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+ReferenceError: apndfile is not defined
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+ReferenceError: apndfile is not defined
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+
+node:internal/errors:477
+    ErrorCaptureStackTrace(err);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.open (node:fs:555:10)
+    at Object.writeFile (node:fs:2174:6)
+    at appendFile (node:fs:2245:6)
+    at apndFile (/home/richar65/newledohub.org/dist/js/apnd-file.js:5:11)
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+node:internal/errors:477
+    ErrorCaptureStackTrace(err);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.open (node:fs:555:10)
+    at Object.writeFile (node:fs:2174:6)
+    at appendFile (node:fs:2245:6)
+    at apndFile (/home/richar65/newledohub.org/dist/js/apnd-file.js:5:11)
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+node:internal/errors:477
+    ErrorCaptureStackTrace(err);
+    ^
+
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.open (node:fs:555:10)
+    at Object.writeFile (node:fs:2174:6)
+    at appendFile (node:fs:2245:6)
+    at apndFile (/home/richar65/newledohub.org/dist/js/apnd-file.js:5:11)
+    at /home/richar65/newledohub.org/app.js:17:3
+    at Layer.handle [as handle_request] (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:328:13)
+    at /home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/richar65/nodevenv/newledohub.org/16/lib/node_modules/express/lib/router/index.js:280:10) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}

@@ -1,0 +1,19 @@
+@media only screen and ( max-width: 640px)
+{
+.bg__1{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images_420/1_Bridge_w_Bunny420.jpg");
+@include backSet420;
+}
+.bg__2{
+background-image: url("./images_420/2_Barn_wideshot_web420.jpg");
+@include backSet420;
+}
+.bg__3{
+background-image: url("./images_420/3_RainbowPasture420.jpg");
+@include backSet420;
+}
+.bg__4{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images_420/4_Newport-Oregon_web_420.jpg");
+@include backSet420;
+}
+}

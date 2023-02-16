@@ -1,0 +1,44 @@
+transporter verified
+2023/02/14 14:17:35
+Error: Cannot find module 'date-and-time'
+Require stack:
+- /home/richar65/newledohub.org/dist/js/form-data-log-format.js
+- /home/richar65/newledohub.org/dist/js/a2-sendmail.js
+- /home/richar65/newledohub.org/dist/js/send-mail.js
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+errorPath: undefined
+Error: Cannot find module 'multiparty'
+Require stack:
+- /home/richar65/newledohub.org/dist/js/send-mail.js
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+errorPath: undefined
+Error: Cannot find module 'multiparty'
+Require stack:
+- /home/richar65/newledohub.org/dist/js/send-mail.js
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+errorPath: undefined
+Error: Cannot find module 'multiparty'
+Require stack:
+- /home/richar65/newledohub.org/dist/js/send-mail.js
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+errorPath: undefined
+Error: Cannot find module 'multiparty'
+Require stack:
+- /home/richar65/newledohub.org/dist/js/send-mail.js
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+errorPath: undefined
+Error: Cannot find module 'multiparty'
+Require stack:
+- /home/richar65/newledohub.org/dist/js/send-mail.js
+- /home/richar65/newledohub.org/app.js
+- /usr/local/lsws/fcgi-bin/lsnode.js
+errorPath: undefined
+transporter verified
+2023/02/15 11:17:45
+transporter verified
+2023/02/15 11:42:45

@@ -1,0 +1,92 @@
+// _config.scss
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@600;900&display=swap'); 
+
+
+$primary-font: 'Comfortaa',cursive;
+$title-font:  'Montserrat', sans-serif;
+
+$primary-color: #ff9900;
+$secondary-color:#f1c232;
+$tersiary-color: #f6b26b;
+$quatorsiary-color: #00ffff;
+$primary-background-color: white;
+$light-border: white;
+$dark-border: black;
+$text-color: white;
+$white-backed-text: black;
+$text-left: 4%;
+* {
+  box-sizing:border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  outline: transparent; //3px solid red;// use for debugging overflow
+  max-width: 100%;
+}
+
+body,html{
+  background-color: $primary-background-color;
+}
+
+h1{
+  font-family: $title-font;
+  color: $primary-color;
+}
+h2{
+  //color: $tersiary-color;
+  font-family: $primary-font;
+  //max-width: 80%;
+}
+p{
+  color: $text-color;
+  font-family: $primary-font;
+}
+//rectangles on page 2 and page 3
+.rect {
+  position: relative;
+  font-family: $primary-font;
+  height: fit-content;
+  width: 100%;
+  background-color: $primary-background-color;
+  top: -4%;
+  border-radius: 1%;
+  //padding-bottom: 2%;
+  //outline: 3px solid red;
+}
+
+.rect_page_title {
+  position: relative;
+  font-family: $primary-font;
+  color: $primary-color;
+  height: fit-content;
+  width: 90%;
+  background-color: $primary-background-color;
+  top: -5%;
+  left: $text-left+4%;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  padding: 3% 6% 3% 3%;
+  font-weight: 800;
+  // outline: 2px solid red;
+}
+
+@mixin backSet{
+    /* Full height */
+    height:100%; 
+      /* Center and scale the image nicely */
+    width: 100%;
+    -webkit-background-size: 100% 100%;           /* Safari 3.0 */
+    -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100% 100%;           /* Opera 9.5 */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    max-width: 100%;
+}
+
+@mixin backSet240{
+  height: 50%;
+}
+@mixin backSet420{
+  height: 50%;
+}
