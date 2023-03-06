@@ -23,7 +23,7 @@ rsync -ravz -e 'ssh -p7822' --protocol=29 richar65@az1-ts106.a2hosting.com:/home
 # upload contact-page.html
 rsync -ravz -e 'ssh -p7822' --protocol=29 ./contact-page.html  richar65@az1-ts106.a2hosting.com:/home/richar65/newledohub.org/dist/contact-page.html
 
-# upload main.css and main.css.map
+# upload main.css 
 rsync -ravz -e 'ssh -p7822' --protocol=29 ./main.css  richar65@az1-ts106.a2hosting.com:/home/richar65/newledohub.org/dist/css/main.css
 
 # upload main.css.map
