@@ -8,7 +8,7 @@
         top: 5%;
         bottom: 5%;
     }
-   
+
 
     .bg__3 {
         top: 5%;
@@ -22,8 +22,9 @@
     .rect_1 {
         top: -4%;
     }
-    .rect_2{
-        top:0%;
+
+    .rect_2 {
+        top: 0%;
     }
 
     .bg__4 {
@@ -41,51 +42,72 @@
     }
 
 }
-@media only screen and (min-aspect-ratio:1/2) and (max-aspect-ratio:2/3) {
-    .bg__1{ height: 40%}
-    .preparation{
-        height: 30%;
-        margin-bottom:5%;
+
+@media only screen and (min-aspect-ratio > 1/2) and (max-aspect-ratio < 2/3) {
+    .bg__1 {
+        height: 40%;
     }
-    .share{
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .preparation {
+        height: 30%;
         margin-bottom: 5%;
     }
+
+    .share {
+        margin-bottom: 5%;
+    }
+
     .bg__4 {
         top: 5%;
         height: 80%;
     }
+
     .who_block_title {
         top: 2%;
     }
-    .whose{
-        top: 10%;
+
+    .whose {
+        top: 7%;
     }
-  
-    .final{
+
+    .final {
         top: 10%;
         height: 40%;
     }
 
 }
 
-@media only screen and (min-aspect-ratio:2/3) and (max-aspect-ratio:3/4) {
-    .bg__1{
+@media only screen and (min-aspect-ratio >= 2/3) and (max-aspect-ratio < 3/4) {
+    .bg__1 {
         height: 80%;
     }
-.bg__2{
-    height: 80%;
-}
+
+    .bg__2 {
+        height: 80%;
+    }
+
     .preparation {
         margin-bottom: 5%;
     }
-    .rect_1{
+
+    .rect_1 {
         top: -5%;
     }
+
     .share {
         //margin-bottom: 25%;
         height: 50%;
     }
-
+    .rect_page_title{
+        top: 4%;
+    }
+.intro_2{
+    top: 0%;
+}
     .third_p {
         height: 40%;
     }
@@ -93,14 +115,20 @@
     .acerage {
         top: -1%;
     }
-    
+
     .rect_2 {
         margin-top: 5%;
         margin-bottom: 10%;
     }
-.whose{
-    top: 10%;
-}
+
+    .bg__4 {
+        height: 80%;
+    }
+
+    .whose {
+        top: 10%;
+    }
+
     .who_block_title {
         top: 3%;
     }
@@ -119,45 +147,56 @@
     }
 }
 
-@media only screen and (min-aspect-ratio:3/4) and (max-aspect-ratio:7/8) {
-    .bg__1 .bg__2{
+@media only screen and (min-aspect-ratio >= 3/4) and (max-aspect-ratio < 7/8) {
+    .bg__1 .bg__2 {
         height: 80%;
     }
-#land{
-    top: -5%;
-}
-.rect_page_title_2{
- top: -15%;
-}
-.acerage{
-    top:-5%;
-}
-.rect_2{
-    margin-top: 0%;
-}
-.bg__1{
-    height: 80%;
-}
- .bg__4{
-    height: 80%;
-}
-.who_block_title{top: 3%;}
-.whose{
-    top: 5%;
-}
+
+    #land {
+        top: -5%;
+    }
+
+    .rect_page_title_2 {
+        top: -15%;
+    }
+
+    .acerage {
+        top: -5%;
+    }
+
+    .rect_2 {
+        margin-top: 0%;
+    }
+
+    .bg__1 {
+        height: 80%;
+    }
+
+    .bg__4 {
+        height: 80%;
+    }
+
+    .who_block_title {
+        top: 3%;
+    }
+
+    .whose {
+        top: 5%;
+    }
 }
 
-@media only screen and (min-aspect-ratio: 7/8) and (max-aspect-ratio: 1/1) {
+@media only screen and (min-aspect-ratio >= 7/8) and (max-aspect-ratio < 1/1) {
 
     .overlay-content {
         top: 0%;
         left: 0%;
         padding: 0%;
     }
+
     // .rect_2{
     //     margin-top: 15%;
     // }
-    .acerage{
+    .acerage {
         top: 0%;
     }
 
@@ -167,24 +206,27 @@
 
 }
 
-@media only screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 5/4) {
-.acerage{
-    top: -3%;
-}
-.whose{
-    top: 15%;
-}
-.bg__1 .bg__4{
-    height: 80%;
-}
+@media only screen and (min-aspect-ratio >= 1/1) and (max-aspect-ratio < 5/4) {
+    .acerage {
+        top: -3%;
+    }
+
+    .whose {
+        top: 15%;
+    }
+
+    .bg__1 .bg__4 {
+        height: 80%;
+    }
 }
 
-@media only screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 4/3) {
+@media only screen and (min-aspect-ratio >= 5/4) and (max-aspect-ratio < 4/3) {
     .preparation {
         margin-top: 1%;
         margin-bottom: 5%;
     }
-    .acerage{
+
+    .acerage {
         top: 10%;
     }
 
@@ -192,8 +234,7 @@
         top: 15%;
     }
 }
-
-@media only screen and ((min-aspect-ratio: 4/3) and (max-aspect-ratio: 3/2)) {
+@media only screen and ((min-aspect-ratio >= 4/3) and (max-aspect-ratio < 3/2)) {
     .envision {
         padding-bottom: 1%
     }
@@ -206,50 +247,95 @@
         top: 3%;
         margin-bottom: 7%;
     }
+    .share{
+        height: 45%;
+    }
 
     .whose {
         top: 15%;
     }
 }
-@media only screen and ((min-aspect-ratio: 3/2) and (max-aspect-ratio: 14/9)) {
+@media only screen and (min-resolution: 192dpi) and ((min-aspect-ratio >= 4/3) and (max-aspect-ratio < 3/2)){
+    .share{
+        height: 45%;
+    }
+    
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and ((min-aspect-ratio >= 4/3) and (max-aspect-ratio < 3/2)) {
+    
+    .envision {
+        padding-bottom: 1%
+    }
+
+    .targeting {
+        margin-top: 0%;
+    }
+
+    .preparation {
+        top: 3%;
+        margin-bottom: 7%;
+    }
+    .share{
+        height: 45%;
+    }
+
+    .whose {
+        top: 15%;
+    }
+}
+@media only screen and (min-resolution: 192dpi) {
+    .share{
+        height: 45%;
+    }
+    
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and ((min-aspect-ratio >= 3/2) and (max-aspect-ratio < 14/9)) {
     .square {
         top: -9%;
         height: 35%;
 
     }
+
     .targeting {
         //top: 80%;
         height: 10%;
         margin-left: 0%;
     }
+
     .preparation {
         top: 7%;
         max-width: 80%;
         margin-top: 0%;
-        margin-bottom:10%;
+        margin-bottom: 10%;
     }
-    .whose{
+
+    .whose {
         top: 15%;
     }
-    }
-@media only screen and ((min-aspect-ratio: 14/9) and (max-aspect-ratio: 8/5)) {
+}
+
+@media only screen and ((min-aspect-ratio >= 14/9) and (max-aspect-ratio < 8/5)) {
     .square {
         top: -9%;
         height: 30%;
         margin-bottom: 3%;
 
     }
+
     .targeting {
         //top: 80%;
         height: 10%;
         margin-left: 0%;
     }
+
     .preparation {
         top: 7%;
         max-width: 80%;
         margin-top: 0%;
-        margin-bottom:10%;
+        margin-bottom: 10%;
     }
+
     .restoration {
         margin-bottom: 3%;
     }
@@ -258,7 +344,8 @@
         top: 15%;
     }
 }
-@media only screen and ((min-aspect-ratio: 8/5) and (max-aspect-ratio: 15/9)) {
+
+@media only screen and ((min-aspect-ratio >= 8/5) and (max-aspect-ratio < 15/9)) {
     .square {
         top: -9%;
         height: 30%;
@@ -275,20 +362,21 @@
         height: 10%;
         margin-left: 0%;
     }
-   
+
     .preparation {
         top: 12%;
         max-width: 80%;
         margin-top: 0%;
-        margin-bottom:10%;
+        margin-bottom: 10%;
     }
-    .whose{
+
+    .whose {
         top: 15%;
     }
 
 }
 
-@media only screen and ((min-aspect-ratio: 15/9) and (max-aspect-ratio: 16/9)) {
+@media only screen and ((min-aspect-ratio >= 15/9) and (max-aspect-ratio  < 16/9)) {
 
     .overlay-content {
         top: -1%;
@@ -302,7 +390,7 @@
 
     .square {
         top: -7%;
-        height: 30%;
+        //height: 50%;
 
     }
 
@@ -316,31 +404,40 @@
         height: 10%;
         margin-left: 0%;
     }
-   
+
     .preparation {
         top: 2%;
-        max-width: 80%;
+        max-width: 100%;
         margin-top: 0%;
-        margin-bottom:6%;
+        margin-bottom: 6%;
     }
 
-
+    .share{
+        height:50%;
+        //margin-bottom:5%;
+    }
     #about {
         top: 100%;
     }
+    .who_block_title{
+        top: 2%;
+        margin-bottom: 2%;
+    }
 
     .who {
-        margin: 5% 0% 0% 0%;
+        margin: 1% 0% 0% 0%;
     }
 
     #who_2 {
         height: 20%;
     }
 }
-
-@media only screen and (min-aspect-ratio: 16/9) and (max-aspect-ratio: 17/9) {
     
+@media only screen and (mmin-aspect-ratio >= 16/9) and (max-aspect-ratio < 17/9) {
 
+    // .square {
+    //     height: 60%;    
+    // }
     .targeting {
         top: 45%;
     }
@@ -350,12 +447,21 @@
         margin-top: 2%;
         margin-bottom: 5%;
     }
-
+.share{
+    height:50%;
+    margin-bottom:5%;
+}
     .intro_2 {
-        margin-left: /* $text-left */0%;
+        margin-left:
+            /* $text-left */
+            0%;
     }
-    #land {top: -5%;}
-    .rect_page_title_2{
+
+    #land {
+        top: -5%;
+    }
+
+    .rect_page_title_2 {
         top: -10%;
     }
 
@@ -368,7 +474,7 @@
     }
 }
 
-@media only screen and (min-aspect-ratio: 17/9) and (max-aspect-ratio: 2/1) {
+@media only screen and (min-aspect-ratio >= 17/9) and (max-aspect-ratio < 2/1) {
     .targeting {
         margin-top: 1%;
         margin-left: 3%;
@@ -378,17 +484,19 @@
     .preparation {
         margin-top: 0%;
         margin-bottom: 5%;
-        margin-left: /* $text-left */0%;
+        margin-left: $text-left;
     }
-  
-    #button_1{
+
+    #button_1 {
         margin-left: 10%;
         padding: 2%;
     }
-    .intro_2{
+
+    .intro_2 {
         margin-left: 0%;
     }
-    .engaged{
+
+    .engaged {
         margin-left: 0%;
     }
 
@@ -413,7 +521,7 @@
     }
 }
 
-@media only screen and (min-aspect-ratio: 2/1) and (max-aspect-ratio: 21/9) {
+@media only screen and (min-aspect-ratio >= 2/1) and (max-aspect-ratio < 21/9) {
     .targeting {
         margin-top: 0%;
     }
@@ -438,20 +546,80 @@
 
 }
 
-@media only screen and (min-aspect-ratio: 21/9) and (max-aspect-ratio: 32/9) {
-    .overlay-content{
-        left: /* $text-left */0%;
+@media only screen and (min-aspect-ratio >= 21/9) and (max-aspect-ratio < 32/9) {
+    .overlay-content {
+        left:
+            /* $text-left */
+            0%;
     }
+
     .square {
         top: -11%;
     }
+
     .targeting {
         margin-top: 0%;
         margin-bottom: 3%;
-        left: /* $text-left */0%;
+        left:
+            /* $text-left */
+            0%;
     }
 
     .whose {
         top: 15%;
+    }
+}
+
+@media only screen and (max-height >= 380px) and (max-aspect-ratio <= 16/9) {
+    .square {
+        height: 70%;
+        //margin-bottom: 5%;
+    }
+
+    .targeting {
+        top: 15%;
+    }
+
+    .preparation {
+        top: -8%;
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+
+    .bg__4 {
+        height: 100%;
+    }
+
+    .who_block_title {
+        top: 2%;
+    }
+
+    .who {
+        margin-top: 0%;
+    }
+
+}
+
+@media only screen and (max-height <= 250px) and (max-aspect-ratio <= 3/2) {
+    .main {
+        margin-top: 1%;
+    }
+
+    .preparation {
+        margin-bottom: 15%;
+    }
+
+    .whose {
+        margin-top: 0%;
+        margin-bottom: 20%;
+    }
+
+    .who {
+        top: 0%;
+    }
+
+    .final {
+        top: 20%;
+        margin-top: 10%;
     }
 }

@@ -6,7 +6,7 @@ cloudlinux-selector create --interprete=nodejs --json --app-root=<USER_NAME> --a
 #a2hosting example
 cloudlinux-selector create --json --interpreter nodejs --version 11 --app-root app --domain example.com --app-uri app
 # practice setup
-cloudlinux-selector create --json --interpreter nodejs --version 16.17.1 --app-mode=develompent --app-root newledohub.org  --domain newledohub.org --app-uri newledo_back
+cloudlinux-selector create --json --interpreter nodejs --version 16.17.1 --app-mode=develompent --app-root newledo  --domain newledohub.com --app-uri newledo.org
 
 #cd into app
 cd rh-backend
@@ -15,28 +15,25 @@ cd rh-backend
 
 #Insert the following
 {
-  "name": "nef",
+  "name": "richardhaskell",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "scss": "sass --watch dist/scss:dist/css/",
-    "dev": "nodemon app.js",
     "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.1.3",
     "cors": "^2.8.5",
+    "date-and-time": "^2.4.1",
     "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "nodemailer": "^6.9.1"
-  },
-  "devDependencies": {
     "fs": "^0.0.1-security",
-    "nodemon": "^2.0.20",
-    "sass": "^1.57.1"
+    "nodemailer": "^6.8.0"
   }
 }
 
@@ -46,7 +43,7 @@ cd rh-backend
 #Edit it to match your app and upload it to app directory
 
 #To install npm, type the following command:
-cloudlinux-selector install-modules --json --interpreter nodejs --user richar65 --app-root newledohub.org
+cloudlinux-selector install-modules --json --interpreter nodejs --user richar65 --app-root public_html/rhbackend
 
 
 ###########################################################################################
@@ -55,26 +52,26 @@ cloudlinux-selector install-modules --json --interpreter nodejs --user richar65 
 # related to the application, log in using SSH, and then type the                         #
 # following command to enter the virtual environment for the application:                 #
 #                                                                                         #
-source /home/richar65/nodevenv/newledohub.org/16/bin/activate && cd /home/richar65/newledohub.org
+source /home/richar65/nodevenv/public_html/rhbackend/16/bin/activate && cd /home/richar65/public_html/rhbackend
 #                                                                                         #
 # enter:                                                                                  #
-#                                                                                         #
      deactivate # to return from virtual environment                                      #
+#                                                                                         #
 ###########################################################################################
 
 #To control the running state of the application, do the following:
 
 #To stop the application, type the following command:
 
-cloudlinux-selector stop --json --interpreter nodejs --app-root ~/newledohub.org
+cloudlinux-selector stop --json --interpreter nodejs --app-root ~/rhbackend
 
 #To start the application, type the following command:
 
-cloudlinux-selector start --json --interpreter nodejs --app-root ~/newledohub.org
+cloudlinux-selector start --json --interpreter nodejs --app-root ~/rhbackend
 
 #To restart (stop and start in one step) the application, type the following command:
 
-cloudlinux-selector restart --json --interpreter nodejs --app-root ~/newledohub.org
+cloudlinux-selector restart --json --interpreter nodejs --app-root ~/public_html/rhbackend
 
 # Get cPanel Hosting
 # Article Details

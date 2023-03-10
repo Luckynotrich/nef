@@ -4,11 +4,29 @@
   font-family: $primary-font;
   height: fit-content;
   width: 85%;
-  top: -7%;
+  top: -6%;
   left: 2%;
+  border-top-left-radius: 10px 25%;
+  border-top-right-radius:  10px 25%;
+}
+.rect_page_title {
+  position: relative;
+  font-family: $primary-font;
+  color: $primary-color;
+  height: 12%;
+  width: 85%;
+  background-color: $primary-background-color;
+  top: 2%;
+  left: $text-left+2%;
+  border-top-left-radius: 10px 25%;
+  border-top-right-radius:  10px 25%;
+  //border-top-right-radius: 2%;
+  padding: 3% 6% 6% 2%;
+  font-weight: 800;
+  // outline: 2px solid red;
 }
 .intro_2{
-  top: -5%;
+  top: 4%;
   left: 2.5%;
   max-width: 60%;
   font-weight: 600;
@@ -16,14 +34,7 @@
   font-family: $primary-font;
   margin-bottom: 3%;
 }
-.second_p {
-  font-family: $primary-font;
-  color: $white-backed-text;
-  font-weight: 800;
-  width: 45%;
-  // padding: 3%;
-  // margin: 3%;
-}
+
 .link {
   //display: block;
   color: $white-backed-text;

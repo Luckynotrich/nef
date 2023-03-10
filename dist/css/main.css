@@ -47,21 +47,6 @@ a:active {
   text-decoration: none;
 }
 
-.rect_page_title {
-  position: relative;
-  font-family: "Comfortaa", cursive;
-  color: #ff9900;
-  height: fit-content;
-  width: 85%;
-  background-color: white;
-  top: -5%;
-  left: 6%;
-  border-top-left-radius: 10px 25%;
-  border-top-right-radius: 10px 25%;
-  padding: 3% 6% 3% 2%;
-  font-weight: 800;
-}
-
 .bg__1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images_1024/1_Bridge_w_Bunny_1024.jpg");
   /* Full height */
@@ -190,7 +175,7 @@ a:active {
 }
 
 .intro {
-  top: 20%;
+  top: 15%;
   left: 4%;
   max-width: 75%;
   font-weight: 800;
@@ -203,7 +188,7 @@ a:active {
   height: fit-content;
   width: 75%;
   background-color: white;
-  top: -5%;
+  top: -3%;
   left: 4%;
   border-radius: 2%;
 }
@@ -224,20 +209,27 @@ a:active {
 }
 
 .preparation {
-  display: flex;
-  width: fit-content;
+  display: contents;
+  width: 100%;
   max-width: 100%;
   height: 25%;
   background-color: white;
   padding: 2% 0% 2% 0%;
-  margin: -6% 1% -6% 4%;
+  margin: -3% 1% -6% 0%;
+}
+
+.second_p {
+  font-family: "Comfortaa", cursive;
+  color: black;
+  font-weight: 800;
+  width: 70%;
 }
 
 .contact {
   position: relative;
   top: 42.5%;
-  left: 62%;
-  width: fit-content;
+  left: 60%;
+  width: 30%;
   padding: 1% 5%;
   background-color: transparent;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
@@ -271,25 +263,35 @@ a:active {
   font-family: "Comfortaa", cursive;
   height: fit-content;
   width: 85%;
-  top: -7%;
+  top: -6%;
   left: 2%;
+  border-top-left-radius: 10px 25%;
+  border-top-right-radius: 10px 25%;
+}
+
+.rect_page_title {
+  position: relative;
+  font-family: "Comfortaa", cursive;
+  color: #ff9900;
+  height: 12%;
+  width: 85%;
+  background-color: white;
+  top: 2%;
+  left: 6%;
+  border-top-left-radius: 10px 25%;
+  border-top-right-radius: 10px 25%;
+  padding: 3% 6% 6% 2%;
+  font-weight: 800;
 }
 
 .intro_2 {
-  top: -5%;
+  top: 4%;
   left: 2.5%;
   max-width: 60%;
   font-weight: 600;
   color: #ff9900;
   font-family: "Comfortaa", cursive;
   margin-bottom: 3%;
-}
-
-.second_p {
-  font-family: "Comfortaa", cursive;
-  color: black;
-  font-weight: 800;
-  width: 45%;
 }
 
 .link {
@@ -351,13 +353,15 @@ a:active.event {
 }
 
 .share {
+  display: block;
   position: relative;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
-  height: fit-content;
+  height: max-content;
   background-color: white;
-  padding: 4% 0% 4% 0%;
+  padding: 0%;
   overflow: hidden;
+  margin-bottom: 5%;
 }
 
 .share_block_title {
@@ -385,6 +389,7 @@ a:active.event {
   width: 75%;
   font-weight: 600;
   color: black;
+  margin-bottom: 5%;
 }
 
 .dark {
@@ -429,6 +434,8 @@ a:active.event {
   width: 85%;
   top: -4%;
   left: 0.5%;
+  border-top-left-radius: 10px 25%;
+  border-top-right-radius: 10px 25%;
 }
 
 .restoration {
@@ -451,7 +458,7 @@ a:active.event {
 }
 
 .who_block_title {
-  top: 14%;
+  top: 4%;
   width: fit-content;
   left: 4%;
   color: #ff9900;
@@ -460,14 +467,14 @@ a:active.event {
 }
 
 .whose {
-  top: 6%;
+  top: 4%;
 }
 
 .who {
   top: 17%;
   left: 4%;
   width: 90%;
-  max-width: 70%;
+  max-width: 85%;
   font-weight: 600;
   color: white;
   font-family: "Comfortaa", cursive;
@@ -486,13 +493,13 @@ a:active.event {
 }
 
 .final {
-  top: 6%;
+  top: 4%;
 }
 
 .closing {
   display: flex;
   margin-left: 12%;
-  width: 100%;
+  width: 85%;
   height: 50%;
   margin-top: 8%;
   color: black;
@@ -645,41 +652,46 @@ a:active.event {
   }
 }
 h1 {
-  font-size: 28px;
+  font-size: 20px;
 }
 @media screen and (min-width: 300px) {
   h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 @media screen and (min-width: 400px) {
   h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 }
 @media screen and (min-width: 512px) {
   h1 {
-    font-size: 40px;
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 640px) {
   h1 {
-    font-size: 46px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 704px) {
   h1 {
-    font-size: 52px;
+    font-size: 44px;
   }
 }
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 58px;
+    font-size: 48px;
   }
 }
 @media screen and (min-width: 870px) {
   h1 {
-    font-size: 64px;
+    font-size: 52px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -706,29 +718,44 @@ h1 {
 h2 {
   font-size: 18px;
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 400px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 512px) {
   h2 {
     font-size: 22px;
   }
 }
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 576px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 640px) {
   h2 {
     font-size: 28px;
   }
 }
+@media screen and (min-width: 704px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   h2 {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 @media screen and (min-width: 870px) {
   h2 {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 @media screen and (min-width: 1024px) {
   h2 {
-    font-size: 50px;
+    font-size: 46px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -821,36 +848,51 @@ h4 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 10px;
+}
+@media screen and (min-width: 300px) {
+  p {
+    font-size: 11px;
+  }
 }
 @media screen and (min-width: 400px) {
   p {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 512px) {
   p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 576px) {
+  p {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 704px) {
+@media screen and (min-width: 640px) {
   p {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   p {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 768px) {
   p {
     font-size: 17px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 870px) {
   p {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 19px;
   }
 }
 @media screen and (min-width: 1168px) {
@@ -903,9 +945,12 @@ p {
     top: 5%;
   }
 }
-@media only screen and (min-aspect-ratio: 1/2) and (max-aspect-ratio: 2/3) {
+@media only screen and (min-aspect-ratio > 1/2) and (max-aspect-ratio < 2/3) {
   .bg__1 {
     height: 40%;
+  }
+  h2 {
+    font-size: 18px;
   }
   .preparation {
     height: 30%;
@@ -922,14 +967,14 @@ p {
     top: 2%;
   }
   .whose {
-    top: 10%;
+    top: 7%;
   }
   .final {
     top: 10%;
     height: 40%;
   }
 }
-@media only screen and (min-aspect-ratio: 2/3) and (max-aspect-ratio: 3/4) {
+@media only screen and (min-aspect-ratio >= 2/3) and (max-aspect-ratio < 3/4) {
   .bg__1 {
     height: 80%;
   }
@@ -945,6 +990,12 @@ p {
   .share {
     height: 50%;
   }
+  .rect_page_title {
+    top: 4%;
+  }
+  .intro_2 {
+    top: 0%;
+  }
   .third_p {
     height: 40%;
   }
@@ -954,6 +1005,9 @@ p {
   .rect_2 {
     margin-top: 5%;
     margin-bottom: 10%;
+  }
+  .bg__4 {
+    height: 80%;
   }
   .whose {
     top: 10%;
@@ -972,7 +1026,7 @@ p {
     padding-bottom: 10%;
   }
 }
-@media only screen and (min-aspect-ratio: 3/4) and (max-aspect-ratio: 7/8) {
+@media only screen and (min-aspect-ratio >= 3/4) and (max-aspect-ratio < 7/8) {
   .bg__1 .bg__2 {
     height: 80%;
   }
@@ -1001,7 +1055,7 @@ p {
     top: 5%;
   }
 }
-@media only screen and (min-aspect-ratio: 7/8) and (max-aspect-ratio: 1/1) {
+@media only screen and (min-aspect-ratio >= 7/8) and (max-aspect-ratio < 1/1) {
   .overlay-content {
     top: 0%;
     left: 0%;
@@ -1014,7 +1068,7 @@ p {
     top: 15%;
   }
 }
-@media only screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 5/4) {
+@media only screen and (min-aspect-ratio >= 1/1) and (max-aspect-ratio < 5/4) {
   .acerage {
     top: -3%;
   }
@@ -1025,7 +1079,7 @@ p {
     height: 80%;
   }
 }
-@media only screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 4/3) {
+@media only screen and (min-aspect-ratio >= 5/4) and (max-aspect-ratio < 4/3) {
   .preparation {
     margin-top: 1%;
     margin-bottom: 5%;
@@ -1037,7 +1091,7 @@ p {
     top: 15%;
   }
 }
-@media only screen and ((min-aspect-ratio: 4/3) and (max-aspect-ratio: 3/2)) {
+@media only screen and ((min-aspect-ratio >= 4/3) and (max-aspect-ratio < 3/2)) {
   .envision {
     padding-bottom: 1%;
   }
@@ -1048,11 +1102,42 @@ p {
     top: 3%;
     margin-bottom: 7%;
   }
+  .share {
+    height: 45%;
+  }
   .whose {
     top: 15%;
   }
 }
-@media only screen and ((min-aspect-ratio: 3/2) and (max-aspect-ratio: 14/9)) {
+@media only screen and (min-resolution: 192dpi) and ((min-aspect-ratio >= 4/3) and (max-aspect-ratio < 3/2)) {
+  .share {
+    height: 45%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and ((min-aspect-ratio >= 4/3) and (max-aspect-ratio < 3/2)) {
+  .envision {
+    padding-bottom: 1%;
+  }
+  .targeting {
+    margin-top: 0%;
+  }
+  .preparation {
+    top: 3%;
+    margin-bottom: 7%;
+  }
+  .share {
+    height: 45%;
+  }
+  .whose {
+    top: 15%;
+  }
+}
+@media only screen and (min-resolution: 192dpi) {
+  .share {
+    height: 45%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and ((min-aspect-ratio >= 3/2) and (max-aspect-ratio < 14/9)) {
   .square {
     top: -9%;
     height: 35%;
@@ -1071,7 +1156,7 @@ p {
     top: 15%;
   }
 }
-@media only screen and ((min-aspect-ratio: 14/9) and (max-aspect-ratio: 8/5)) {
+@media only screen and ((min-aspect-ratio >= 14/9) and (max-aspect-ratio < 8/5)) {
   .square {
     top: -9%;
     height: 30%;
@@ -1094,7 +1179,7 @@ p {
     top: 15%;
   }
 }
-@media only screen and ((min-aspect-ratio: 8/5) and (max-aspect-ratio: 15/9)) {
+@media only screen and ((min-aspect-ratio >= 8/5) and (max-aspect-ratio < 15/9)) {
   .square {
     top: -9%;
     height: 30%;
@@ -1118,7 +1203,7 @@ p {
     top: 15%;
   }
 }
-@media only screen and ((min-aspect-ratio: 15/9) and (max-aspect-ratio: 16/9)) {
+@media only screen and ((min-aspect-ratio >= 15/9) and (max-aspect-ratio < 16/9)) {
   .overlay-content {
     top: -1%;
     left: 0%;
@@ -1129,7 +1214,6 @@ p {
   }
   .square {
     top: -7%;
-    height: 30%;
   }
   .envision {
     margin-bottom: 2%;
@@ -1142,27 +1226,38 @@ p {
   }
   .preparation {
     top: 2%;
-    max-width: 80%;
+    max-width: 100%;
     margin-top: 0%;
     margin-bottom: 6%;
+  }
+  .share {
+    height: 50%;
   }
   #about {
     top: 100%;
   }
+  .who_block_title {
+    top: 2%;
+    margin-bottom: 2%;
+  }
   .who {
-    margin: 5% 0% 0% 0%;
+    margin: 1% 0% 0% 0%;
   }
   #who_2 {
     height: 20%;
   }
 }
-@media only screen and (min-aspect-ratio: 16/9) and (max-aspect-ratio: 17/9) {
+@media only screen and (mmin-aspect-ratio >= 16/9) and (max-aspect-ratio < 17/9) {
   .targeting {
     top: 45%;
   }
   .preparation {
     top: 1%;
     margin-top: 2%;
+    margin-bottom: 5%;
+  }
+  .share {
+    height: 50%;
     margin-bottom: 5%;
   }
   .intro_2 {
@@ -1181,7 +1276,7 @@ p {
     top: 1%;
   }
 }
-@media only screen and (min-aspect-ratio: 17/9) and (max-aspect-ratio: 2/1) {
+@media only screen and (min-aspect-ratio >= 17/9) and (max-aspect-ratio < 2/1) {
   .targeting {
     margin-top: 1%;
     margin-left: 3%;
@@ -1190,7 +1285,7 @@ p {
   .preparation {
     margin-top: 0%;
     margin-bottom: 5%;
-    margin-left: 0%;
+    margin-left: 4%;
   }
   #button_1 {
     margin-left: 10%;
@@ -1218,7 +1313,7 @@ p {
     top: 8%;
   }
 }
-@media only screen and (min-aspect-ratio: 2/1) and (max-aspect-ratio: 21/9) {
+@media only screen and (min-aspect-ratio >= 2/1) and (max-aspect-ratio < 21/9) {
   .targeting {
     margin-top: 0%;
   }
@@ -1236,7 +1331,7 @@ p {
     margin: 5% 0% 0% 0%;
   }
 }
-@media only screen and (min-aspect-ratio: 21/9) and (max-aspect-ratio: 32/9) {
+@media only screen and (min-aspect-ratio >= 21/9) and (max-aspect-ratio < 32/9) {
   .overlay-content {
     left: 0%;
   }
@@ -1250,6 +1345,47 @@ p {
   }
   .whose {
     top: 15%;
+  }
+}
+@media only screen and (max-height >= 380px) and (max-aspect-ratio <= 16/9) {
+  .square {
+    height: 70%;
+  }
+  .targeting {
+    top: 15%;
+  }
+  .preparation {
+    top: -8%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+  .bg__4 {
+    height: 100%;
+  }
+  .who_block_title {
+    top: 2%;
+  }
+  .who {
+    margin-top: 0%;
+  }
+}
+@media only screen and (max-height <= 250px) and (max-aspect-ratio <= 3/2) {
+  .main {
+    margin-top: 1%;
+  }
+  .preparation {
+    margin-bottom: 15%;
+  }
+  .whose {
+    margin-top: 0%;
+    margin-bottom: 20%;
+  }
+  .who {
+    top: 0%;
+  }
+  .final {
+    top: 20%;
+    margin-top: 10%;
   }
 }
 
