@@ -1,6 +1,6 @@
 //_page4.scss
 .who_block_title {
-    top: 4%;
+    top: 14%;
     width: fit-content;
     left: $text-left;
     color: $primary-color;
@@ -8,14 +8,14 @@
     font-weight: 600;
 }
 .whose{
-    top: 4%;
+    top: 6%;
 }
 
 .who{
     top: 17%;
     left: $text-left;
     width: 90%;
-    max-width: 85%;
+    max-width: 70%;
     font-weight: 600;
     color: $text-color;
     font-family: $primary-font;
@@ -37,13 +37,13 @@
     padding: 1% 0% 1% 0%;
 }
 .final{
-    top:4%;
+    top:6%;
 }
 
 .closing{
     display:flex;
     margin-left: $text-left+8%;
-    width:85%;
+    width:100%;
     height: 50%;
     //outline: 2px solid red;
     margin-top:8%;
