@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;800&display=swap");
+body,
+html {
+  height: 100%;
+  max-width: 99%;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+article {
+  margin-top: 1%;
+  margin-left: 4%;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 72px;
+  color: #ff9900;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1:hover {
+  color: #ff5361;
+}
+
+h2,
+h3 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  color: #f1c232;
+}
+
+h2 {
+  display: inline;
+  font-size: 28px;
+}
+
+section {
+  display: flex;
+  height: 100%;
+  margin: 10px;
+}
+
+ul {
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-left: -5%;
+}
+
+.Get-In-Touch {
+  margin-top: 10%;
+}
+
+.heich2 {
+  font-size: 16pt;
+  display: inline;
+}
+
+/* .h1_a{
+  cursor: url("./images/envelope.png"),help; 
+} */
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 85%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: #ff9900;
+}
+
+.hero-text:visited {
+  color: #394D95;
+}
+
+a:visited {
+  color: #394D95;
+}
+
+.center {
+  max-width: 975px;
+  margin: auto;
+  padding: 10px;
+  color: #B4C7DC;
+}
+
+/* The hero image */
+.hero-image {
+  /* Eliminate white space around hero-image*/
+  display: block;
+  line-height: 0%;
+  /* Set a specific height */
+  height: 30%;
+  width: 103%;
+  left: -1.5%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* 
+* Start of contact form
+ */
+.container {
+  width: 100%;
+  height: 50vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  /* margin-left: 35%;
+  max-width: 1024px; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 7px;
+  margin: 0;
+}
+
+form h3 {
+  color: #f6b26b;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input[type=text], input[type=email], input[type=tel], textarea {
+  border: 0;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  outline: none;
+  background-color: rgb(251, 244, 230);
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+input::placeholder {
+  font-family: "Droid Sans Mono", "monospace", monospace;
+}
+
+input:focus::placeholder {
+  transition: opacity 1s 0s ease !important;
+  opacity: 0;
+}
+
+textarea:focus::placeholder {
+  transition: opacity 1s 0s ease !important;
+  opacity: 0;
+}
+
+form button {
+  padding: 15px;
+  background: #ff9900;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+.inputLable {
+  color: rgb(26, 5, 5);
+  margin-top: 6px;
+  margin-bottom: -10px;
+}
+
+/* .h1_a{
+  cursor: url("./images/back-arrow.png"),help; 
+}
+.hero-image3{
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)), url("images/more-mountains.png");
+ }
+*/
+.credit {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  margin-bottom: 0%;
+  font-size: small;
+}
+
+@media screen and (max-width: 935px) {
+  body {
+    width: 100%;
+  }
+  section {
+    transform: scaleX(0.9);
+  }
+  .hero-image {
+    background-position: center;
+    margin-left: -1%;
+    margin-top: -3%;
+    padding: 0%;
+  }
+  .hero-text h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: large;
+  }
+}
+/* @media screen and (max-width:835px) { 
+
+} */
+@media screen and (min-aspect-ratio: 8/5) and (max-aspect-ratio: 16/9) {
+  .h1_a {
+    margin-top: -20%;
+  }
+  .hero-text {
+    top: 20%;
+  }
+  .container {
+    margin-top: 15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero-text h1 {
+    position: relative;
+    text-align: left;
+    top: 80%;
+    left: 17%;
+    bottom: 0%;
+    margin-bottom: 0%;
+    font-size: 36px;
+    word-wrap: normal;
+  }
+  .center {
+    max-width: 95%;
+  }
+  h2 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .hero-text h1 {
+    left: 10%;
+    font-size: 30px;
+  }
+}
+#submitButton {
+  padding: 15px;
+  background: #ff9900;
+  color: #fff;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 50;
+}
+
+#submitButton:hover {
+  background-color: #45a049;
+}
+
+#shim {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  background: rgb(249, 218, 177);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  z-index: 990;
+  display: none;
+}
+
+#msgbx {
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+  max-width: 100%;
+  top: 20%;
+  left: 0%;
+  margin: auto;
+  color: #ff9900;
+  z-index: 999;
+  overflow-x: auto;
+  text-align: center;
+  background-color: white; /* #294766; */
+  opacity: 1;
+}
+
+#msg {
+  position: relative;
+  top: 20%;
+  margin: auto;
+  font-size: 12pt;
+  background-color: none;
+}
+
+.thanks {
+  color: #ff9900;
+}
+
+@media screen and (max-width: 400px) {
+  #msg {
+    overflow-wrap: break-word;
+    text-align: left;
+  }
+}
+h1 {
+  font-size: 24px;
+}
+@media screen and (min-width: 300px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 512px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 640px) {
+  h1 {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 704px) {
+  h1 {
+    font-size: 52px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 58px;
+  }
+}
+@media screen and (min-width: 870px) {
+  h1 {
+    font-size: 64px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 68px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  h1 {
+    font-size: 76px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h1 {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  h1 {
+    font-size: 110px;
+  }
+}
+
+h2 {
+  font-size: 18px;
+}
+@media screen and (min-width: 640px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 704px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 870px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  h2 {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h2 {
+    font-size: 56px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  h2 {
+    font-size: 60px;
+  }
+}
+
+h3 {
+  font-size: 15px;
+}
+@media screen and (min-width: 400px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 640px) {
+  h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 704px) {
+  h3 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 870px) {
+  h3 {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 35px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h3 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  h3 {
+    font-size: 56px;
+  }
+}
+
+h4 {
+  font-size: 12px;
+}
+@media screen and (min-width: 400px) {
+  h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 640px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h4 {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h4 {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  h4 {
+    font-size: 42px;
+  }
+}
+
+p {
+  font-size: 12px;
+}
+@media screen and (min-width: 400px) {
+  p {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 512px) {
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 704px) {
+  p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 870px) {
+  p {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  p {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  p {
+    font-size: 21px;
+  }
+}
+
+a {
+  font-size: 12px;
+}
+@media screen and (min-width: 400px) {
+  a {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 512px) {
+  a {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 704px) {
+  a {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 870px) {
+  a {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  a {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1168px) {
+  a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  a {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  a {
+    font-size: 28px;
+  }
+}
+
+/*# sourceMappingURL=contact-style.css.map */

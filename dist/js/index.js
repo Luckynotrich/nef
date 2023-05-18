@@ -3,9 +3,10 @@ const form = document.getElementById("contact-form");
 const formEvent = form.addEventListener("submit", (event) => {
   event.preventDefault();
   document.getElementById('shim').style.display = document.getElementById('msgbx').style.display = "block";
+  document.getElementById('inTouch').style.display='none';
   let mail = new FormData(form);
-  mail.append('message',message.value)
-  sendMail(mail);
+  //mail.append('message',message.value)
+  //sendMail(mail);
    
 });
 

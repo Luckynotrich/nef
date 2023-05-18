@@ -1,0 +1,82 @@
+//_page4.scss
+.who_block_title {
+    display: block;
+    margin-top: 3%;
+    width: fit-content;
+    left: $text-left;
+    color: $primary-color;
+    font-family: $header-font;
+    font-weight: 600;
+    top: 3%;
+}
+.whose{
+    display: flex;
+    flex-flow: row wrap;
+    left: $text-left;
+    top: 3%;
+    width: 90%;
+    padding-bottom: 1rem;
+}
+
+.who {
+    margin-bottom: 3%;
+     margin-right: $text-left;
+     text-align: left;
+     width: 87%;
+     max-width: 1000px;
+    
+}
+
+.contact-us {
+    // font-family: $header-font;
+    // font-weight: $paragraph-font-weight+50;
+     top: 5%;
+     left: $text-left;
+     width: 87%;
+    // max-width: 90%;
+    // color: $white-backed-text;
+    padding: 1% 0% 1% 0%;
+    padding-bottom: 20%;
+}
+
+.final {
+    width: 85%;
+}
+
+.closing {
+    display: flex;
+    margin-left: $text-left+8%;
+    width: 85%;
+    height: 50%;
+    //outline: 2px solid red;
+    margin-top: 8%;
+    color: $white-backed-text;
+}
+
+.email {
+    color: $white-backed-text;
+    text-decoration: underline;
+    width: 40%;
+    margin-left: -4%;
+    font-family: $paragraph-font;
+    padding: 4%;
+}
+
+.phone {
+    //top:10%;
+    //justify-self: center;
+    width: 40%;
+    color: $white-backed-text;
+    font-family: $paragraph-font;
+    padding: 4%;
+}
+
+.address {
+    //top: 15%;
+    //left: 18%;
+    width: 60%;
+    left: $text-left;
+    color: $white-backed-text;
+    font-family: $paragraph-font;
+    padding: 4% 0% 4% 0%;
+}

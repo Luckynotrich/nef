@@ -2,10 +2,11 @@
 
 const { readdir, rm, writeFile } = require('node:fs/promises');
 const { isNumberObject } = require('node:util/types');
-const apndFile = require('./apnd-file');
+const apndFile = require('./dist/js/apnd-file');
 
 
 async function fileListGen(path, file, size, test) {
+  //file = "./test-proof.scss"// redefine file name for testing
   let pathParts = path.split('/');
   let direct = pathParts.pop();
   let imagePath = './' + direct;
@@ -37,11 +38,14 @@ async function fileListGen(path, file, size, test) {
     for (let i = 0; i < files.length; i++) {
 
       let listFile = bg + `${i + 1}` + '{\n' + '' + background;
+
+      //edit for added gradiants
       //if (i == 0 || i == 3) {
-        listFile = listFile + gradiant;
-        console.log('gradiant added ', i)
+       // listFile = listFile + gradiant;
+        //console.log('gradiant added ', i)
       //}
       //else console.log(' i ',i,' comparison',(i==0 || i==3))
+      
       listFile = listFile + url + imagePath + '/' + files[i] + bg_end;
       if (!test) { listFile = listFile + backset; }
       if (num === 420) { listFile = listFile + backSet240; }
@@ -49,7 +53,7 @@ async function fileListGen(path, file, size, test) {
       listFile = listFile + '}\n';
       apndFile(file, listFile)
     }
-    if (test) apndFile(file, '}')
+    if (test)await apndFile(file, '}\n')
   } catch (err) {
     console.error(err);
   }

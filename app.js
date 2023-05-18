@@ -4,6 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const cors = require('cors');
 const apndFile = require('./dist/js/apnd-file.js')
+const date = require('date-and-time')
 
 require('dotenv').config({ debug: true })
 
@@ -14,36 +15,47 @@ const app = express();
 let errorPath
 
 app.use((req, res, next) => {
-  console.log("path:", req.path)
+  const now = new Date();
+  let idData = date.format(now, 'YYYY/MM/DD HH:mm:ss');
+let reqPath = `\n${idData} path: ${req.path} \n`;
+  
+  apndFile('log_app.log',reqPath);
+  
   errorPath = req.path;
   next() // calling next middleware function or handler
 })
 
-//app.use('/newledohub.org/',express.static(path.join(__dirname, "dist")));
-app.use('/newledohub.org/', express.static(path.join(__dirname, 'dist', 'js')))
-app.use('/newledohub.org/', express.static(path.join(__dirname, "dist", "css")));
 
-app.get('/newledohub.org/contact-page.html', (req, res) => {
-  //console.log('            get contact',path.join(__dirname,'./','dist','contact-page.html'))
+app.use(express.static( path.join(__dirname,'./', 'dist', 'js')))
+app.use(express.static(path.join(__dirname,'./dist/css/newledo')));
+app.use(express.static(path.join(__dirname,'./dist/css/contact')));
+app.use('/events/',express.static(path.join(__dirname,'./events/')))
+app.use('/residency/',express.static(path.join(__dirname,'./dist/css/residency/')))
+
+
+app.get('/residency/',(req,res) =>{
+  res.sendFile(path.join(__dirname,'./dist/residency.html'))
+})
+app.get('/events/',(req,res) =>{
+  res.sendFile(path.join(__dirname,'./dist/happenings.html'))
+})
+
+app.get('/contact-page.html', (req, res) => {
   res.sendFile(path.join(__dirname, './', 'dist', 'contact-page.html'))
 })
-app.get('/newledohub.org/', (req, res) => {
-  //console.log('          get index')
-  res.sendFile(path.join(__dirname, './', 'dist', 'index.html'))
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './', 'index.html'))
 })
 
 try {
 
   app.use('/newledo/', require('./dist/js/send-mail.js'))
 } catch (error) {
-  const errStrMsg = error + '\n' + 'errorPath: ' + errorPath + '\n'
+  const errStrMsg ='\n'+ error + '\n' + 'errorPath: ' + errorPath + '\n'
   apndFile('a2log.err', errStrMsg);
   console.error();
 };
 
-app.listen(
-  PORT,
-  console.log(`Check out the references on http://localhost:${PORT}`)
-);
-//(async () => { await open('http://localhost:'+ PORT+'/', { app: { name: 'google-chrome' } }) })()	
+app.listen(PORT,
+  console.log(`Check out the references on http://localhost:${PORT}`));
 

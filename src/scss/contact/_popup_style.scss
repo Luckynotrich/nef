@@ -1,0 +1,70 @@
+#submitButton {
+    padding: 15px;
+    background: $primary-color;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 50;
+  }
+  
+  #submitButton:hover {
+    background-color: $submitButton-hover;
+  }
+
+  #shim {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)";
+    -khtml-opacity: .00;
+    -moz-opacity: .00;
+    background: $quatorsiary-background-color;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    z-index: 990;
+    display: none;
+  }
+  
+  #msgbx {
+    position:absolute;
+    height: 1000px;
+    width: 100%;
+    max-width: 100%;
+    top: 20%;
+    left: 0%;
+    margin:auto;
+    color: $primary-color;
+    z-index: 999;
+    overflow-x: auto;
+    text-align: center;
+    background-color:$primary-background-color;/* #294766; */
+    opacity: 1;    
+  }
+  
+  #msg {
+    position: relative;
+    top: 20%;
+    margin: auto;
+    font-size: 12pt;
+    background-color: none;
+  
+  }
+  .thanks{
+    color: $primary-color;
+  }
+  
+  @media screen and (max-width: 400px) {
+    
+    #msg{
+      overflow-wrap: break-word;
+      text-align:left;
+    }
+  }
+  

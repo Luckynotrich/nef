@@ -1,0 +1,36 @@
+// _config.scss
+// @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@600;900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;800&display=swap');
+
+
+$title-font:  'Montserrat', sans-serif;
+$header-font: 'Poppins', sans-serif;
+$paragraph-font: 'Poppins', sans-serif;
+//$header-font: 'Comfortaa',cursive;
+//$paragraph-font: 'Arial', san-serif;
+$title-font-weight: 600;
+$header-font-weight: 600;
+$paragraph-font-weight:400;
+
+$primary-color: #ff9900;
+$secondary-color:#f1c232;
+$tersiary-color: #f6b26b;
+$quatorsiary-color: #00ffff;
+$dark-text: rgb(0,0,0);
+
+$primary-background-color: white;
+$secondary-background-color:rgb(26, 5, 5);
+$tersiary-background-color: rgb(251, 244, 230);
+$quatorsiary-background-color: rgb(249, 218, 177);
+
+$submitButton-hover:#45a049;
+$h1-hover-color: #ff5361;
+$a-visted-color: #394D95;
+$light-border: white;
+$dark-border: black;
+$text-color: rgb(245, 244, 235);
+$white-backed-text: black;
+$text-left: 4%;
+$button-border-width: 2px;
+
+

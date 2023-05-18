@@ -18,10 +18,10 @@
 <body>     
        <!-- https://www.richardhaskell.dev -->
        
-   <a class="h1_a" href="/newledohub.org">
+   <a class="h1_a" href="/">
    <div class="hero-image hero-image3">
       <div class="hero-text">
-         <h1>NewLedo</h1>
+         <h1>Newledo</h1>
       </div>
    </div>
       </a>
@@ -33,7 +33,7 @@
       method="POST"
       action="send"
       enctype="multipart/form-data">
-         <h3 class="Get-In-Touch">Get In Touch</h3>
+         <h3 id="inTouch" class="Get-In-Touch">Get In Touch</h3>
          <label id='nameLable' class="inputLable" >*Your Name</label>
          <input id="name" class='inpt'type="text" onfocus="animateCSS('nameLable','fadeInUp')" name="name" placeholder="*Your Name" required >
          <!-- <label id='companyLable' class="inputLable" >Company</label>
@@ -47,12 +47,13 @@
          <input id="submitButton" class="btn" type="submit"  value="Send">
          <br><br><div class="credit">*-Required so we may contact you and no other purpose.</div>
          <div id="shim"></div>
-            <div id="msgbx"style='display: none'>
-                <div id="center"><h2 class="thanks"> Thank you for your interest. </h2> <br>
+            <div id="msgbx" style='display: none'> <!--  -->
+               <a class="h1_a" href="/"><h2>Newledo</h2></a>
+                <div id="center"><h3 class="thanks"> Thank you for your interest. </h3> <br>
                 <div id="parent"> 
-                 <h3> We will contact you as soon as possible</h3></div>
+                 <h4> We will contact you as soon as possible</h4></div>
                     <!-- <div id="cancelBtn" class="popBtn" onclick="hidePopup()">continue</div> -->
-                    <a href="/newledohub.org" ><input type="button" value="Back"></input></a> <!-- class="saveBtn" class="popBtn" -->
+                    <a href="/" ><input type="button" value="Back"></input></a> <!-- class="saveBtn" class="popBtn" -->
                 
             </div>
          </input>

@@ -1,0 +1,53 @@
+@media only screen and (min-aspect-ratio: 1/2)
+and (min-width: 480px){
+    .rect_2{
+        top: 4%;
+    }
+    // .acerage{
+
+    // }
+}
+@media only screen and (max-aspect-ratio: 1/2) 
+and (min-width: 640px){
+    .acerage{
+        margin-top: 3%;
+    }
+    .rect_2{
+        margin-top: 3%;
+    }
+}
+@media only screen and (min-aspect-ratio: 1/2)
+and (min-width: 640px){
+    .rect__2{
+        margin-top: -3%;
+    }
+    .acerage{
+        margin-top: -3%;
+    }
+}
+@media only screen and (min-width:640px){
+    .whose{
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media only screen and (min-aspect-ratio: 2/3)
+and (min-width: 767px){
+    .rect_2{
+        top: -7%;
+        margin-top: 1%;
+    }
+    .acerage{
+        margin-top: 2%;
+    }
+}
+@media only screen and (min-aspect-ratio: 2/3)
+and (min-width: 1023px){
+    .rect_2{
+        top: -6%;
+        margin-top: 1%;
+    }
+    .acerage{
+        margin-top: 2%;
+    }
+}

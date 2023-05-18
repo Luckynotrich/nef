@@ -1,0 +1,84 @@
+@import '../config';
+* {
+    box-sizing:border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    outline:transparent; //2px solid red;//  use for debugging overflow
+    max-width: 100%;
+  }
+  
+  body,html{
+    background-color: $primary-background-color;
+  }
+  
+  h1{
+    font-family: $title-font;
+    color: $primary-color;
+    font-weight: $title-font-weight;
+  }
+  h2, h3, h4{
+    font-family: $header-font;
+    font-weight: $header-font-weight;
+  }
+  p{
+    //color: $text-color;
+    font-family: $paragraph-font;
+    font-weight: $paragraph-font-weight;
+  }
+  b{
+    font-weight: 600;
+    color: $white-backed-text;
+  }
+  tbody,table,tr,th,td{
+    max-width: 95%;
+    // border-width: 0%;
+    // padding: 0%;
+    // margin: 0%;
+  }
+  /*  — when the user has not visited, hovered, or clicked on a link */
+  // a:link{
+  //   text-decoration:none;
+  // }
+  /* — after the user has visited the link */
+  a:visited{text-decoration:none;}
+  /* — when the user hovers their mouse over the link */
+  a:hover{text-decoration:none;}
+  /* needs to be last */
+  a:active{text-decoration:none;}
+  //rectangles on page 2 and page 3
+  
+  @mixin backSet{
+      /* Full height */
+      height:100%; 
+        /* Center and scale the image nicely */
+      width: 100%;
+      -webkit-background-size: 100% 100%;           /* Safari 3.0 */
+      -moz-background-size: 100% 100%;           /* Gecko 1.9.2 (Firefox 3.6) */
+      -o-background-size: 100% 100%;           /* Opera 9.5 */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size:cover; 
+      max-width: 100%;
+  }
+  
+  @mixin backSet240{
+    height: 50%;
+  }
+  @mixin backSet420{
+    height: 80%;
+  }
+  
+@import 'bg_images_1024';
+@import '_nav';
+@import 'page1'; 
+@import 'page2';
+@import 'page3';
+@import 'page4';
+@import 'bg_images_640';
+@import 'bg_images_420';
+@import 'bg_images_240';
+@import 'nav_responsive';
+@import '../font_responsive';
+@import 'page_aspect_responsive';
+@import 'page_asp-wid_responsive'
