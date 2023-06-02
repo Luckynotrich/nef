@@ -1,7 +1,7 @@
 //a2-sendmail.js
 const nodemailer = require("nodemailer");
-const apndFile = require('./apnd-file')
-const formDataLogFormat = require('./form-data-log-format')
+const apndFile = require('./dist/js/apnd-file')
+const formDataLogFormat = require('./dist/js/form-data-log-format')
 const date = require('date-and-time')
 
 function a2SendMail(subject, text, html) {

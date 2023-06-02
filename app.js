@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const cors = require('cors');
 const apndFile = require('./dist/js/apnd-file.js')
-const date = require('date-and-time')
+const date = require('date-and-time');
 
 require('dotenv').config({ debug: true })
 
@@ -29,11 +29,11 @@ let reqPath = `\n${idData} path: ${req.path} \n`;
 app.use(express.static( path.join(__dirname,'./', 'dist', 'js')))
 app.use(express.static(path.join(__dirname,'./dist/css/newledo')));
 app.use(express.static(path.join(__dirname,'./dist/css/contact')));
-app.use('/events/',express.static(path.join(__dirname,'./events/')))
-app.use('/residency/',express.static(path.join(__dirname,'./dist/css/residency/')))
+app.use(express.static(path.join(__dirname,'./events/')))
+app.use(express.static(path.join(__dirname,'./dist/css/residency/')))
 
 
-app.get('/residency/',(req,res) =>{
+app.get('/residency.html',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/residency.html'))
 })
 app.get('/events/',(req,res) =>{
@@ -56,6 +56,6 @@ try {
   console.error();
 };
 
-app.listen(PORT,
-  console.log(`Check out the references on http://localhost:${PORT}`));
+ app.listen(PORT, 
+   console.log(`Check out the references on http://localhost:${PORT}`));
 

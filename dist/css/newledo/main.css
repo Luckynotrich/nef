@@ -13,6 +13,10 @@ body, html {
   background-color: white;
 }
 
+nav {
+  background-color: transparent;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   color: #ff9900;
@@ -55,7 +59,7 @@ a:active {
 }
 
 .bg__2 {
-  background-image: url("./images_1024/2_Barn_wideshot_1024.jpg");
+  background-image: url("/images_1024/2_Barn_wideshot_1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -70,7 +74,7 @@ a:active {
 }
 
 .bg__1 {
-  background-image: url("./images_1024/1_Bridge_w_Bunny_1024.jpg");
+  background-image: url("/images_1024/1_Bridge_w_Bunny_1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -85,7 +89,7 @@ a:active {
 }
 
 .bg__3 {
-  background-image: url("./images_1024/3_RainbowPasture1024.jpg");
+  background-image: url("/images_1024/3_RainbowPasture1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -100,7 +104,7 @@ a:active {
 }
 
 .bg__4 {
-  background-image: url("./images_1024/4_Newport-Oregon_web_1024.jpg");
+  background-image: url("/images_1024/4_Newport-Oregon_web_1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -122,7 +126,8 @@ a:active {
   padding: 0;
   overflow: hidden;
   background-color: transparent;
-  max-width: 100%;
+  max-width: fit-content;
+  border-radius: 5px;
 }
 
 .overlay-content a {
@@ -157,6 +162,7 @@ a:active {
 
 * {
   max-width: 100%;
+  background-color: white;
 }
 
 .main {
@@ -164,6 +170,7 @@ a:active {
   top: 10%;
   left: 3.7%;
   max-width: 80%;
+  background-color: transparent;
 }
 
 .opener {
@@ -173,6 +180,7 @@ a:active {
   left: 4%;
   width: max-content;
   padding-right: 1%;
+  background-color: transparent;
 }
 
 .hub {
@@ -198,6 +206,7 @@ a:active {
   left: 4%;
   color: #ff9900;
   background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.35)) !important;
+  background-color: transparent im;
 }
 
 .intro {
@@ -205,6 +214,7 @@ a:active {
   left: 4%;
   max-width: 75%;
   color: rgb(245, 244, 235);
+  background-color: transparent;
 }
 
 .square {
@@ -279,7 +289,7 @@ a:active {
   left: 6%;
   border-top-left-radius: 10px 25%;
   border-top-right-radius: 10px 25%;
-  padding: 3% 6% 3% 4%;
+  padding: 3% 6% 0% 4%;
 }
 
 .rect_1 {
@@ -290,7 +300,7 @@ a:active {
   top: -3%;
   left: 2%;
   text-align: left;
-  margin-bottom: 4%;
+  margin-bottom: 2%;
 }
 
 .intro_2 {
@@ -299,6 +309,7 @@ a:active {
   max-width: 60%;
   color: #ff9900;
   font-family: "Poppins", sans-serif;
+  margin-top: -5%;
   margin-bottom: 3%;
 }
 
@@ -313,6 +324,7 @@ a:active {
 #about {
   position: absolute;
   color: transparent;
+  background-color: transparent;
 }
 
 .engaged {
@@ -499,48 +511,48 @@ a:active.event {
 
 @media only screen and (max-width: 1024px) {
   .bg__1 {
-    background-image: url("./images_640/1_Bridge_w_Bunny_web_640.jpg");
+    background-image: url("/images_640/1_Bridge_w_Bunny_web_640.jpg");
   }
   .bg__2 {
-    background-image: url("./images_640/2_Barn_wideshot_web_640.jpg");
+    background-image: url("/images_640/2_Barn_wideshot_web_640.jpg");
   }
   .bg__3 {
-    background-image: url("./images_640/3_RainbowPasture640.jpg");
+    background-image: url("/images_640/3_RainbowPasture640.jpg");
   }
   .bg__4 {
-    background-image: url("./images_640/4_Newport-Oregon_web_640.jpg");
+    background-image: url("/images_640/4_Newport-Oregon_web_640.jpg");
   }
 }
 @media only screen and (max-width: 640px) {
   .bg__1 {
-    background-image: url("./images_420/1_Bridge_w_Bunny420.jpg");
+    background-image: url("/images_420/1_Bridge_w_Bunny420.jpg");
     height: 80%;
   }
   .bg__2 {
-    background-image: url("./images_420/2_Barn_wideshot_web420_150.jpg");
+    background-image: url("/images_420/2_Barn_wideshot_web420_150.jpg");
     height: 80%;
   }
   .bg__3 {
-    background-image: url("./images_420/3_RainbowPasture420_150.jpg");
+    background-image: url("/images_420/3_RainbowPasture420_150.jpg");
     height: 80%;
   }
   .bg__4 {
-    background-image: url("./images_420/4_Newport-Oregon_web_420.jpg");
+    background-image: url("/images_420/4_Newport-Oregon_web_420.jpg");
     height: 80%;
   }
 }
 @media only screen and (max-width: 320px) {
   .bg__1 {
-    background-image: url("./images_240/1_Bridge_w_Bunny240.jpg");
+    background-image: url("/images_240/1_Bridge_w_Bunny240.jpg");
   }
   .bg__2 {
-    background-image: url("./images_240/2_Barn_wideshot_web240.jpg");
+    background-image: url("/images_240/2_Barn_wideshot_web240.jpg");
   }
   .bg__3 {
-    background-image: url("./images_240/3_RainbowPasture240.jpg");
+    background-image: url("/images_240/3_RainbowPasture240.jpg");
   }
   .bg__4 {
-    background-image: url("./images_240/4_Newport-Oregon_web_sm_240.jpg");
+    background-image: url("/images_240/4_Newport-Oregon_web_sm_240.jpg");
   }
 }
 @media screen and (min-width: 600px) {
@@ -551,7 +563,12 @@ a:active.event {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 876px) and (min-width: 595px) {
+  .overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
+  }
+}
+@media screen and (max-width: 594px) {
   * {
     overflow: visible;
   }
@@ -568,6 +585,9 @@ a:active.event {
     overflow-y: hidden;
     transition: 0.5s;
   }
+  .overlay::after {
+    background-color: white;
+  }
   .overlay-content {
     position: relative;
     top: 25%;
@@ -575,6 +595,7 @@ a:active.event {
     max-width: 90%;
     text-align: center;
     margin-top: 30px;
+    background-color: transparent;
   }
   .overlay a {
     padding: 8px;
@@ -594,12 +615,20 @@ a:active.event {
     font-size: 60px;
     left: 3%;
   }
+  .closebtn {
+    background-color: transparent;
+  }
   #span {
     position: relative;
-    max-width: 80%;
+    max-width: fit-content;
+    padding-right: 0.1rem;
     display: flex;
     top: 25px;
     left: 4%;
+    color: #ff9900;
+    background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
+    background-color: transparent;
+    border-radius: 0.5rem;
   }
 }
 @media screen and (max-height: 450px) {
@@ -616,6 +645,8 @@ a:active.event {
   #span {
     top: 25px;
     right: 2rem;
+    color: #ff9900;
+    background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
   }
 }
 h1 {
@@ -909,6 +940,12 @@ a {
   .bg__2 {
     background-position: left;
   }
+  .rect_1 {
+    top: -1%;
+  }
+  .share_block_title {
+    margin-top: 5%;
+  }
   .bg__3 {
     top: 5%;
     height: 80%;
@@ -925,6 +962,12 @@ a {
   .envision {
     margin-left: 2%;
     padding-left: 3%;
+  }
+  .rect_1 {
+    top: -1%;
+  }
+  .share_block_title {
+    margin-top: 5%;
   }
   .rect_page_title_2 {
     top: -4%;
@@ -958,6 +1001,9 @@ a {
   }
   .rect_page_title {
     padding-top: 0.5%;
+  }
+  .rect_1 {
+    top: 0%;
   }
   .share_block_title {
     margin-top: 5%;
@@ -1123,6 +1169,12 @@ a {
   }
   .targeting {
     padding-top: 0%;
+  }
+  .rect_1 {
+    top: 1%;
+  }
+  .share_block_title {
+    margin-top: 3%;
   }
   .rect_2 {
     top: -2%;
@@ -1451,6 +1503,14 @@ a {
   }
   .acerage {
     margin-top: 2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (min-width: 3840px) {
+  .rect_page_title {
+    height: 7rem;
+  }
+  .rect_page_title_2 {
+    height: 7rem;
   }
 }
 

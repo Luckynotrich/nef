@@ -23,7 +23,7 @@
   <title>Newledo</title>
 </head>
 
-<body id="bg" style="height: 100%">
+<body id="bg" style="height: 100%;background-color: white;">
   <div id="home" class="bg__1" alt="image of rabbit statue on bridge next to barn">
     <div id="topNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -31,11 +31,11 @@
         <!-- <a class='active' href="#home">HOME</a> -->
         <a href="#about" accesskey="a" onclick="closeNav()">ABOUT</a>
         <a href="contact-page.html" accesskey="c" onclick="closeNav()">CONTACT</a>
-        <a href="residency/" accesskey="r" onclick="closeNav()">RESIDENCY</a>
+        <a href="residency.html" accesskey="r" onclick="closeNav()">RESIDENCY</a>
         <!-- <a href="events/" accesskey="e" onclick="closeNav()">HAPPENINGS</a> -->
       </nav>
     </div>
-    <h1 id="span"><span onclick="openNav()">&#9776;</span></h1>
+    <h1 id="span" style="color: #ff9900 !important;"><span style="color: #ff9900 !important;background-color: transparent;" onclick="openNav()">&#9776;</span></h1>
     
   
     <h1 class="main">Newledo</h1>
@@ -53,19 +53,19 @@
   <!-- <div > -->
   <div class="square">
       <h3 class="envision">
-        We envision NewLedo as a platform for pioneering ecologically kind projects
+        We envision Newledo as a platform for pioneering ecologically kind projects
         and a destination filled with immersive inspiring experiences.
       </h3>
 
 
       <p class="targeting">
-        We are targeting Summer 2023 to be open to the public, inviting the community to engage with
-        projects, share feedback and be part of a larger conversation regarding regenerative living.
+        <!-- We are targeting Summer 2023 to be open to the public, inviting the community to engage with
+        projects, share feedback and be part of a larger conversation regarding regenerative living. -->
       </p>
 
     
-      <p class="preparation">In preparation for our summer opening, we are currently inviting farmers, inventors,
-        makers, and local organizations who are focused on being responsive to climate and community.
+      <p class="preparation"><!-- In preparation for our summer opening, --> We are inviting farmers, inventors,
+        makers, scientists, artists and local organizations who are focused on being responsive to climate, community and regenerative living.
       </p>
     
     <div id="button_1">
@@ -86,10 +86,9 @@
     <h3 class="intro_2">Emerging Strategy</h3>
     <p class="engaged">Our vision is to have touchpoints across the site dedicated as spaces for
       experimentation. Resident and visiting inventors, makers and growers will be creating
-      innovations in the areas of farming, energy, shelter and waste. Solutions will be installed
-      in all areas of the farm including pastures and the dairy barn.
+      and installing innovations in all areas of the farm including pastures and the dairy barn.
     </p><br>
-
+    <p style="visibility: hidden;">This line should be</p>
     <p class="engaged">
       Our range of public focused activities will include immersive educational experiences,
       presentations, hands on workshops, and inventors’ demonstrations. Events, such as farm
@@ -113,14 +112,15 @@
   <h2  class="rect_page_title_2">LAND</h2>
   <div class="rect_2">
         <h4 class="acerage">
-          NewLedo is an 18 acre farm on the Oregon coast situated between the Pacific Ocean and the Coast Range.
+          Newledo is an 18 acre farm on the Oregon Coast.
         </h4>
          
         <p class="pastures">
           The site has wide open pastures, two creeks, a pond and wetland areas.
         </p><br>
+        
         <p class="restoration">
-          We’re currently engaged in restoration planning to create improved habitat for salmon and beavers.
+          We’re currently engaged in restoration planning to create improved habitat for salmon and beaver.
           We plan to be open to the public, through tours focused on habitat restoration and watershed
           health.
         </p>
@@ -135,14 +135,15 @@
     <div class="whose">
       
              <p class="who">
-          <b>Nicole Cousino</b> is an entrepreneur, regenerative planner and creative strategist. Her background
-          includes mission based startups, documentary film, industrial design, permaculture, and sustainable
-          sanitation.
+          <b>Nicole Cousino</b> is an entrepreneur, regenerative practioner and creative strategist. Her background includes 
+          mission based startups, documentary film, industrial design, permaculture and sustainable sanitation. Nicole collaborated 
+          on a ground breaking waste grease-to-biodiesel project in the mid 90s. This led to being the lead researcher on a 
+          trap grease-to-biodiesel startup in Philadelphia. Her creative work in video and installation has shown internationally. 
+          She’s passionate about meaningful impact in response to our climate and environmental crisis. 
         </p>
       
         <p class="who">
-          <b>Richard Haskell</b> is a web developer, industrial designer, maker and network tech for Newledo. He is an
-          advocate for alternative transit, an avid bicycle rider and thrilled to be working with Newledo.
+          <b>Richard Haskell</b> is a web developer, industrial designer, maker and network tech for Newledo. His work is informed by his ongoing interest in physics, AI, appropriate technology and by the philosophy of both physicalism and panpsycism. He is an advocate for alternative transit, an avid bicyclist and outdoor adventurer.
         </p>
       </div>
 
@@ -152,9 +153,9 @@
     </h4>
 
     <div class="closing">
-      <p> <a href="contact-page.html" id="button_2" class="email" target="_blank">hello@NewLedoHub.org</a>
+      <p> <a href="contact-page.html" id="button_2" class="email" target="_blank">hello@NewledoHub.org</a>
         <br><br>
-        (541) 351-8616
+        <!-- (541) 351-8616 -->
         <br><br>
         88 Fruitvale Road Newport Oregon 97365
       </p>
@@ -174,10 +175,37 @@
       document.getElementById("topNav").style.height = "0%";
       location.reload();
       document.querySelector('*').style.height = "100%";
-      location.reload();
       }
+      window.location.reload();
     }
     document.querySelector('*').style.height = "100%";
+    
+     //$(window).bind("pageshow", function(event) {
+//     window.addEventListener("pageshow", function(event) {
+//       console.log("bind")
+//     if (event.originalEvent.persisted) {
+//         window.location.reload(); 
+//     }
+// });
+const events = ["pagehide", "pageshow", "unload", "load"];
+
+const eventLogger = (event) => {
+  switch (event.type) {
+    // case "pagehide":
+    case "pageshow": {
+      let isPersisted = event.persisted ? "persisted" : "not persisted";
+      console.log(`Event: ${event.type} - ${isPersisted}`);
+      //window.location.reload();
+      break;
+    }
+    default:
+      console.log(`Event: ${event.type}`);
+      break;
+  }
+};
+
+events.forEach((eventName) => window.addEventListener(eventName, eventLogger));
+
   </script>
 
 </body>

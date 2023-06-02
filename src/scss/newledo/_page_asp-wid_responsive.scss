@@ -51,3 +51,12 @@ and (min-width: 1023px){
         margin-top: 2%;
     }
 }
+@media only screen and (min-aspect-ratio: 16/9)
+and (min-width: 3840px){
+    .rect_page_title {
+        height: 7rem;
+    }
+    .rect_page_title_2{
+        height: 7rem;
+    }
+}

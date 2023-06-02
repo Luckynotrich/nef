@@ -1,5 +1,6 @@
 * {
   max-width: 100%;
+  background-color: $primary-background-color;
 }
 
 .main {
@@ -7,6 +8,7 @@
   top: 10%;
   left: $text-left - .3%;
   max-width: 80%;
+background-color: transparent;
 }
 .opener{
   display: flex;
@@ -15,7 +17,7 @@
   left: $text-left;
   width: max-content;
   padding-right: 1%;
-  //background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)) !important; 
+  background-color: transparent;
 }
 
 .hub {
@@ -41,13 +43,14 @@
   left: $text-left;
   color: $primary-color;
   background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.35)) !important;
+  background-color: transparent im;
 }
 .intro {
   top: 20%;
   left: $text-left;
   max-width: 75%;
   color: $text-color;
-  //font-family: $header-font;
+  background-color: transparent;
 }
 
 .square {

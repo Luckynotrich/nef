@@ -7,7 +7,13 @@
     display: none;
   }
 }
-@media screen and (max-width: 600px)   
+@media screen and (max-width:876px) and (min-width: 595px){
+  .overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
+  }
+  
+}
+@media screen and (max-width: 594px)   
 {
   *{
     overflow:visible;
@@ -25,6 +31,9 @@
   overflow-y: hidden;
   transition: 0.5s;
 }
+.overlay::after{
+  background-color: $primary-background-color;
+}
 
 .overlay-content {
   position: relative;
@@ -33,6 +42,7 @@
   max-width: 90%;
   text-align: center;
   margin-top: 30px;
+  background-color: transparent;
 }
 
 .overlay a {
@@ -55,12 +65,20 @@
   font-size: 60px;
   left: 3%;
 }
+.closebtn{
+  background-color: transparent;
+}
 #span{
     position: relative;
-    max-width: 80%;
+    max-width: fit-content;
+    padding-right: .1rem;
     display: flex;
     top: 25px;
     left: $text-left;
+    color: $primary-color;
+    background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
+    background-color: transparent;
+    border-radius: .5rem;
 }
 }
 @media screen and (max-height: 450px) {
@@ -74,5 +92,7 @@
   #span{
     top: 25px;
     right: 2rem;
+    color: $primary-color;
+    background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
   }
 }

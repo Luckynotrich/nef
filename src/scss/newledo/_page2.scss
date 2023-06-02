@@ -11,7 +11,7 @@
   left: $text-left+2%;
   border-top-left-radius: 10px 25%;
   border-top-right-radius:  10px 25%;
-  padding: 3% 6% 3% 4%;
+  padding: 3% 6% 0% 4%;
   // outline: 2px solid red;
 }
 .rect_1 {
@@ -22,7 +22,7 @@
   top: -3%;
   left: 2%;
   text-align: left;
-  margin-bottom:4%;
+  margin-bottom:2%;
 }
 .intro_2{
   top: 0%;
@@ -30,6 +30,7 @@
   max-width: 60%;
   color: $primary-color;
   font-family: $header-font;
+  margin-top: -5%;
   margin-bottom: 3%;
 }
 
@@ -47,6 +48,7 @@
   position:absolute;
   //top: 100%;
   color: transparent;
+  background-color: transparent;
   }
 
 .engaged {

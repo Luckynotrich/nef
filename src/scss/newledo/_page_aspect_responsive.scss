@@ -9,7 +9,12 @@
     .bg__2{
         background-position: left;
     }
-
+.rect_1{
+    top: -1%;
+}
+.share_block_title{
+    margin-top: 5%;
+}
     .bg__3 {
         top: 5%;
         height: 80%;
@@ -28,6 +33,13 @@
    .envision{
     margin-left: 2%;
     padding-left: 3%;
+   }
+   .rect_1{
+    top: -1%;
+    // height: 5rem;
+   }
+   .share_block_title{
+    margin-top: 5%;
    }
     .rect_page_title_2{
         top: -4%;
@@ -66,6 +78,9 @@
 }
 .rect_page_title{
     padding-top: .5%;
+}
+.rect_1{
+    top: 0%;
 }
    .share_block_title{
     margin-top: 5%
@@ -252,6 +267,12 @@ and (max-aspect-ratio: 5/4) {
        }
        .targeting{
         padding-top: 0%;
+       }
+       .rect_1{
+        top: 1%;
+       }
+       .share_block_title {
+        margin-top: 3%; 
        }
     .rect_2{
         top: -2%;

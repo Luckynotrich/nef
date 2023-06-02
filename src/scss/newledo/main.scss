@@ -11,7 +11,9 @@
   body,html{
     background-color: $primary-background-color;
   }
-  
+  nav{
+    background-color: transparent;
+  }
   h1{
     font-family: $title-font;
     color: $primary-color;

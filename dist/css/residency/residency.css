@@ -53,7 +53,6 @@ section {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
-  /* border-bottom: 1px solid black; */
 }
 
 section.row {
@@ -100,6 +99,8 @@ img {
   object-fit: cover;
   margin: 0%;
   padding: 0%;
+  outline: none;
+  border: none;
 }
 
 .hero {
@@ -134,30 +135,30 @@ img {
 
 @media only screen and (min-width: 870px) {
   .hero {
-    background-image: url("./images/FarmMontage1024x720_05.jpg");
+    background-image: url("./images/FarmMontageNEW_1024x720.jpg");
   }
   .rightimg1 {
     background-image: url("./images/bridgeandcreek640.jpg");
   }
   .leftimg1 {
-    background-image: url("./images/Montageartist640.jpg");
+    background-image: url("./images/MontageartistNEW_640.jpg");
   }
   .rightimg2 {
-    background-image: url("./images/stumpwgrass640.jpg");
+    background-image: url("./images/NewportBeach480x640.jpg");
   }
 }
 @media only screen and (max-width: 870px) {
   .hero {
-    background-image: url("./images/FarmMontage640x480_05.png");
+    background-image: url("./images/FarmMontageNEW_640.jpg");
   }
   .rightimg1 {
     background-image: url("./images/bridgeandcreek480.jpg");
   }
   .leftimg1 {
-    background-image: url("./images/Montageartist480.jpg");
+    background-image: url("./images/MontageartistNEW_480.jpg");
   }
   .rightimg2 {
-    background-image: url("./images/stumpwgrass480.jpg");
+    background-image: url("./images/NewportBeach360x480.jpg");
   }
 }
 @media only screen and (max-width: 640px) {
@@ -165,18 +166,18 @@ img {
     max-width: 100%;
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 320px) {
   .hero {
-    background-image: url("./images/FarmMontage420x188_05.png");
+    background-image: url("./images/FarmMontageNEW_420.jpg");
   }
   .rightimg1 {
     background-image: url("./images/bridgeandcreek240.jpg");
   }
   .leftimg1 {
-    background-image: url("./images/Montageartist240.jpg");
+    background-image: url("./images/MontageartistNEW_240.jpg");
   }
   .rightimg2 {
-    background-image: url("./images/stumpwgrass240.jpg");
+    background-image: url("./images/NewportBeach240x320.jpg");
   }
 }
 h1 {

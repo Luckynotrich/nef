@@ -9,7 +9,7 @@ async function fileListGen(path, file, size, test) {
   //file = "./test-proof.scss"// redefine file name for testing
   let pathParts = path.split('/');
   let direct = pathParts.pop();
-  let imagePath = './' + direct;
+  let imagePath = '/' + direct;
   let bg = '.bg__';
   let gradiant = ' linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),';
   let background = 'background-image:';
