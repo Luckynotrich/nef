@@ -5,3 +5,5 @@ doc/
 .log
 .err
 .env
+a2log.err
+log_app.log
