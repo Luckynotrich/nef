@@ -6,13 +6,12 @@
 $title-font:  'Montserrat', sans-serif;
 $header-font: 'Poppins', sans-serif;
 $paragraph-font: 'Poppins', sans-serif;
-//$header-font: 'Comfortaa',cursive;
-//$paragraph-font: 'Arial', san-serif;
-$title-font-weight: 600;
+
+$title-font-weight: 800;
 $header-font-weight: 600;
 $paragraph-font-weight:400;
 
-$primary-color: #ff9900;
+$primary-color: #F15A29/*  #ff9900 */;
 $secondary-color:#f1c232;
 $tersiary-color: #f6b26b;
 $quatorsiary-color: #00ffff;
@@ -30,7 +29,27 @@ $light-border: white;
 $dark-border: black;
 $text-color: rgb(245, 244, 235);
 $white-backed-text: black;
+
+$header-left: 6%;
 $text-left: 4%;
 $button-border-width: 2px;
+$primary-aspect-ratio: 1.618;
 
+// html{
+  // color-scheme: light dark;
+// }
 
+.logo {
+    position: relative;
+    padding: 10rem;
+    top: 5%;// based on 7:16 aspect ratio
+    left: -25%;
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-color: transparent;
+    background-position: center center;
+    z-index: 2;
+  }
+  
+  
+ 

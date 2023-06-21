@@ -1,5 +1,17 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;800&display=swap");
+.logo {
+  position: relative;
+  padding: 10rem;
+  top: 5%;
+  left: -25%;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-color: transparent;
+  background-position: center center;
+  z-index: 2;
+}
+
 * {
   box-sizing: border-box;
   position: relative;
@@ -9,7 +21,8 @@
   max-width: 100%;
 }
 
-body, html {
+body,
+html {
   background-color: white;
 }
 
@@ -17,15 +30,15 @@ nav {
   background-color: transparent;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
-  color: #ff9900;
-  font-weight: 600;
+  color: #F15A29;
+  font-weight: 800;
 }
 
-h2, h3, h4 {
+h4, h5 {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 p {
@@ -35,17 +48,30 @@ p {
 
 b {
   font-weight: 600;
-  color: black;
 }
 
-tbody, table, tr, th, td {
+tbody,
+table,
+tr,
+th,
+td {
   max-width: 95%;
 }
 
+span {
+  color: #F15A29;
+  background-color: transparent;
+}
+
 /*  — when the user has not visited, hovered, or clicked on a link */
+a:link {
+  color: #F15A29;
+}
+
 /* — after the user has visited the link */
 a:visited {
   text-decoration: none;
+  color: #f1c232;
 }
 
 /* — when the user hovers their mouse over the link */
@@ -58,34 +84,38 @@ a:active {
   text-decoration: none;
 }
 
-.bg__2 {
-  background-image: url("/images_1024/2_Barn_wideshot_1024.jpg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  width: 100%;
-  -webkit-background-size: 100% 100%; /* Safari 3.0 */
-  -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
-  -o-background-size: 100% 100%; /* Opera 9.5 */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
-}
-
 .bg__1 {
   background-image: url("/images_1024/1_Bridge_w_Bunny_1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
-  width: 100%;
+  width: 102%;
   -webkit-background-size: 100% 100%; /* Safari 3.0 */
   -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
   -o-background-size: 100% 100%; /* Opera 9.5 */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  max-width: 102%;
+  z-index: 0;
+  right: 0%;
+}
+
+.bg__2 {
+  background-image: url("/images_1024/2_Barn_wideshot_1024.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  width: 102%;
+  -webkit-background-size: 100% 100%; /* Safari 3.0 */
+  -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
+  -o-background-size: 100% 100%; /* Opera 9.5 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 102%;
+  z-index: 0;
+  right: 0%;
 }
 
 .bg__3 {
@@ -93,29 +123,21 @@ a:active {
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
-  width: 100%;
+  width: 102%;
   -webkit-background-size: 100% 100%; /* Safari 3.0 */
   -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
   -o-background-size: 100% 100%; /* Opera 9.5 */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  max-width: 102%;
+  z-index: 0;
+  right: 0%;
 }
 
-.bg__4 {
-  background-image: url("/images_1024/4_Newport-Oregon_web_1024.jpg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  width: 100%;
-  -webkit-background-size: 100% 100%; /* Safari 3.0 */
-  -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
-  -o-background-size: 100% 100%; /* Opera 9.5 */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 100%;
+#topNav {
+  position: relative;
+  z-index: 4;
 }
 
 .overlay {
@@ -128,15 +150,19 @@ a:active {
   background-color: transparent;
   max-width: fit-content;
   border-radius: 5px;
+  z-index: 4;
 }
 
 .overlay-content a {
+  position: relative;
   padding: 20px;
   padding-left: 30px;
   background-color: transparent;
-  color: #f1c232;
+  color: #F15A29;
   font-family: "Montserrat", sans-serif;
   left: 4%;
+  font-weight: 600;
+  z-index: 4;
 }
 
 .overlay-content a:link {
@@ -156,8 +182,11 @@ a:active {
 }
 
 #span {
+  position: relative;
+  color: #F15A29;
   display: none;
   cursor: pointer;
+  z-index: 4;
 }
 
 * {
@@ -165,122 +194,65 @@ a:active {
   background-color: white;
 }
 
-.main {
-  text-align: left;
-  top: 10%;
-  left: 3.7%;
-  max-width: 80%;
-  background-color: transparent;
-}
-
-.opener {
-  display: flex;
-  flex-flow: column nowrap;
-  top: 10%;
-  left: 4%;
-  width: max-content;
-  padding-right: 1%;
-  background-color: transparent;
-}
-
-.hub {
-  display: flex;
-  flex-wrap: nowrap;
-  word-break: keep-all;
-  top: 10%;
-  width: fit-content;
-  max-width: max-content;
-  left: 4%;
-  color: #ff9900;
-  line-height: 1.5;
-  background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.35)) !important;
-  border-top-right-radius: 7%;
-  border-top-left-radius: 7%;
-  padding: 0.5%;
-}
-
-.newport {
-  top: 10%;
-  width: fit-content;
-  max-width: fit-max-content;
-  left: 4%;
-  color: #ff9900;
-  background: linear-gradient(rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.35)) !important;
-  background-color: transparent im;
-}
-
-.intro {
-  top: 20%;
-  left: 4%;
-  max-width: 75%;
-  color: rgb(245, 244, 235);
-  background-color: transparent;
-}
-
-.square {
-  display: flex;
-  flex-flow: row wrap;
-  height: fit-content;
-  justify-content: space-between;
-  width: 88%;
-  background-color: white;
-  top: -5%;
-  left: 4%;
-  border-radius: 5%;
-  text-align: left;
-  border-top-left-radius: 20px 10%;
-  border-top-right-radius: 20px 10%;
-}
-
-.envision {
-  color: #ff9900;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  padding: 2% 0% 2% 2%;
+.mission {
+  top: -28%;
+  left: 6%;
+  font-family: "Montserrat", sans-serif;
+  max-width: 90%;
+  width: 85%;
+  padding: 0.5rem;
+  padding-left: 4%;
+  text-wrap: balance;
   border-top-left-radius: 10px 25%;
   border-top-right-radius: 10px 25%;
-  margin-top: 1%;
-  margin-left: 3%;
 }
 
-.targeting {
-  font-family: "Poppins", sans-serif;
-  color: black;
-  padding: 2% 0% 2% 0%;
-  text-align: left;
-  max-width: 1000px;
+.sub-header {
+  color: #F15A29;
+  letter-spacing: 0.1ch;
 }
 
-.preparation {
-  flex: 1 1 auto;
-  width: 50%;
-  max-width: 1000px;
-}
-
-#button_1 {
+.vision {
+  position: relative;
+  top: -28%;
+  left: 4%;
+  display: flex;
+  flex-flow: column;
   flex: 2 1 auto;
+  max-width: 90%;
+}
+
+.button_1 {
+  position: relative;
+  flex: 2 1 auto;
+  top: -28%;
+  left: calc(50% - 6rem);
   background: transparent;
   text-align: center;
-  max-width: 20%;
-  width: 15%;
-  max-height: 20%;
-  height: 20%;
+  vertical-align: middle;
+  max-width: 80%;
+  width: 10%;
+  max-height: 10%;
+  height: 2rem;
   border-style: solid;
   border-width: 3px;
   border-radius: 0.8rem;
   border-width: 2px;
   border-color: black;
-  color: black;
+  color: #F15A29;
   box-sizing: content-box;
-  padding: 1rem;
-  margin: 1rem 1.5rem;
+  padding: 1rem 1rem; /*  1.2rem; */
+  margin: 1.5rem 1.5rem 0%;
+  z-index: 0;
+}
+
+#join {
+  top: 5%;
 }
 
 .rect_page_title {
   position: relative;
-  font-family: "Poppins", sans-serif;
-  color: #ff9900;
+  color: #F15A29;
   height: fit-content;
   width: 85%;
   height: 6%;
@@ -297,28 +269,16 @@ a:active {
   flex-flow: column;
   height: fit-content;
   width: fit-content;
-  top: -3%;
+  top: -5%;
   left: 2%;
   text-align: left;
+  margin-top: -6%;
   margin-bottom: 2%;
 }
 
 .intro_2 {
-  top: 0%;
-  left: 4%;
-  max-width: 60%;
-  color: #ff9900;
-  font-family: "Poppins", sans-serif;
-  margin-top: -5%;
-  margin-bottom: 3%;
-}
-
-.link {
-  color: black;
-  background: transparent;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  text-decoration: none;
+  color: #F15A29;
 }
 
 #about {
@@ -329,7 +289,7 @@ a:active {
 
 .engaged {
   position: relative;
-  top: 3%;
+  top: 0%;
   left: 4%;
   width: 87%;
   max-width: 1300px;
@@ -348,6 +308,7 @@ a:visited.event {
 /* — when the user hovers their mouse over the link */
 a:hover.event {
   text-decoration: underline;
+  color: #f1c232;
 }
 
 /* needs to be last */
@@ -357,22 +318,18 @@ a:active.event {
 
 .share_block_title {
   background-color: white !important;
-  color: #ff9900;
-  font-family: "Poppins", sans-serif;
+  color: #F15A29;
   width: fit-content;
   height: fit-content;
-  left: 8%;
-  font-weight: 600;
-  top: 6%;
+  left: 6%;
+  top: 0%;
+  padding-left: 4%;
   padding-bottom: 3%;
 }
 
 .bring {
-  width: 70%;
-  top: 4%;
-  left: 4%;
-  color: #ff9900;
-  padding-bottom: 3%;
+  font-weight: 600;
+  color: #F15A29;
 }
 
 .third_p {
@@ -387,8 +344,7 @@ a:active.event {
 .rect_page_title_2 {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
-  color: #ff9900;
+  color: #F15A29;
   height: 4rem;
   width: 85%;
   top: 0%;
@@ -406,24 +362,21 @@ a:active.event {
   font-family: "Poppins", sans-serif;
   height: fit-content;
   width: 85%;
-  top: 2.5%;
+  top: -1%;
   left: 4%;
   border-top-left-radius: 10px 25%;
   border-top-right-radius: 10px 25%;
 }
 
 .acerage {
-  margin-top: -10%;
-  width: 85%;
-  padding-top: 0%;
-  padding-bottom: 0%;
-  font-family: "Poppins", sans-serif;
-  color: #ff9900;
+  font-weight: 600;
+  color: #F15A29;
 }
 
 .pastures {
   position: relative;
   top: 2%;
+  left: 4%;
   width: 87%;
   color: black;
 }
@@ -439,19 +392,19 @@ a:active.event {
 .who_block_title {
   display: block;
   margin-top: 3%;
-  width: fit-content;
-  left: 4%;
-  color: #ff9900;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  width: 85%;
+  left: 6%;
+  padding-left: 4%;
+  color: #F15A29;
   top: 3%;
+  letter-spacing: normal;
 }
 
 .whose {
   display: flex;
   flex-flow: row wrap;
   left: 4%;
-  top: 3%;
+  top: 4%;
   width: 90%;
   padding-bottom: 1rem;
 }
@@ -509,7 +462,7 @@ a:active.event {
   padding: 4% 0% 4% 0%;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 832px) {
   .bg__1 {
     background-image: url("/images_640/1_Bridge_w_Bunny_web_640.jpg");
   }
@@ -519,29 +472,19 @@ a:active.event {
   .bg__3 {
     background-image: url("/images_640/3_RainbowPasture640.jpg");
   }
-  .bg__4 {
-    background-image: url("/images_640/4_Newport-Oregon_web_640.jpg");
-  }
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 530px) {
   .bg__1 {
     background-image: url("/images_420/1_Bridge_w_Bunny420.jpg");
-    height: 80%;
   }
   .bg__2 {
     background-image: url("/images_420/2_Barn_wideshot_web420_150.jpg");
-    height: 80%;
   }
   .bg__3 {
     background-image: url("/images_420/3_RainbowPasture420_150.jpg");
-    height: 80%;
-  }
-  .bg__4 {
-    background-image: url("/images_420/4_Newport-Oregon_web_420.jpg");
-    height: 80%;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 280px) {
   .bg__1 {
     background-image: url("/images_240/1_Bridge_w_Bunny240.jpg");
   }
@@ -551,8 +494,231 @@ a:active.event {
   .bg__3 {
     background-image: url("/images_240/3_RainbowPasture240.jpg");
   }
-  .bg__4 {
-    background-image: url("/images_240/4_Newport-Oregon_web_sm_240.jpg");
+}
+@media only screen and (min-width: 240px) and (max-width: 420px) {
+  .logo {
+    background-image: url("/logo/1_newledo_logo_123w.png");
+  }
+}
+@media only screen and (min-width: 420px) and (max-width: 640px) {
+  .logo {
+    background-image: url("/logo/2_newledo_logo_184w.png");
+  }
+}
+@media only screen and (min-width: 640px) and (max-width: 1280px) {
+  .logo {
+    background-image: url("/logo/3_newledo_logo_276w.png");
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1600px) {
+  .logo {
+    background-image: url("/logo/4_newledo_logo_344w.png");
+  }
+}
+.logo {
+  background-image: url("/logo/5_newledo_logo_414w.png");
+}
+
+@media only screen and (min-width: 2560px) and (max-width: 3840px) {
+  .logo {
+    background-image: url("/logo/6_newledo_logo_621w.png");
+  }
+}
+@media only screen and (min-width: 3840px) and (max-width: 7680px) {
+  .logo {
+    background-image: url("/logo/7_newledo_logo_777w.png");
+  }
+}
+@media screen and (min-aspect-ratio: 1/3) and (max-width: 319px) {
+  .logo {
+    background-size: 28%;
+    top: -30%;
+    left: -40%;
+  }
+}
+@media screen and (min-aspect-ratio: 1/3) and (min-width: 599px) {
+  .logo {
+    top: 35%;
+  }
+}
+@media screen and (min-aspect-ratio: 1/3) and (min-width: 720px) {
+  .logo {
+    top: 28%;
+  }
+}
+@media only screen and (min-width: 589) {
+  .logo {
+    top: 20%;
+  }
+}
+@media screen and (min-aspect-ratio: 1/2) and (min-width: 599px) {
+  .logo {
+    top: 35%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/3) and (min-width: 612px) {
+  .logo {
+    top: 20%;
+  }
+}
+@media only screen and (min-aspect-ratio: 3/4) and (min-width: 912px) and (max-aspect-ratio: 1/1) {
+  .logo {
+    background-size: 25%;
+  }
+}
+@media screen and (min-aspect-ratio: 1/1) and (min-width: 840px) {
+  .logo {
+    background-size: 25%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 1024px) {
+  .logo {
+    background-size: 23%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 1270px) {
+  .logo {
+    background-size: 20%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 1585px) {
+  .logo {
+    background-size: 15%;
+  }
+}
+@media screen and (min-aspect-ratio: 5/4) and (min-width: 1600px) {
+  .logo {
+    background-size: 18%;
+  }
+}
+@media only screen and (min-aspect-ratio: 5/4) and (min-width: 1887px) {
+  .logo {
+    background-size: 15%;
+  }
+}
+@media screen and (min-aspect-ratio: 4/3) and (min-width: 1786px) {
+  .logo {
+    background-size: 15%;
+  }
+}
+@media screen and (min-aspect-ratio: 4/3) and (min-width: 2151px) {
+  .logo {
+    background-size: 14%;
+  }
+}
+@media screen and (min-aspect-ratio: 4/3) and (min-width: 2248px) {
+  .logo {
+    background-size: 13%;
+  }
+}
+@media only screen and (min-aspect-ratio: 3/2) and (min-width: 2004px) {
+  .logo {
+    background-size: 15%;
+  }
+}
+@media screen and (min-aspect-ratio: 3/2) and (min-width: 2202px) {
+  .logo {
+    background-size: 14%;
+  }
+}
+@media screen and (min-aspect-ratio: 3/2) and (min-width: 2264px) {
+  .logo {
+    background-size: 12%;
+  }
+}
+@media only screen and (min-aspect-ratio: 14/9) and (min-width: 2004px) {
+  .logo {
+    background-size: 14%;
+  }
+}
+@media only screen and (min-aspect-ratio: 14/9) and (min-width: 2282px) {
+  .logo {
+    background-size: 13%;
+  }
+}
+@media only screen and (min-aspect-ratio: 14/9) and (min-width: 2359px) {
+  .logo {
+    background-size: 12%;
+  }
+}
+@media screen and (min-aspect-ratio: 5/3) and (min-width: 1128px) {
+  .logo {
+    background-size: 15%;
+  }
+}
+@media screen and (min-aspect-ratio: 5/3) and (min-width: 2324px) {
+  .logo {
+    background-size: 11%;
+  }
+}
+@media screen and (min-aspect-ratio: 5/3) and (min-width: 2689px) {
+  .logo {
+    background-size: 10%;
+  }
+}
+@media screen and (min-aspect-ratio: 8/5) and (min-width: 2179px) {
+  .logo {
+    background-size: 13%;
+  }
+}
+@media screen and (min-aspect-ratio: 8/5) and (min-width: 2465px) {
+  .logo {
+    background-size: 12%;
+  }
+}
+@media screen and (min-aspect-ratio: 8/5) and (min-width: 2602px) {
+  .logo {
+    background-size: 11%;
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (min-width: 2000px) {
+  .logo {
+    background-size: 15%;
+  }
+}
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 2324px) {
+  .logo {
+    background-size: 13%;
+  }
+}
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 2469px) {
+  .logo {
+    background-size: 13%;
+  }
+}
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 2719px) {
+  .logo {
+    background-size: 11%;
+  }
+}
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 2585px) {
+  .logo {
+    background-size: 10%;
+  }
+}
+@media only screen and (min-aspect-ratio: 17/9) and (min-width: 1600px) {
+  .logo {
+    background-size: 12%;
+  }
+}
+@media screen and (min-aspect-ratio: 17/9) and (min-width: 2887px) {
+  .logo {
+    background-size: 10%;
+  }
+}
+@media screen and (min-aspect-ratio: 2/1) and (min-width: 2687px) {
+  .logo {
+    background-size: 11%;
+  }
+}
+@media screen and (min-aspect-ratio: 2/1) and (min-width: 2924px) {
+  .logo {
+    background-size: 10%;
+  }
+}
+@media screen and (min-aspect-ratio: 2/1) and (min-width: 3000px) {
+  .logo {
+    background-size: 9%;
   }
 }
 @media screen and (min-width: 600px) {
@@ -563,21 +729,24 @@ a:active.event {
     display: none;
   }
 }
-@media screen and (max-width: 876px) and (min-width: 595px) {
+@media screen and (max-width: 876px) and (min-width: 599px) {
   .overlay {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
   }
 }
-@media screen and (max-width: 594px) {
+@media screen and (max-width: 599px) {
   * {
     overflow: visible;
   }
+  #topNav {
+    top: 0%;
+  }
   .overlay {
     height: 0%;
-    width: 100%;
-    max-width: 100%;
+    width: 102%;
+    max-width: 102%;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
     top: 0;
     left: 0;
     background-color: rgb(0, 0, 0);
@@ -587,6 +756,7 @@ a:active.event {
   }
   .overlay::after {
     background-color: white;
+    z-index: 0;
   }
   .overlay-content {
     position: relative;
@@ -596,6 +766,7 @@ a:active.event {
     text-align: center;
     margin-top: 30px;
     background-color: transparent;
+    z-index: 0;
   }
   .overlay a {
     padding: 8px;
@@ -623,9 +794,9 @@ a:active.event {
     max-width: fit-content;
     padding-right: 0.1rem;
     display: flex;
-    top: 25px;
+    margin-top: 7rem;
     left: 4%;
-    color: #ff9900;
+    color: #F15A29;
     background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
     background-color: transparent;
     border-radius: 0.5rem;
@@ -634,6 +805,7 @@ a:active.event {
 @media screen and (max-height: 450px) {
   .overlay {
     overflow-y: auto;
+    z-index: 2;
   }
   .overlay a {
     font-size: 20px;
@@ -645,10 +817,54 @@ a:active.event {
   #span {
     top: 25px;
     right: 2rem;
-    color: #ff9900;
+    color: #F15A29;
     background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
+    z-index: 2;
   }
 }
+@media only screen and (max-aspect-ratio: 2/3) and (max-width: 600px) {
+  #span {
+    top: 3rem;
+  }
+}
+h2 {
+  font-size: 0.1rem;
+}
+@media screen and (min-width: 640px) {
+  h2 {
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (min-width: 870px) {
+  h2 {
+    letter-spacing: 0.3rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h2 {
+    letter-spacing: 0.4rem;
+  }
+}
+
+h3 {
+  font-size: 0.1rem;
+}
+@media screen and (min-width: 640px) {
+  h3 {
+    letter-spacing: 0.15rem;
+  }
+}
+@media screen and (min-width: 870px) {
+  h3 {
+    letter-spacing: 0.2rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h3 {
+    letter-spacing: 0.3rem;
+  }
+}
+
 h1 {
   font-size: 24px;
 }
@@ -709,7 +925,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 16px;
 }
 @media screen and (min-width: 640px) {
   h2 {
@@ -802,7 +1018,7 @@ h3 {
 }
 
 h4 {
-  font-size: 12px;
+  font-size: 14px;
 }
 @media screen and (min-width: 400px) {
   h4 {
@@ -811,7 +1027,7 @@ h4 {
 }
 @media screen and (min-width: 640px) {
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -835,8 +1051,32 @@ h4 {
   }
 }
 
+h5 {
+  font-size: 13px;
+}
+@media screen and (min-width: 400px) {
+  h5 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 640px) {
+  h5 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h5 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h5 {
+    font-size: 24px;
+  }
+}
+
 p {
-  font-size: 12px;
+  font-size: 11px;
 }
 @media screen and (min-width: 400px) {
   p {
@@ -953,15 +1193,18 @@ a {
 }
 @media only screen and (min-aspect-ratio: 1/2) and (max-aspect-ratio: 2/3) {
   .bg__1 {
+    top: -2%;
     height: 80%;
     background-position-x: 75%;
   }
   .bg__2 {
     background-position-x: 25%;
   }
-  .envision {
-    margin-left: 2%;
-    padding-left: 3%;
+  .mission {
+    top: -30%;
+  }
+  .vision {
+    top: -30%;
   }
   .rect_1 {
     top: -1%;
@@ -974,7 +1217,7 @@ a {
     height: 5.5rem;
   }
   .rect_2 {
-    margin-top: -10%;
+    margin-top: -16%;
   }
   .acerage {
     margin-top: -15%;
@@ -990,14 +1233,17 @@ a {
 @media only screen and (min-aspect-ratio: 2/3) and (max-aspect-ratio: 3/4) {
   .bg__1 {
     height: 80%;
+    top: -3%;
   }
   .bg__2 {
     height: 80%;
     background-position-x: 25%;
   }
-  .envision {
-    margin-top: 1%;
-    margin-left: 1%;
+  .mission {
+    top: -15%;
+  }
+  .vision {
+    top: -15%;
   }
   .rect_page_title {
     padding-top: 0.5%;
@@ -1042,9 +1288,11 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 3/4) and (max-aspect-ratio: 7/8) {
-  .envision {
-    margin-top: 1%;
-    margin-left: 1%;
+  .mission {
+    top: -10%;
+  }
+  .vision {
+    top: -10%;
   }
   .intro_2 {
     margin-bottom: 2%;
@@ -1088,9 +1336,12 @@ a {
     left: 0%;
     padding: 0%;
   }
-  .envision {
-    margin-top: 1%;
-    margin-left: 1%;
+  .mission {
+    top: -10%;
+    padding-bottom: 2%;
+  }
+  .vision {
+    top: -10%;
   }
   .rect_page_title {
     top: -5%;
@@ -1113,12 +1364,18 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 5/4) {
+  .bg__1 {
+    top: -6%;
+  }
+  .mission {
+    top: -13%;
+    padding-bottom: 2%;
+  }
+  .vision {
+    top: -13%;
+  }
   .rect_2 {
     top: -2%;
-  }
-  .envision {
-    margin-top: 1%;
-    margin-left: 1%;
   }
   .rect_page_title {
     top: -5%;
@@ -1142,6 +1399,16 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 4/3) {
+  .bg__1 {
+    top: -6%;
+  }
+  .mission {
+    top: -13%;
+    padding-bottom: 2%;
+  }
+  .vision {
+    top: -13%;
+  }
   .acerage {
     margin-top: 0%;
   }
@@ -1163,15 +1430,16 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 3/2) {
-  .envision {
-    margin-left: 1%;
+  .mission {
+    top: -13%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
+  .vision {
+    top: -13%;
   }
   .rect_1 {
-    top: 1%;
+    top: 5%;
+    margin-bottom: 5%;
   }
   .share_block_title {
     margin-top: 3%;
@@ -1198,12 +1466,12 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 3/2) and (max-aspect-ratio: 14/9) {
-  .envision {
-    margin-left: 1%;
+  .mission {
+    top: -13%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
+  .vision {
+    top: -13%;
   }
   .rect_page_title {
     top: -5%;
@@ -1220,13 +1488,12 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 14/9) and (max-aspect-ratio: 8/5) {
-  .envision {
-    margin-top: -1%;
-    margin-left: 0%;
+  .mission {
+    top: -13%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
+  .vision {
+    top: -13%;
   }
   .rect_page_title {
     top: -5%;
@@ -1247,13 +1514,13 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 8/5) and (max-aspect-ratio: 15/9) {
-  .envision {
-    margin-top: -1%;
+  .mission {
+    top: -12%;
     margin-left: 0%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
+  .vision {
+    top: -12%;
   }
   .rect_page_title {
     top: -5%;
@@ -1276,20 +1543,17 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 15/9) and (max-aspect-ratio: 16/9) {
-  .overlay-content {
-    top: -1%;
-    left: 0%;
-  }
-  .envision {
-    margin-top: -1%;
+  .mission {
+    top: -14%;
     margin-left: 0%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
+  .vision {
+    top: -14%;
   }
-  #button_1 {
-    margin-left: 38%;
+  .overlay-content {
+    top: -1%;
+    left: 0%;
   }
   .contact {
     top: 15%;
@@ -1319,13 +1583,13 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 16/9) and (max-aspect-ratio: 17/9) {
-  .envision {
-    margin-top: -1%;
+  .mission {
+    top: -14%;
     margin-left: 0%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
+  .vision {
+    top: -14%;
   }
   .intro_2 {
     margin-top: 1%;
@@ -1351,16 +1615,12 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 17/9) and (max-aspect-ratio: 2/1) {
-  .envision {
-    margin-top: -1%;
-    margin-left: 0%;
+  .mission {
+    top: -13%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
-  }
-  #button_1 {
-    margin-left: 38%;
+  .vision {
+    top: -13%;
   }
   .intro_2 {
     margin-top: 2%;
@@ -1384,21 +1644,20 @@ a {
   .bg__3 {
     background-position-y: 15%;
   }
+  .rect_2 {
+    top: 5%;
+  }
   .who_block_title {
     margin-bottom: 1%;
   }
 }
 @media only screen and (min-aspect-ratio: 2/1) and (max-aspect-ratio: 21/9) {
-  .envision {
-    margin-top: -1%;
-    margin-left: 0%;
+  .mission {
+    top: -13%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
-  }
-  #button_1 {
-    margin-left: 38%;
+  .vision {
+    top: -13%;
   }
   .intro_2 {
     margin-top: 2%;
@@ -1422,24 +1681,28 @@ a {
   .bg__3 {
     background-position-y: 15%;
   }
+  .rect_2 {
+    top: 5%;
+  }
   .who_block_title {
     margin-bottom: 1%;
   }
 }
 @media only screen and (min-aspect-ratio: 21/9) {
-  .overlay-content {
-    left: 0%;
-  }
-  .envision {
-    margin-top: -1%;
-    margin-left: 0%;
+  .mission {
+    top: -13%;
     padding-bottom: 2%;
   }
-  .targeting {
-    padding-top: 0%;
+  .vision {
+    top: -13%;
   }
-  #button_1 {
-    margin-left: 38%;
+  .rect_page_title {
+    top: -5%;
+    height: 5rem;
+    padding-top: 0.5%;
+  }
+  .overlay-content {
+    left: 0%;
   }
   .rect_page_title_2 {
     padding-top: 0%;
@@ -1461,12 +1724,93 @@ a {
     margin-left: 0%;
   }
 }
-@media only screen and (min-aspect-ratio: 1/2) and (min-width: 480px) {
+@media only screen and (min-aspect-ratio: 1/3) {
+  #span {
+    margin-top: 40%;
+  }
+  .bg__1 {
+    top: -25%;
+  }
+}
+@media screen and (min-aspect-ratio: 1/3) and (min-width: 710px) {
+  .mission {
+    top: -27%;
+  }
+}
+@media only screen and (max-aspect-ratio: 1/2) and (min-width: 480px) {
+  .rect_page_title_2 {
+    margin-top: 2%;
+  }
+  .rect_2 {
+    top: 0%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/2) and (min-width: 480px) and (max-aspect-ratio: 2/3) {
+  .bg__1 {
+    top: -25%;
+  }
+  .rect_page_title_2 {
+    top: 0%;
+  }
   .rect_2 {
     top: 4%;
   }
 }
+@media only screen and (min-aspect-ratio: 1/2) and (min-width: 560px) {
+  #span {
+    top: 10%;
+  }
+  .bg__1 {
+    top: -28%;
+  }
+  .mission {
+    top: -35%;
+  }
+  .vision {
+    top: -32.5%;
+  }
+  .rect_page_title_2 {
+    top: -5%;
+  }
+  .rect_2 {
+    top: -3%;
+    margin-top: -4%;
+  }
+}
+@media screen and (min-aspect-ratio: 1/2) and (min-width: 590px) {
+  .mission {
+    top: -33%;
+  }
+}
+@media screen and (min-aspect-ratio: 1/2) and (min-width: 600px) {
+  .mission {
+    top: -32%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .vision {
+    flex-flow: row nowrap;
+    width: 80%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/2) and (min-width: 612px) {
+  .bg__1 {
+    top: -10%;
+  }
+  .mission {
+    top: -16%;
+  }
+  .vision {
+    top: -16%;
+  }
+  .button_1 {
+    top: -15%;
+  }
+}
 @media only screen and (max-aspect-ratio: 1/2) and (min-width: 640px) {
+  .button_1 {
+    top: 15%;
+  }
   .acerage {
     margin-top: 3%;
   }
@@ -1475,11 +1819,46 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 1/2) and (min-width: 640px) {
+  .bg__1 {
+    top: -10%;
+  }
+  .mission {
+    top: -15%;
+  }
+  .rect_1 {
+    top: 0%;
+    margin-top: -6%;
+  }
   .rect__2 {
-    margin-top: -3%;
+    top: 0%;
+    margin-top: -4%;
   }
   .acerage {
     margin-top: -3%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/2) and (min-width: 679px) {
+  .rect_page_title_2 {
+    top: -3%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/2) and (min-width: 707px) {
+  .mission {
+    top: -15%;
+  }
+  .button_1 {
+    left: 24%;
+  }
+  .rect_page_title_2 {
+    top: -4%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/2) and (min-width: 837px) {
+  .rect_page_title_2 {
+    top: -5%;
+  }
+  .rect_2 {
+    top: 3%;
   }
 }
 @media only screen and (min-width: 640px) {
@@ -1487,22 +1866,174 @@ a {
     flex-wrap: nowrap !important;
   }
 }
+@media only screen and (min-aspect-ratio: 2/3) and (min-width: 430px) {
+  .bg__1 {
+    top: -28%;
+  }
+  .mission {
+    top: -35%;
+  }
+  .vision {
+    top: -35%;
+  }
+  .button_1 {
+    top: -25%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/3) and (min-width: 640px) {
+  .bg__1 {
+    top: -3%;
+  }
+  .mission {
+    top: -8%;
+  }
+  .vision {
+    top: -8%;
+  }
+}
 @media only screen and (min-aspect-ratio: 2/3) and (min-width: 767px) {
   .rect_2 {
+    top: 0%;
+    margin-top: -4%;
+  }
+  .acerage {
+    margin-top: 2%;
+  }
+  .button_1 {
+    top: -8%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/3) and (min-width: 854px) {
+  .button_1 {
     top: -7%;
-    margin-top: 1%;
+    left: 30%;
+  }
+  .rect_page_title_2 {
+    margin-top: 5%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/3) and (min-width: 904px) {
+  .rect_page_title_2 {
+    margin-top: -2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/3) and (min-width: 1023px) {
+  .rect_2 {
+    top: 0%;
+    margin-top: 5%;
   }
   .acerage {
     margin-top: 2%;
   }
 }
-@media only screen and (min-aspect-ratio: 2/3) and (min-width: 1023px) {
+@media only screen and (min-aspect-ratio: 3/4) and (min-width: 534px) {
+  rect_page_title_2 {
+    top: -5%;
+  }
+}
+@media only screen and (min-aspect-ratio: 3/4) and (min-width: 951px) {
+  .rect_page_title_2 {
+    top: -2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 3/4) and (min-width: 1024px) {
+  .mission {
+    top: -7%;
+    padding-bottom: 2%;
+  }
+  .rect_page_title_2 {
+    top: -3%;
+  }
   .rect_2 {
-    top: -6%;
-    margin-top: 1%;
+    top: 0%;
+    margin-top: -3%;
   }
   .acerage {
     margin-top: 2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 7/8) and (min-width: 887px) {
+  .mission {
+    top: -14%;
+  }
+}
+@media only screen and (min-aspect-ratio: 7/8) and (min-width: 887px) {
+  .mission {
+    top: -10%;
+  }
+}
+@media only screen and (min-aspect-ratio: 7/8) and (min-width: 1800px) {
+  .mission {
+    top: -7%;
+    padding-bottom: 2%;
+  }
+  .vision {
+    top: -10%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 640px) {
+  .bg__1 {
+    top: -8%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 708px) {
+  .mission {
+    top: -15%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 1024px) {
+  .mission {
+    top: -13%;
+    padding-bottom: 2%;
+  }
+  .vision {
+    top: -13%;
+  }
+  .button_1 {
+    top: -13%;
+    left: 35%;
+  }
+  .rect_page_title_2 {
+    margin-bottom: 0%;
+  }
+  .rect_1 {
+    top: 2%;
+    margin-bottom: 5%;
+  }
+  .rect_2 {
+    top: -2%;
+    margin-top: 0%;
+  }
+  .acerage {
+    margin-top: 2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 1804px) {
+  .rect_page_title_2 {
+    top: -1%;
+  }
+}
+@media only screen and (min-aspect-ratio: 4/3) and (min-width: 1024px) {
+  .rect_1 {
+    top: 0%;
+    margin-top: -1%;
+  }
+}
+@media only screen and (min-aspect-ratio: 4/3) and (min-width: 1980px) {
+  .rect_page_title_2 {
+    top: -2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 5/4) and (min-width: 1600px) {
+  .rect_1 {
+    top: 0%;
+    margin-top: -2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (min-width: 1024px) {
+  .rect_1 {
+    top: 0%;
+    margin-top: 0%;
   }
 }
 @media only screen and (min-aspect-ratio: 16/9) and (min-width: 3840px) {
@@ -1511,6 +2042,14 @@ a {
   }
   .rect_page_title_2 {
     height: 7rem;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/1) and (min-width: 3000px) {
+  .rect_page_title_2 {
+    top: -1%;
+  }
+  .rect_2 {
+    top: 4%;
   }
 }
 

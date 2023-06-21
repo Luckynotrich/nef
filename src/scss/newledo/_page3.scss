@@ -2,21 +2,21 @@
 .share_block_title {
     background-color: $primary-background-color !important;
     color: $primary-color;
-    font-family: $header-font;
     width: fit-content;
     height: fit-content;
-    left: $text-left+4%;
-    font-weight: $header-font-weight;
-    top: 6%;
+    left: $header-left;
+    top: 0%;
+    padding-left: 4%;
     padding-bottom: 3%;
   }
 
 .bring {
-    width: 70%;
-    top: 4%;
-    left: $text-left;
+    // width: 70%;
+    // top: 4%;
+    // left: $text-left;
+    font-weight: $header-font-weight;
     color: $primary-color;
-    padding-bottom: 3%;   
+    // padding-bottom: 3%;   
 }
 
 .third_p {
@@ -31,12 +31,11 @@
 .rect_page_title_2 {
   display: block;
   position: relative;
-  font-family: $header-font;
   color: $primary-color;
   height: 4rem;
   width: 85%;
   top: 0%;
-  left: $text-left+2%;
+  left: $header-left;
   background-color: $primary-background-color;
   border-top-left-radius: 10px 25%;
   border-top-right-radius:  10px 25%;
@@ -50,25 +49,21 @@
     font-family: $header-font;
     height: fit-content;//70%;
     width: 85%;
-    top: 2.5%;
+    top: -1%;
     left: $text-left;
     border-top-left-radius: 10px 25%;
     border-top-right-radius:  10px 25%;
   }
  
   .acerage {
-    margin-top: -10%;
-    width: 85%;
-    padding-top: 0%;
-    padding-bottom: 0%;
-    font-family: $header-font;
+    font-weight: $header-font-weight;
     color: $primary-color;
 }
 
 .pastures {
   position: relative;
   top: 2%;
-  //left: $text-left;
+  left: $text-left;
   width: 87%;
   color: $white-backed-text;
   //outline: 3px solid red;

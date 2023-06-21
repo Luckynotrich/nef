@@ -21,19 +21,24 @@
     }
 }
 
+
 @media only screen and (min-aspect-ratio: 1/2)
  and (max-aspect-ratio: 2/3) {
     .bg__1{ 
+        top: -2%;
         height: 80%;
         background-position-x: 75%;
 }
    .bg__2{
     background-position-x: 25% ;
    }
-   .envision{
-    margin-left: 2%;
-    padding-left: 3%;
-   }
+   .mission {
+    top: -30%;
+  }
+
+  .vision {
+    top: -30%;
+  }
    .rect_1{
     top: -1%;
     // height: 5rem;
@@ -46,7 +51,7 @@
         height: 5.5rem;
     }
     .rect_2{
-        margin-top: -10%;
+        margin-top: -16%;
     }
     .acerage{
         margin-top: -15%;
@@ -65,17 +70,21 @@
  and (max-aspect-ratio:3/4) {
     .bg__1{
         height: 80%;
+        top: -3%;
     }
 
 .bg__2{
     height: 80%;
     background-position-x: 25%;
 }
+.mission {
+    top: -15%;
+  }
 
-.envision{
-    margin-top: 1%;
-    margin-left: 1%;
-}
+  .vision {
+    top: -15%;
+  }
+
 .rect_page_title{
     padding-top: .5%;
 }
@@ -127,11 +136,14 @@
 
 @media only screen and (min-aspect-ratio: 3/4)
  and (max-aspect-ratio: 7/8) {
+    .mission {
+        top: -10%;
+      }
     
-    .envision{
-        margin-top: 1%;
-        margin-left: 1%;
-    }
+      .vision {
+        top: -10%;
+      }
+   
     .intro_2{
         margin-bottom: 2%;
     }
@@ -178,10 +190,13 @@
         left: 0%;
         padding: 0%;
     }
-    .envision{
-        margin-top: 1%;
-        margin-left: 1%;
-    }
+    .mission{
+        top: -10%;
+        padding-bottom: 2%;
+       }
+     .vision{
+        top: -10%;
+     }
     .rect_page_title{
         top: -5%;
         height: 5rem;
@@ -204,13 +219,20 @@
 }
 @media only screen and (min-aspect-ratio: 1/1) 
 and (max-aspect-ratio: 5/4) {
+    .bg__1{
+        top: -6%;
+    }
+    .mission{
+        top: -13%;
+        padding-bottom: 2%;
+       }
+     .vision{
+        top: -13%;
+     }
     .rect_2{
         top: -2%;
     }
-    .envision{
-        margin-top: 1%;
-        margin-left: 1%;
-    }
+    
     .rect_page_title{
         top: -5%;
         height: 5rem;
@@ -235,7 +257,16 @@ and (max-aspect-ratio: 5/4) {
 
 @media only screen and (min-aspect-ratio: 5/4)
  and (max-aspect-ratio: 4/3) {
-   
+   .bg__1{
+    top: -6%;
+   }
+   .mission{
+    top: -13%;
+    padding-bottom: 2%;
+   }
+ .vision{
+    top: -13%;
+ }
     .acerage{
         margin-top: 0%;
     }
@@ -261,15 +292,19 @@ and (max-aspect-ratio: 5/4) {
 
 @media only screen and (min-aspect-ratio: 4/3)
  and (max-aspect-ratio: 3/2) {
-    .envision{
-        margin-left: 1%;
+    
+    .mission{
+        top: -13%;
         padding-bottom: 2%;
        }
-       .targeting{
-        padding-top: 0%;
-       }
+     .vision{
+        top: -13%;
+     }
+      
+     
        .rect_1{
-        top: 1%;
+        top: 5%;
+        margin-bottom: 5%;
        }
        .share_block_title {
         margin-top: 3%; 
@@ -299,12 +334,12 @@ and (max-aspect-ratio: 5/4) {
 
 @media only screen and (min-aspect-ratio: 3/2)
  and (max-aspect-ratio: 14/9) {
-    .envision{
-        margin-left: 1%;
+    .mission{
+        top: -13%;
         padding-bottom: 2%;
        }
-       .targeting{
-        padding-top: 0%;
+     .vision{
+        top: -13%;
        }
        .rect_page_title{
         top: -5%;
@@ -323,14 +358,13 @@ and (max-aspect-ratio: 5/4) {
 
 @media only screen and (min-aspect-ratio: 14/9)
  and (max-aspect-ratio: 8/5) {
-    .envision{
-        margin-top: -1%;
-        margin-left: 0%;
+    .mission{
+        top: -13%;
         padding-bottom: 2%;
        }
-       .targeting{
-        padding-top: 0%;
-       }
+     .vision{
+        top: -13%;
+     }
        .rect_page_title{
         top: -5%;
         height: 5rem;
@@ -353,14 +387,14 @@ and (max-aspect-ratio: 5/4) {
 }
 @media only screen and (min-aspect-ratio: 8/5)
  and (max-aspect-ratio: 15/9) {
-    .envision{
-        margin-top: -1%;
+    .mission{
+        top: -12%;
         margin-left: 0%;
         padding-bottom: 2%;
        }
-       .targeting{
-        padding-top: 0%;
-       }
+     .vision{
+        top: -12%;
+     }
    
     .rect_page_title{
         top: -5%;
@@ -389,22 +423,19 @@ and (max-aspect-ratio: 5/4) {
 
 @media only screen and (min-aspect-ratio: 15/9)
  and (max-aspect-ratio: 16/9) {
-
+    .mission{
+        top: -14%;
+        margin-left: 0%;
+        padding-bottom: 2%;
+       }
+     .vision{
+        top: -14%;
+     }
     .overlay-content {
         top: -1%;
         left: 0%;
     }
-    .envision{
-        margin-top: -1%;
-        margin-left: 0%;
-        padding-bottom: 2%;
-       }
-       .targeting{
-        padding-top: 0%;
-       }
-       #button_1{
-        margin-left: 38%;
-       }
+    
     .contact {
         top: 15%;
         left: 65%;
@@ -438,17 +469,14 @@ and (max-aspect-ratio: 5/4) {
 
 @media only screen and (min-aspect-ratio: 16/9)
  and (max-aspect-ratio: 17/9) {
-    .envision{
-        margin-top: -1%;
+    .mission{
+        top: -14%;
         margin-left: 0%;
         padding-bottom: 2%;
        }
-       .targeting{
-        padding-top: 0%;
-       }
-    //    #button_1{
-    //     margin-left: 38%;
-    //    }
+     .vision{
+        top: -14%;
+     }
     .intro_2{
         margin-top: 1%;
     }
@@ -478,17 +506,14 @@ and (max-aspect-ratio: 5/4) {
 
 @media only screen and (min-aspect-ratio: 17/9) 
 and (max-aspect-ratio: 2/1) {
-    .envision{
-        margin-top: -1%;
-        margin-left: 0%;
+    .mission{
+        top: -13%;
         padding-bottom: 2%;
        }
-       .targeting{
-        padding-top: 0%;
-       }
-       #button_1{
-        margin-left: 38%;
-       }
+     .vision{
+        top: -13%;
+     }
+     
     .intro_2{
         margin-top: 2%;
     }
@@ -513,6 +538,9 @@ and (max-aspect-ratio: 2/1) {
     .bg__3{
         background-position-y: 15%;
     }
+    .rect_2{
+        top: 5%;
+    }
     .who_block_title{
         margin-bottom:1%;
     }
@@ -522,18 +550,14 @@ and (max-aspect-ratio: 2/1) {
 
 @media only screen and (min-aspect-ratio: 2/1) 
 and (max-aspect-ratio: 21/9) {
-   .envision{
-    margin-top: -1%;
-    margin-left: 0%;
-    padding-bottom: 2%;
-   }
-   .targeting{
-    padding-top: 0%;
-   }
-   #button_1{
+    .mission{
+        top: -13%;
+        padding-bottom: 2%;
+       }
+     .vision{
+        top: -13%;
+     }
    
-    margin-left: 38%;
-   }
     .intro_2{
         margin-top: 2%;
     }
@@ -557,6 +581,9 @@ and (max-aspect-ratio: 21/9) {
     .bg__3{
         background-position-y: 15%;
     }  
+    .rect_2{
+        top: 5%;
+    }
     .who_block_title{
         margin-bottom:1%;
     } 
@@ -564,21 +591,22 @@ and (max-aspect-ratio: 21/9) {
 }
 
 @media only screen and (min-aspect-ratio: 21/9) {
+    .mission{
+        top: -13%;
+        padding-bottom: 2%;
+       }
+     .vision{
+        top: -13%;
+     }
+    .rect_page_title{
+        top: -5%;
+        height: 5rem;
+        padding-top: .5%;
+    }
     .overlay-content{
         left: /* $text-left */0%;
     }
-    .envision{
-        margin-top: -1%;
-        margin-left: 0%;
-        padding-bottom: 2%;
-       }
-       .targeting{
-        padding-top: 0%;
-       }
-       #button_1{
-        margin-left: 38%;
-       }
-       
+         
     .rect_page_title_2{
         padding-top: 0%;
         top: -5%;

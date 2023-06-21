@@ -2,18 +2,18 @@
 .who_block_title {
     display: block;
     margin-top: 3%;
-    width: fit-content;
-    left: $text-left;
+    width: 85%;
+    left: $header-left;
+    padding-left: 4%;
     color: $primary-color;
-    font-family: $header-font;
-    font-weight: 600;
     top: 3%;
+    letter-spacing: normal;
 }
 .whose{
     display: flex;
     flex-flow: row wrap;
     left: $text-left;
-    top: 3%;
+    top: 4%;
     width: 90%;
     padding-bottom: 1rem;
 }

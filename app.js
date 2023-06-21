@@ -25,8 +25,8 @@ let reqPath = `\n${idData} path: ${req.path} \n`;
   next() // calling next middleware function or handler
 })
 
-
 app.use(express.static( path.join(__dirname,'./', 'dist', 'js')))
+app.use(express.static(path.join(__dirname,'./dist/css/')));
 app.use(express.static(path.join(__dirname,'./dist/css/newledo')));
 app.use(express.static(path.join(__dirname,'./dist/css/contact')));
 app.use(express.static(path.join(__dirname,'./events/')))

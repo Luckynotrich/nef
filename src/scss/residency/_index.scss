@@ -23,6 +23,7 @@ h2 {
     flex: 1;
     justify-content: center;
     color: $primary-color;
+    font-family: $title-font;
 }
 
 h1 {
@@ -31,9 +32,9 @@ h1 {
 }
 
 h2,
-h3,h4 {
+h3,h4,h5 {
     display: flex;
-    font-family: $header-font;
+    font-family: $title-font;
     flex-flow: row wrap;
     margin: 0% 3% 0%;
     color: $primary-color;

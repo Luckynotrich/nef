@@ -3,7 +3,7 @@ const router = express.Router();
 router.use(express.urlencoded({ extended: false }));
 const dotenv = require('dotenv');
 dotenv.config();
-const a2SendMail = require('./a2-sendmail.js');
+const a2SendMail = require('./dist/js/a2-sendmail.js');
 const apndFile = require("./apnd-file.js");
 const multiparty = require("multiparty");
 
