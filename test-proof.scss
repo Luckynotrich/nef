@@ -1,0 +1,38 @@
+//logo
+@media only screen and ( max-width: 240px)
+{
+.logo{
+background-image:  url("/logo/1_newledo_logo_62w.png");
+}}
+@media only screen and ( max-width: 420px)
+{
+.logo{
+background-image:  url("/logo/2_newledo_logo_123w.png");
+@include backSet240;
+}}
+@media only screen and ( max-width: 640px)
+{
+.logo{
+background-image:  url("/logo/3_newledo_logo_184w.png");
+@include backSet420;
+}}
+@media only screen and ( max-width: 1280px)
+{
+.logo{
+background-image:  url("/logo/4_newledo_logo_276w.png");
+}}
+@media only screen and ( max-width: 1600px)
+{
+.logo{
+background-image:  url("/logo/5_newledo_logo_414w.png");
+}}
+@media only screen and ( max-width: 2560px)
+{
+.logo{
+background-image:  url("/logo/6_newledo_logo_621w.png");
+}}
+@media only screen and ( max-width: 3840px)
+{
+.logo{
+background-image:  url("/logo/7_newledo_logo_933w.png");
+}}

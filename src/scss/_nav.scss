@@ -1,0 +1,49 @@
+
+// Note: The following code is a modified version of the code found at https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+.overlay {
+    // position: relative;
+    top: 5%;
+    left: 0%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    max-width: fit-content;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1000;
+  }
+  .overlay-content a {
+    position: relative;
+    padding: 20px;
+    padding-left: 30px;
+    background-color: transparent;
+    color:$primary-color;
+    font-family: $title-font;
+    left: $text-left;
+    font-weight: $header-font-weight;
+  }
+  .overlay-content a:link {
+    text-decoration: none;
+  }
+  
+  .overlay-content a:visited {
+    text-decoration: none;
+  }
+  //Note: a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+  //Note: a:active MUST come after a:hover in the CSS definition in order to be effective.
+  .overlay-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .overlay-content a:active {
+    text-decoration: underline;
+  }
+  
+  #span{
+    position: relative;
+    color: $primary-color;
+    display: none;
+    cursor:pointer;
+    // z-index: 4;
+  }

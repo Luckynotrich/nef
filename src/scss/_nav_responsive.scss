@@ -1,0 +1,111 @@
+
+@media screen and (min-width:600px) {
+  #topNav {
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
+  }
+  .closebtn{
+    display: none;
+  }
+}
+@media screen and (max-width:876px) and (min-width: 599px){
+  .overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
+  }
+  
+}
+@media screen and (max-width: 599px)   
+{
+  *{
+    overflow:visible;
+  }
+ 
+.overlay {
+  height: 0%;
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: .5s;
+  z-index: 1000;
+}
+.overlay::after{
+  background-color: $primary-background-color;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  left: 0%;
+  max-width: 90%;
+  text-align: center;
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+.overlay a {
+  padding: 8px;
+  max-width: 95%;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 1em;
+  font-size: 60px;
+  left: 3%;
+}
+.closebtn{
+  background-color: transparent;
+}
+#span{
+    position: relative;
+    max-width: fit-content;
+    padding-right: .1rem;
+    display: flex;
+    margin-top: 7rem;
+    left: $text-left;
+    color: $primary-color;
+    background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
+    background-color: transparent;
+    border-radius: .5rem;
+}
+}
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 2rem;
+  }
+  #span{
+    top: 5rem;
+    right: 2rem;
+
+    color: $primary-color;
+    background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
+  }
+}
+@media only screen and (max-aspect-ratio: 2/3) 
+and (max-width: 600px) 
+{
+  #span{
+    top: 5rem;
+    left: 2rem;
+  }
+}
