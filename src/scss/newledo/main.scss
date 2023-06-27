@@ -76,7 +76,6 @@ a:active {
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 102%;
-  z-index: 0;
   right: 0%;
 }
 
@@ -101,7 +100,6 @@ a:active {
 @import "../logo_size";
 @import "../logo_responsive";
 @import "../nav_responsive";
-@import "../letter_spacing";
 @import "../font_responsive";
 @import "page_aspect_responsive";
 @import "page_asp-wid_responsive";

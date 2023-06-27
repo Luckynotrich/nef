@@ -42,11 +42,10 @@
 
   <!--************************************************* top image *****************************  -->
   <div class="mission">
-    <h1>
-      Newledo</h1><h5 
-      
-      class="sub-header"> Exploration Hub’s
-      mission is to transform an old dairy farm into a site for regenerative experimentation and demonstration, a
+    <h1 id="newledo">
+      Newledo</h1>
+      <h5 class="sub-header"> Exploration Hub’s
+      mission is to transform an old dairy farm into a site for regenerative experiments and demonstration, a
       residency for makers
       and growers and a modern day grange hall.</h5>
   </div>
@@ -88,7 +87,7 @@
   </seciton>
     <!-- *********************************************************Page 3 ************************************ -->
     <h2 class="share_block_title">share</h2>
-    <seciton class="rect_1">
+    <seciton class="rect_1" id="rect_1_2">
     <p class="third_p"><span class="bring">Bring your project to the farm.</span>
       Stay the night or longer. Our live /work program offers onsite housing and fabrication opportunities to
       regenerative practitioners and farmers working on early stage innovations in our four focus areas: farming,
@@ -157,9 +156,9 @@
 
   <script>
     function openNav() {
-      document.querySelector('*').style.zIndex = "-1";
+      // document.querySelector('*').style.zIndex = "-1";
       document.getElementById("topNav").style.height = "100%";
-      document.getElementById("overlay").style.zIndex = "3";
+      // document.getElementById("overlay").style.zIndex = "4";
       document.querySelector('*').style.background = "black";
     }
 
@@ -174,13 +173,7 @@
     }
     document.querySelector('*').style.height = "100%";
 
-    //$(window).bind("pageshow", function(event) {
-    //     window.addEventListener("pageshow", function(event) {
-    //       console.log("bind")
-    //     if (event.originalEvent.persisted) {
-    //         window.location.reload(); 
-    //     }
-    // });
+    
     const events = ["pagehide", "pageshow", "unload", "load"];
 
     const eventLogger = (event) => {
@@ -203,7 +196,6 @@
   </script>
 
 </body>
-<!-- q: Why does class="square" div in this file display a white background after the click event executes opneNav fucntion and sets the background black? -->
-<!--a:-->
+
 
 </html>

@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;800&display=swap");
 .logo {
   position: relative;
-  padding: 10rem;
-  top: 5%;
-  left: -25%;
+  padding: 6rem;
+  top: 15%;
+  left: 0%;
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 60%;
+  width: 25%;
+  height: 25%;
   background-color: transparent;
   background-position: center center;
-  z-index: 2;
 }
 
 body,

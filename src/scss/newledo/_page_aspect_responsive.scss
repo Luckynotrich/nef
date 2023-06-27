@@ -6,17 +6,36 @@
     .bg__1{
         background-position-x: 75%;
     }
+    .mission{
+        top: -30%;
+    }
     .bg__2{
+        top: -17%;
         background-position: left;
     }
+    .rect_page_title{
+        top: -21.5%;
+    }
 .rect_1{
-    top: -1%;
+    top: -17%;
+}
+#rect_1_2{
+    top: -11%;
+}
+.rect_2{
+    top: -7%;
 }
 .share_block_title{
-    margin-top: 5%;
+    top: -15%;
+}
+.who_block_title{
+    top: -6%;
+}
+.whose{
+    top: -5%;
 }
     .bg__3 {
-        top: 5%;
+        top: 0%;
         height: 80%;
     }
 }
@@ -212,6 +231,12 @@
     }
     .pastures{
         margin-top: 2%;
+    }
+    .share_block_title{
+        margin-top: 5%;
+    }
+    #rect_1_2{
+        top: 2%;
     }
    .who_block_title{
     margin-bottom: 2%;

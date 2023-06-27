@@ -5,7 +5,7 @@
     width: fit-content;
     height: fit-content;
     left: $header-left;
-    top: 0%;
+    top: -3%;
     padding-left: 4%;
     padding-bottom: 3%;
   }
@@ -30,6 +30,7 @@
 
 .rect_page_title_2 {
   display: block;
+  max-width: 1920px;
   position: relative;
   color: $primary-color;
   height: 4rem;
@@ -37,8 +38,8 @@
   top: 0%;
   left: $header-left;
   background-color: $primary-background-color;
-  border-top-left-radius: 10px 25%;
-  border-top-right-radius:  10px 25%;
+  border-top-left-radius: 20px 25%;
+  border-top-right-radius: 20px 25%;
   padding: 3% 6% 0% 4%;
 }
 
@@ -48,6 +49,7 @@
   background-color: $primary-background-color;
     font-family: $header-font;
     height: fit-content;//70%;
+    max-width: 2020px;
     width: 85%;
     top: -1%;
     left: $text-left;

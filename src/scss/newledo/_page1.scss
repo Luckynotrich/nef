@@ -1,18 +1,22 @@
 * {
   max-width: 100%;
   background-color: $primary-background-color;
+  
+}
+#newledo{
+  border-top-right-radius: 20px 25%; 
 }
 .mission{
   top: -28%;
   left: $header-left;
   font-family: $title-font;
-  max-width: 90%;
+  max-width: 1920px;
   width: 85%/* calc(100% - $text-left*3) */;
   padding:.5rem;
   padding-left: 4%;
   text-wrap: balance; 
-  border-top-left-radius: 10px 25%;
-  border-top-right-radius: 10px 25%; 
+  border-top-left-radius: 20px 25%;
+  border-top-right-radius: 20px 25%; 
 }
 .sub-header{
   color: $primary-color;
@@ -25,7 +29,7 @@
   display: flex;
   flex-flow: column;
   flex: 2 1 auto;
-  max-width: 90%;
+  max-width: 2020px;
 }
 
 .button_1 {
@@ -49,7 +53,6 @@
   box-sizing: content-box;
   padding: 1rem 1rem;/*  1.2rem; */
   margin: 1.5rem 1.5rem 0%;
-  z-index: 0;
 }
 #join{
   top:5%;

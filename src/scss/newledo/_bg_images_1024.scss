@@ -1,9 +1,9 @@
-.bg__1{
-background-image: url("/images_1024/1_Bridge_w_Bunny_1024.jpg");
-@include backSet;
-}
 .bg__2{
 background-image: url("/images_1024/2_Barn_wideshot_1024.jpg");
+@include backSet;
+}
+.bg__1{
+background-image: url("/images_1024/1_Bridge_w_Bunny_1024.jpg");
 @include backSet;
 }
 .bg__3{

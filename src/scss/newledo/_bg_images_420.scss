@@ -1,12 +1,15 @@
-@media only screen and ( max-width: 530px)
+@media only screen and ( max-width: 420px)
 {
 .bg__1{
 background-image: url("/images_420/1_Bridge_w_Bunny420.jpg");
+@include backSet240;
 }
 .bg__2{
 background-image: url("/images_420/2_Barn_wideshot_web420_150.jpg");
+@include backSet240;
 }
 .bg__3{
 background-image: url("/images_420/3_RainbowPasture420_150.jpg");
+@include backSet240;
 }
 }
