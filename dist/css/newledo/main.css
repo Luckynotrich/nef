@@ -85,28 +85,12 @@ a:active {
   text-decoration: none;
 }
 
-.bg__2 {
-  background-image: url("/images_1024/2_Barn_wideshot_1024.jpg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  width: 102%;
-  -webkit-background-size: 100% 100%; /* Safari 3.0 */
-  -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
-  -o-background-size: 100% 100%; /* Opera 9.5 */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 102%;
-  right: 0%;
-}
-
 .bg__1 {
-  background-image: url("/images_1024/1_Bridge_w_Bunny_1024.jpg");
+  background-image: url("/images_1024/1_bunny_1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
-  width: 102%;
+  width: 100%;
   -webkit-background-size: 100% 100%; /* Safari 3.0 */
   -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
   -o-background-size: 100% 100%; /* Opera 9.5 */
@@ -122,7 +106,23 @@ a:active {
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
-  width: 102%;
+  width: 100%;
+  -webkit-background-size: 100% 100%; /* Safari 3.0 */
+  -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
+  -o-background-size: 100% 100%; /* Opera 9.5 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 102%;
+  right: 0%;
+}
+
+.bg__2 {
+  background-image: url("/images_1024/2_house_barn_W1024.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  width: 100%;
   -webkit-background-size: 100% 100%; /* Safari 3.0 */
   -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
   -o-background-size: 100% 100%; /* Opera 9.5 */
@@ -462,10 +462,10 @@ a:active.event {
 
 @media only screen and (max-width: 832px) {
   .bg__1 {
-    background-image: url("/images_640/1_Bridge_w_Bunny_web_640.jpg");
+    background-image: url("/images_640/1_bunny_640.jpg");
   }
   .bg__2 {
-    background-image: url("/images_640/2_Barn_wideshot_web_640.jpg");
+    background-image: url("/images_640/2_house_barn_W640.jpg");
   }
   .bg__3 {
     background-image: url("/images_640/3_RainbowPasture640.jpg");
@@ -473,11 +473,11 @@ a:active.event {
 }
 @media only screen and (max-width: 420px) {
   .bg__1 {
-    background-image: url("/images_420/1_Bridge_w_Bunny420.jpg");
+    background-image: url("/images_420/1_bunny_480.jpg");
     height: 50%;
   }
   .bg__2 {
-    background-image: url("/images_420/2_Barn_wideshot_web420_150.jpg");
+    background-image: url("/images_420/2_house_barn_W480.jpg");
     height: 50%;
   }
   .bg__3 {
@@ -487,10 +487,10 @@ a:active.event {
 }
 @media only screen and (max-width: 320px) {
   .bg__1 {
-    background-image: url("/images_240/1_Bridge_w_Bunny240.jpg");
+    background-image: url("/images_240/1_bunny_240.jpg");
   }
   .bg__2 {
-    background-image: url("/images_240/2_Barn_wideshot_web240.jpg");
+    background-image: url("/images_240/2_house_barn_W240.jpg");
   }
   .bg__3 {
     background-image: url("/images_240/3_RainbowPasture240.jpg");
@@ -721,6 +721,11 @@ a:active.event {
     top: 4%;
   }
 }
+@media screen and (min-aspect-ratio: 5/3) and (min-width: 940px) {
+  .logo {
+    top: 6%;
+  }
+}
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 1024px) {
   .logo {
     top: 42%;
@@ -835,7 +840,7 @@ a:active.event {
 }
 @media screen and (min-aspect-ratio: 2/1) and (min-width: 3000px) {
   .logo {
-    background-size: 52%;
+    background-size: 42%;
   }
 }
 @media screen and (min-width: 600px) {
@@ -2057,8 +2062,11 @@ a {
   }
 }
 @media only screen and (min-aspect-ratio: 2/3) and (min-width: 854px) {
+  .vision {
+    top: -23%;
+  }
   .button_1 {
-    top: -7%;
+    top: -17%;
     left: 30%;
   }
   .rect_page_title_2 {
@@ -2066,6 +2074,15 @@ a {
   }
   .rect_2 {
     top: -2%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/3) and (min-width: 854px) {
+  .vision {
+    top: -8%;
+  }
+  .button_1 {
+    top: -8%;
+    left: 30%;
   }
 }
 @media only screen and (min-aspect-ratio: 2/3) and (min-width: 904px) {
@@ -2188,9 +2205,13 @@ a {
     top: -27%;
   }
 }
-@media only screen and (min-aspect-ratio: 7/8) and (min-width: 887px) {
-  .mission {
-    top: -27%;
+@media only screen and (min-aspect-ratio: 7/8) and (min-width: 837px) {
+  .vision {
+    top: -23%;
+  }
+  .button_1 {
+    top: -13%;
+    left: 30%;
   }
 }
 @media only screen and (min-aspect-ratio: 7/8) and (min-width: 887px) {
@@ -2206,6 +2227,11 @@ a {
     top: -25%;
   }
 }
+@media only screen and (min-aspect-ratio: 7/8) and (min-width: 1125px) {
+  .pastures {
+    margin-top: -1%;
+  }
+}
 @media only screen and (min-aspect-ratio: 7/8) and (min-width: 1800px) {
   .mission {
     top: -7%;
@@ -2218,6 +2244,17 @@ a {
     top: -15%;
   }
 }
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 590px) {
+  .mission {
+    top: -17%;
+  }
+  .vision {
+    top: -17%;
+  }
+  .button_1 {
+    top: -12%;
+  }
+}
 @media only screen and (min-aspect-ratio: 1/1) and (min-width: 640px) {
   .bg__1 {
     top: -8%;
@@ -2226,6 +2263,19 @@ a {
 @media only screen and (min-aspect-ratio: 1/1) and (min-width: 708px) {
   .mission {
     top: -15%;
+  }
+  .button_1 {
+    top: -10%;
+    left: 35%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 850px) {
+  .vision {
+    top: -15%;
+  }
+  .button_1 {
+    top: -15%;
+    left: 35%;
   }
 }
 @media only screen and (min-aspect-ratio: 1/1) and (min-width: 1024px) and (max-aspect-ratio: 8/5) {
@@ -2255,9 +2305,9 @@ a {
     margin-top: 2%;
   }
 }
-@media only screen and (min-aspect-ratio: 1/1) and (min-width: 1804px) {
-  .rect_page_title_2 {
-    top: -1%;
+@media only screen and (min-aspect-ratio: 5/4) and (min-width: 893px) {
+  .pastures {
+    margin-top: 2%;
   }
 }
 @media only screen and (min-aspect-ratio: 5/4) and (min-width: 1400px) {
@@ -2266,6 +2316,11 @@ a {
   }
   .rect_2 {
     top: -5%;
+  }
+}
+@media only screen and (min-aspect-ratio: 1/1) and (min-width: 1804px) {
+  .rect_page_title_2 {
+    top: -1%;
   }
 }
 @media only screen and (min-aspect-ratio: 5/4) and (min-width: 1600px) {
@@ -2339,12 +2394,37 @@ a {
     top: -80%;
   }
 }
+@media screen and (min-aspect-ratio: 5/3) and (min-width: 940px) {
+  .bg__1 {
+    top: 0%;
+  }
+  .mission {
+    top: -7%;
+  }
+  .vision {
+    top: 0%;
+  }
+  .button_1 {
+    top: 0%;
+  }
+  .rect_1 {
+    top: 5%;
+  }
+}
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 1024px) {
   .bg__1 {
     top: -30%;
   }
   .mission {
     top: -37%;
+  }
+}
+@media screen and (min-aspect-ratio: 5/3) and (min-width: 1364px) {
+  .vision {
+    top: -30%;
+  }
+  .button_1 {
+    top: -30%;
   }
 }
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 1500px) {
@@ -2356,6 +2436,16 @@ a {
   }
   .vision {
     top: -22%;
+  }
+}
+@media screen and (min-aspect-ratio: 8/5) and (min-width: 1636px) {
+  .button_1 {
+    top: -10%;
+  }
+}
+@media screen and (min-aspect-ratio: 5/3) and (min-width: 2390px) {
+  .pastures {
+    margin-top: 1%;
   }
 }
 @media screen and (min-aspect-ratio: 16/9) and (min-width: 560px) {
@@ -2372,6 +2462,14 @@ a {
     top: 5%;
   }
 }
+@media only screen and (min-aspect-ratio: 16/9) and (min-width: 1000px) {
+  .vision {
+    top: -10%;
+  }
+  .button_1 {
+    top: -10%;
+  }
+}
 @media only screen and (min-aspect-ratio: 16/9) and (min-width: 1024px) {
   .rect_1 {
     top: -3%;
@@ -2381,6 +2479,11 @@ a {
   }
   .share_block_title {
     top: -1%;
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (min-width: 1632px) {
+  .vision {
+    top: -15%;
   }
 }
 @media only screen and (min-aspect-ratio: 16/9) and (min-width: 1800px) {
@@ -2455,6 +2558,11 @@ a {
   }
   .share_block_title {
     top: -6%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/1) and (min-width: 1161px) {
+  .vision {
+    top: -10%;
   }
 }
 @media only screen and (min-aspect-ratio: 2/1) and (min-width: 1800px) {

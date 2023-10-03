@@ -199,6 +199,9 @@ and (min-width: 1600px){
   top: 4%;
   }
 }
+@media screen and (min-aspect-ratio: 5/3 )and (min-width: 940px){
+  .logo{top: 6%;}
+}
 @media screen and (min-aspect-ratio: 5 / 3) and (min-width: 1024px){
     .logo{
         top: 42%;
@@ -315,8 +318,9 @@ background-size: 52%;
        background-size: 51%;
     }
 }
+
 @media screen and (min-aspect-ratio: 2/1) and (min-width:3000px){
   .logo{
-     background-size: 52%;
+     background-size: 42%;
   }
 }

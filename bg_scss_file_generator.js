@@ -31,11 +31,13 @@ async function fileListGen(path, file, size, test) {
   try {
     const files = await readdir(path);
     files.sort();
-    setTimeout(() => {console.log(files)}, 1000);
+    setTimeout(() => {/* console.log(files) */}, 1000);
     const num = parseInt(size);
 
-    console.log('num ', num, ' ', test);
-    if (test == true) apndFile(file, screen);
+    if (test == true) {
+      console.log(screen)
+      apndFile(file, screen)
+    };
     for (let i = 0; i < files.length; i++) {
 
       let listFile = bg + `${i + 1}` + '{\n' + '' + background;
@@ -52,6 +54,7 @@ async function fileListGen(path, file, size, test) {
       if (num === 420) { listFile = listFile + backSet240; }
       if (num === 640) { listFile = listFile + backSet420; }
       listFile = listFile + '}\n';
+      console.log(listFile);
       apndFile(file, listFile)
     }
     if (test)await apndFile(file, '}\n')
