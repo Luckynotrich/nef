@@ -31,13 +31,15 @@ app.use(express.static(path.join(__dirname,'./dist/css/newledo')));
 app.use(express.static(path.join(__dirname,'./dist/css/contact')));
 app.use(express.static(path.join(__dirname,'./events/')))
 app.use(express.static(path.join(__dirname,'./dist/css/residency/')))
+app.use(express.static(path.join(__dirname, './dist/happenings/')))
+// app.use(express.static(path.join(__dirname, './dist/happenings/css')))
 
 
 app.get('/residency.html',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/residency.html'))
 })
 app.get('/events/',(req,res) =>{
-  res.sendFile(path.join(__dirname,'./dist/happenings.html'))
+  res.sendFile(path.join(__dirname,'./dist/happenings/happenings.html'))
 })
 
 app.get('/contact-page.html', (req, res) => {
