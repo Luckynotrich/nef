@@ -1,5 +1,0 @@
-building file list ... done
-./
-
-sent 1,679 bytes  received 30 bytes  262.92 bytes/sec
-total size is 7,602,978  speedup is 4,448.79
