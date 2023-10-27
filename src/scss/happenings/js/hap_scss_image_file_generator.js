@@ -2,6 +2,7 @@
 
 const { readdir, rm, writeFile } = require('node:fs/promises');
 const { isNumberObject } = require('node:util/types');
+const sizeOf = require('image-size');
 const apndFile = require('../../../../dist/js/apnd-file');
 const { existsSync } = require('node:fs');
 
@@ -10,26 +11,30 @@ const events = ['eclipser-mixer', 'ferrock', 'mushroom_event_1'];
 
 //scss files array size must match sizes and screens arrays
 const scssFiles = ['images_1024.scss', 'images_640.scss',
-  'images_420.scss', 'images_240.scss'];
+  'images_420.scss', 'images_240.scss'/* , 'first_images.scss' */];
 const sizes = ['1024', '640', '420', '240'];
 const screens = ['2048', '1280', '840', '0'];
 
 const path = './dist/css/happenings/images/';
 
 const scssPath = './src/scss/happenings/';
-const titles = []//= '//' + scssPath + scssFiles[file] + '\n';
+const titles = []
 
 async function fileListGen() {
-  let currentPath = '';
-  let files = [];
-  let backgrounds = [];
   for (let i = 0; i < events.length; i++) {
+    let currentPath = '';
+    let files = [];
+    let backgrounds = [];
     for (let j = 0; j < sizes.length; j++) {
       currentPath = path + events[i] + '/' + events[i] + '_' + sizes[j];
-      let screen = `@media only screen and ( min-width: ${screens[j]}px)\n{\n`
+      let screen = `@media only screen and ( min-width: ${screens[j]}px)\n`
+      if(j > 0) screen = screen + ` and ( max-width: ${screens[j-1]}px)\n`
+      screen = screen+`{\n`
       try { await apndFile(titles[j], screen) } catch (err) { console.log('error', err) }
       try {
         files = await readdir(currentPath);
+        await files.sort();
+        setTimeout(() => {/* console.log(files) */ }, 1000);
       }
       catch (err) {
         console.log(err);
@@ -37,21 +42,26 @@ async function fileListGen() {
       finally {
         for (let k = 0; k < files.length; k++) {
           let file = currentPath + '/' + files[k];
-          console.log('file', file);
-          let width = file.naturalWidth;
-          // console.log('width', width);
-          let height = file.naturalHeight;
+          let width = sizeOf(file).width;
+          let height = sizeOf(file).height;
+          // console.log('files[k],width,height ', files[k], width, ' , ', height);
           if (files[k].includes('.jpg') || files[k].includes('.jpeg')) {
             backgrounds[k] = '#' + '_' + (k + 1) + '_' + events[i] + '{' + '\n' + 'background-image: url("./images/' + events[i]
               + '/' + events[i] + '_' + sizes[j] + '/' + files[k] + '");\n'
-              + 'background-repeat: no-repeat;\n' + 'background-position: center;\n' /* + 'background-size: cover;\n' + '}' */
-              + '\nwidth: ' + width + 'px;\n' + 'height: ' + height + 'px;\n' + '}\n';
+              + 'background-repeat: no-repeat;\n' + 'background-position: center;\n'
+              + 'width: ' + width + 'px;\n' + 'height: ' + height + 'px;\n' 
+              + '}\n';
           }
         }
         for (let k = 0; k < backgrounds.length; k++) {
-          try { await apndFile(titles[j], backgrounds[k]) } catch (err) { console.log('error', err) }
+          try { await apndFile(titles[j], backgrounds[k]) 
+            // setTimeout(() => {/* console.log(files) */ }, 100);
+          } catch (err) { console.log('error ', err) }
+          
         }
-        try { await apndFile(titles[j], '\n}') } catch (err) { console.log('error', err) }
+        setTimeout(() => {/* console.log(files) */ }, 2000);
+         try { await apndFile(titles[j], '\n}\n') } catch (err) { console.log('error ', err) }
+
       }
     }
   }

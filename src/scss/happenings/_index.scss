@@ -1,10 +1,10 @@
 /* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;800&display=swap');
+
 *{
     margin: auto;
 }
  body{
-   max-width: 1400px;
+   max-width: 2050px;
     width: 100%;
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;
@@ -13,6 +13,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color:white;
+// outline: 1px solid red;
 } 
 
 h1,h2{
@@ -39,13 +40,14 @@ section{
     display: inherit;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 .figure {
     flex: 1;
     margin: 0%;
     padding: 0% 0% 0% .2%;
-    height: 480px;
+    height: inherit;
 }
 article{
     flex: 1;
@@ -66,13 +68,34 @@ hr{
     margin-bottom: 0%;
 }
 
-p{
-    font-size: medium;
-}
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 2048px) {
+    body{
+        max-width: 1280px;
+
+}}
+@media screen and (max-width: 1280px) {
+    body{
+        max-width: 1024px;
+
+}}
+@media screen and (max-width: 1024px) {
+    body{
+        max-width: 840px;
+
+}}
+@media screen and (max-width: 840px) {
+    body{
+        max-width: 480px;
+
+}}
+@media screen and (max-width: 480px) {
     section{
         flex-direction: column;
     }
-    
+    body{
+        max-width: 300px;
+
 }
+}    
+
