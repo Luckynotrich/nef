@@ -4,8 +4,9 @@
     margin: auto;
 }
  body{
-   max-width: 2050px;
+   max-width: 2068px;
     width: 100%;
+    margin:auto;
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;
     display: flex;
@@ -13,7 +14,7 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color:white;
-// outline: 1px solid red;
+//  outline: 1px solid red;
 } 
 
 h1,h2{
@@ -29,7 +30,7 @@ h1{
 h2,p{
     font-family: 'Poppins', sans-serif;
 }
-h3{
+h3,h4,h5,h6{
     font-family: 'Montserrat', sans-serif;
     color: #000;
 }
@@ -42,11 +43,30 @@ section{
     align-items: center;
     
 }
+a{
+    margin:auto;
+    justify-content: center;
+}
+.header{
+    flex: 1;
+    margin: 0%;
+    padding: 0%;
+    height: 15%;
+    width: 100%;
+    // background-color: #ff9900;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:right;
+    align-items: end;
+    align-content: center;
+
+}
 
 .figure {
     flex: 1;
-    margin: 0%;
-    padding: 0% 0% 0% .2%;
+    border: 5% solid #ffff;
+    margin: 1%;
+    padding: 0% 0% 0% .5%;
     height: inherit;
 }
 article{
@@ -54,48 +74,50 @@ article{
     flex-wrap: wrap;
     margin: 5%;
 }
-img{
-    width:50%;
-    margin: 0%;
-    padding: 0%;
-}
+
 hr{
     height: 15px;
     width: 100%;
     background-color:#ff9900;
     margin-bottom: .5%;
-    margin-top: 0%;
+    margin-top: 5%;
     margin-bottom: 0%;
 }
+.logo{
+    position:relative;
+    width: 50%;
+    height: auto;
+    left: 25%;
+}
 
-
-@media screen and (max-width: 2048px) {
+@media screen and (max-width: 2068px) {
     body{
-        max-width: 1280px;
+        max-width: 1300px;
 
 }}
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1300px) {
     body{
         max-width: 1024px;
 
 }}
 @media screen and (max-width: 1024px) {
     body{
-        max-width: 840px;
+        max-width: 860px;
 
 }}
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 860px) {
     body{
-        max-width: 480px;
+        max-width: 500px;
 
 }}
 @media screen and (max-width: 480px) {
+    body{
+        max-width: 320px;
+        // margin: auto;
+        // width: 50%;
+    }
     section{
         flex-direction: column;
     }
-    body{
-        max-width: 300px;
-
-}
 }    
 

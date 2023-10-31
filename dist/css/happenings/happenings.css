@@ -5,8 +5,9 @@
 }
 
 body {
-  max-width: 2050px;
+  max-width: 2068px;
   width: 100%;
+  margin: auto;
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   display: flex;
@@ -32,7 +33,7 @@ h2, p {
   font-family: "Poppins", sans-serif;
 }
 
-h3 {
+h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
   color: #000;
 }
@@ -47,10 +48,29 @@ section {
   align-items: center;
 }
 
-.figure {
+a {
+  margin: auto;
+  justify-content: center;
+}
+
+.header {
   flex: 1;
   margin: 0%;
-  padding: 0% 0% 0% 0.2%;
+  padding: 0%;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: end;
+  align-content: center;
+}
+
+.figure {
+  flex: 1;
+  border: 5% solid white;
+  margin: 1%;
+  padding: 0% 0% 0% 0.5%;
   height: inherit;
 }
 
@@ -60,47 +80,48 @@ article {
   margin: 5%;
 }
 
-img {
-  width: 50%;
-  margin: 0%;
-  padding: 0%;
-}
-
 hr {
   height: 15px;
   width: 100%;
   background-color: #ff9900;
   margin-bottom: 0.5%;
-  margin-top: 0%;
+  margin-top: 5%;
   margin-bottom: 0%;
 }
 
-@media screen and (max-width: 2048px) {
+.logo {
+  position: relative;
+  width: 50%;
+  height: auto;
+  left: 25%;
+}
+
+@media screen and (max-width: 2068px) {
   body {
-    max-width: 1280px;
+    max-width: 1300px;
   }
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1300px) {
   body {
     max-width: 1024px;
   }
 }
 @media screen and (max-width: 1024px) {
   body {
-    max-width: 840px;
+    max-width: 860px;
   }
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 860px) {
   body {
-    max-width: 480px;
+    max-width: 500px;
   }
 }
 @media screen and (max-width: 480px) {
+  body {
+    max-width: 320px;
+  }
   section {
     flex-direction: column;
-  }
-  body {
-    max-width: 300px;
   }
 }
 h1 {
@@ -426,13 +447,14 @@ a {
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 840px) {
+@media only screen and (min-width: 20px) and (max-width: 860px) {
   #_1_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_240/1_EclipserMixer_240.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_2_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_240/2_EclipserMixer_240.jpg");
@@ -440,6 +462,7 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_3_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_240/3_FennelMeThis_240.jpg");
@@ -447,6 +470,7 @@ a {
     background-position: center;
     width: 240px;
     height: 310px;
+    border: 5px solid #ffffff;
   }
   #_4_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_240/4_EclipserMixer_240.jpg");
@@ -454,6 +478,7 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_5_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_240/5_EclipserMixer_240.jpg");
@@ -461,6 +486,7 @@ a {
     background-position: center;
     width: 240px;
     height: 181px;
+    border: 5px solid #ffffff;
   }
   #_6_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_240/6_IntheWeeds_240.jpg");
@@ -468,29 +494,33 @@ a {
     background-position: center;
     width: 240px;
     height: 310px;
+    border: 5px solid #ffffff;
   }
   #_7_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_240/7_EclipserMixer_240.jpeg");
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_240/7_Nicole_croped_EclipserMixer_178.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 240px;
-    height: 320px;
+    width: 178px;
+    height: 177px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 840px) {
-  #_2_ferrock {
-    background-image: url("./images/ferrock/ferrock_240/2_Rob_&_David_crushing_oyster_240w.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 240px;
-    height: 180px;
-  }
+@media only screen and (min-width: 20px) and (max-width: 860px) {
   #_1_ferrock {
     background-image: url("./images/ferrock/ferrock_240/1_ferrock_tiles_240w.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
+  }
+  #_2_ferrock {
+    background-image: url("./images/ferrock/ferrock_240/2_Rob_&_David_crushing_oyster_240w.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 240px;
+    height: 180px;
+    border: 5px solid #ffffff;
   }
   #_3_ferrock {
     background-image: url("./images/ferrock/ferrock_240/3_ferrock-gate_240w.jpg");
@@ -498,6 +528,7 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_4_ferrock {
     background-image: url("./images/ferrock/ferrock_240/4_Maria_&_Ramsey_240w.jpg");
@@ -505,6 +536,7 @@ a {
     background-position: center;
     width: 240px;
     height: 320px;
+    border: 5px solid #ffffff;
   }
   #_5_ferrock {
     background-image: url("./images/ferrock/ferrock_240/5_Workshop_240w.jpg");
@@ -512,6 +544,7 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_6_ferrock {
     background-image: url("./images/ferrock/ferrock_240/6_Ferrock02_240.jpg");
@@ -519,6 +552,7 @@ a {
     background-position: center;
     width: 240px;
     height: 202px;
+    border: 5px solid #ffffff;
   }
   #_7_ferrock {
     background-image: url("./images/ferrock/ferrock_240/7_Bake_A_Cake_240.jpg");
@@ -526,15 +560,17 @@ a {
     background-position: center;
     width: 240px;
     height: 320px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 840px) {
+@media only screen and (min-width: 20px) and (max-width: 860px) {
   #_1_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_240/1_Workshop_wide _240.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_2_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_240/2_Packing_sawdust_240.jpg");
@@ -542,6 +578,7 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_3_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_240/3_Mushroom_dye_display_240.jpg");
@@ -549,6 +586,7 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
   #_4_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_240/4_Randi_dying_action_240.jpg");
@@ -556,6 +594,7 @@ a {
     background-position: center;
     width: 240px;
     height: 320px;
+    border: 5px solid #ffffff;
   }
   #_5_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_240/5_Packing_sawdust_240.jpg");
@@ -563,13 +602,7 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
-  }
-  #_6_mushroom_event_1 {
-    background-image: url("./images/mushroom_event_1/mushroom_event_1_240/6_Drilling_logs_240.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 240px;
-    height: 180px;
+    border: 5px solid #ffffff;
   }
   #_7_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_240/7_Rich finished_log_240.jpg");
@@ -577,29 +610,33 @@ a {
     background-position: center;
     width: 240px;
     height: 180px;
+    border: 5px solid #ffffff;
   }
-}
-@media only screen and (min-width: 840px) and (max-width: 1280px) {
-  #_2_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/2_EclipserMixer_420.jpg");
+  #_6_mushroom_event_1 {
+    background-image: url("./images/mushroom_event_1/mushroom_event_1_240/6_Drilling_logs_240.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 420px;
-    height: 315px;
+    width: 240px;
+    height: 180px;
+    border: 5px solid #ffffff;
   }
+}
+@media only screen and (min-width: 860px) and (max-width: 1300px) {
   #_1_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_420/1_EclipserMixer_420.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 420px;
     height: 315px;
+    border: 5px solid #ffffff;
   }
-  #_6_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/6_IntheWeeds_420.jpg");
+  #_2_eclipser-mixer {
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/2_EclipserMixer_420.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 420px;
-    height: 543px;
+    height: 315px;
+    border: 5px solid #ffffff;
   }
   #_3_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_420/3_FennelMeThis_420.jpg");
@@ -607,20 +644,7 @@ a {
     background-position: center;
     width: 420px;
     height: 543px;
-  }
-  #_5_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/5_EclipserMixer_420.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 420px;
-    height: 316px;
-  }
-  #_7_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/7_EclipserMixer_420.jpeg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 420px;
-    height: 560px;
+    border: 5px solid #ffffff;
   }
   #_4_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_420/4_EclipserMixer_420.jpg");
@@ -628,22 +652,41 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
+    border: 5px solid #ffffff;
+  }
+  #_5_eclipser-mixer {
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/5_EclipserMixer_420.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 420px;
+    height: 316px;
+    border: 5px solid #ffffff;
+  }
+  #_6_eclipser-mixer {
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/6_IntheWeeds_420.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 420px;
+    height: 543px;
+    border: 5px solid #ffffff;
+  }
+  #_7_eclipser-mixer {
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_420/7_Nicole_croped_EclipserMixer_352.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 352px;
+    height: 349px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 840px) and (max-width: 1280px) {
+@media only screen and (min-width: 860px) and (max-width: 1300px) {
   #_1_ferrock {
     background-image: url("./images/ferrock/ferrock_420/1_ferrock_tiles_420w.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 420px;
     height: 315px;
-  }
-  #_5_ferrock {
-    background-image: url("./images/ferrock/ferrock_420/5_Workshop_420w.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 420px;
-    height: 315px;
+    border: 5px solid #ffffff;
   }
   #_2_ferrock {
     background-image: url("./images/ferrock/ferrock_420/2_Rob_&_David_crushing_oyster_420w.jpg");
@@ -651,6 +694,7 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
+    border: 5px solid #ffffff;
   }
   #_3_ferrock {
     background-image: url("./images/ferrock/ferrock_420/3_ferrock-gate_420w.jpg");
@@ -658,13 +702,7 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
-  }
-  #_6_ferrock {
-    background-image: url("./images/ferrock/ferrock_420/6_Ferrock02_420.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 420px;
-    height: 354px;
+    border: 5px solid #ffffff;
   }
   #_4_ferrock {
     background-image: url("./images/ferrock/ferrock_420/4_Maria_&_Ramsey_420w.jpg");
@@ -672,6 +710,23 @@ a {
     background-position: center;
     width: 420px;
     height: 560px;
+    border: 5px solid #ffffff;
+  }
+  #_5_ferrock {
+    background-image: url("./images/ferrock/ferrock_420/5_Workshop_420w.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 420px;
+    height: 315px;
+    border: 5px solid #ffffff;
+  }
+  #_6_ferrock {
+    background-image: url("./images/ferrock/ferrock_420/6_Ferrock02_420.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 420px;
+    height: 354px;
+    border: 5px solid #ffffff;
   }
   #_7_ferrock {
     background-image: url("./images/ferrock/ferrock_420/7_Bake_A_Cake_420.jpg");
@@ -679,15 +734,17 @@ a {
     background-position: center;
     width: 420px;
     height: 560px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 840px) and (max-width: 1280px) {
+@media only screen and (min-width: 860px) and (max-width: 1300px) {
   #_1_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_420/1_Workshop_wide _420.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 420px;
     height: 315px;
+    border: 5px solid #ffffff;
   }
   #_2_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_420/2_Packing_sawdust_420.jpg");
@@ -695,6 +752,7 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
+    border: 5px solid #ffffff;
   }
   #_3_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_420/3_Mushroom_dye_display_420.jpg");
@@ -702,13 +760,7 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
-  }
-  #_5_mushroom_event_1 {
-    background-image: url("./images/mushroom_event_1/mushroom_event_1_420/5_Packing_sawdust_420.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 420px;
-    height: 315px;
+    border: 5px solid #ffffff;
   }
   #_4_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_420/4_Randi_dying_action_420.jpg");
@@ -716,6 +768,15 @@ a {
     background-position: center;
     width: 420px;
     height: 560px;
+    border: 5px solid #ffffff;
+  }
+  #_5_mushroom_event_1 {
+    background-image: url("./images/mushroom_event_1/mushroom_event_1_420/5_Packing_sawdust_420.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 420px;
+    height: 315px;
+    border: 5px solid #ffffff;
   }
   #_6_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_420/6_Drilling_logs_420.jpg");
@@ -723,6 +784,7 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
+    border: 5px solid #ffffff;
   }
   #_7_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_420/7_Rich finished_log_420.jpg");
@@ -730,15 +792,17 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 2048px) {
+@media only screen and (min-width: 1300px) and (max-width: 2068px) {
   #_1_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_640/1_EclipserMixer_640.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_2_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_640/2_EclipserMixer_640.jpg");
@@ -746,6 +810,7 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_3_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_640/3_FennelMeThis_640.jpg");
@@ -753,6 +818,7 @@ a {
     background-position: center;
     width: 640px;
     height: 828px;
+    border: 5px solid #ffffff;
   }
   #_4_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_640/4_EclipserMixer_640.jpg");
@@ -760,6 +826,7 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_5_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_640/5_EclipserMixer_640.jpg");
@@ -767,6 +834,7 @@ a {
     background-position: center;
     width: 640px;
     height: 482px;
+    border: 5px solid #ffffff;
   }
   #_6_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_640/6_IntheWeeds_640.jpg");
@@ -774,22 +842,25 @@ a {
     background-position: center;
     width: 640px;
     height: 828px;
+    border: 5px solid #ffffff;
   }
   #_7_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_640/7_EclipserMixer_640.jpeg");
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_640/7_Nicole_croped_EclipserMixer_475.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 640px;
-    height: 853px;
+    width: 475px;
+    height: 471px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 2048px) {
+@media only screen and (min-width: 1300px) and (max-width: 2068px) {
   #_1_ferrock {
     background-image: url("./images/ferrock/ferrock_640/1_ferrock_tiles_640w.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_2_ferrock {
     background-image: url("./images/ferrock/ferrock_640/2_Rob_&_David_crushing_oyster_640w.jpg");
@@ -797,6 +868,7 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_3_ferrock {
     background-image: url("./images/ferrock/ferrock_640/3_ferrock-gate_640w.jpg");
@@ -804,6 +876,7 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_4_ferrock {
     background-image: url("./images/ferrock/ferrock_640/4_Maria_&_Ramsey_640w.jpg");
@@ -811,6 +884,7 @@ a {
     background-position: center;
     width: 640px;
     height: 853px;
+    border: 5px solid #ffffff;
   }
   #_5_ferrock {
     background-image: url("./images/ferrock/ferrock_640/5_Workshop_640w.jpg");
@@ -818,6 +892,7 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_6_ferrock {
     background-image: url("./images/ferrock/ferrock_640/6_Ferrock02_640.jpg");
@@ -825,6 +900,7 @@ a {
     background-position: center;
     width: 640px;
     height: 539px;
+    border: 5px solid #ffffff;
   }
   #_7_ferrock {
     background-image: url("./images/ferrock/ferrock_640/7_Bake_A_Cake_640.jpg");
@@ -832,29 +908,17 @@ a {
     background-position: center;
     width: 640px;
     height: 853px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 2048px) {
+@media only screen and (min-width: 1300px) and (max-width: 2068px) {
   #_1_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_640/1_Workshop_wide _640.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 640px;
     height: 480px;
-  }
-  #_4_mushroom_event_1 {
-    background-image: url("./images/mushroom_event_1/mushroom_event_1_640/4_Randi_dying_action_640.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 640px;
-    height: 853px;
-  }
-  #_3_mushroom_event_1 {
-    background-image: url("./images/mushroom_event_1/mushroom_event_1_640/3_Mushroom_dye_display_640.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 640px;
-    height: 480px;
+    border: 5px solid #ffffff;
   }
   #_2_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_640/2_Packing_sawdust_640.jpg");
@@ -862,6 +926,23 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
+  }
+  #_3_mushroom_event_1 {
+    background-image: url("./images/mushroom_event_1/mushroom_event_1_640/3_Mushroom_dye_display_640.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 640px;
+    height: 480px;
+    border: 5px solid #ffffff;
+  }
+  #_4_mushroom_event_1 {
+    background-image: url("./images/mushroom_event_1/mushroom_event_1_640/4_Randi_dying_action_640.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 640px;
+    height: 853px;
+    border: 5px solid #ffffff;
   }
   #_5_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_640/5_Packing_sawdust_640.jpg");
@@ -869,6 +950,7 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_6_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_640/6_Drilling_logs_640.jpg");
@@ -876,6 +958,7 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
   #_7_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_640/7_Rich finished_log_640.jpg");
@@ -883,22 +966,17 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 2048px) {
+@media only screen and (min-width: 2068px) {
   #_1_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/1_EclipserMixer_1024.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 1024px;
     height: 768px;
-  }
-  #_3_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/3_FennelMeThis_1024.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1024px;
-    height: 1325px;
+    border: 5px solid #ffffff;
   }
   #_2_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/2_EclipserMixer_1024.jpg");
@@ -906,6 +984,15 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
+  }
+  #_3_eclipser-mixer {
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/3_FennelMeThis_1024.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1024px;
+    height: 1325px;
+    border: 5px solid #ffffff;
   }
   #_4_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/4_EclipserMixer_1024.jpg");
@@ -913,6 +1000,15 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
+  }
+  #_5_eclipser-mixer {
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/5_EclipserMixer_1024.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1024px;
+    height: 771px;
+    border: 5px solid #ffffff;
   }
   #_6_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/6_IntheWeeds_1024.jpg");
@@ -920,29 +1016,25 @@ a {
     background-position: center;
     width: 1024px;
     height: 1325px;
-  }
-  #_5_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/5_EclipserMixer_1024.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1025px;
-    height: 772px;
+    border: 5px solid #ffffff;
   }
   #_7_eclipser-mixer {
-    background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/7_EclipserMixer_1024.jpeg");
+    background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/7_Nicole_croped_EclipserMixer_760.jpeg");
     background-repeat: no-repeat;
     background-position: center;
-    width: 1024px;
-    height: 1365px;
+    width: 760px;
+    height: 754px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 2048px) {
+@media only screen and (min-width: 2068px) {
   #_1_ferrock {
     background-image: url("./images/ferrock/ferrock_1024/1_ferrock_tiles_1024w.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
   }
   #_2_ferrock {
     background-image: url("./images/ferrock/ferrock_1024/2_Ferrock05_1024.jpg");
@@ -950,6 +1042,7 @@ a {
     background-position: center;
     width: 1024px;
     height: 1229px;
+    border: 5px solid #ffffff;
   }
   #_3_ferrock {
     background-image: url("./images/ferrock/ferrock_1024/3_ferrock-gate_1024w.jpg");
@@ -957,13 +1050,7 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
-  }
-  #_4_ferrock {
-    background-image: url("./images/ferrock/ferrock_1024/4_Maria_&_Ramsey_1024w.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1024px;
-    height: 1365px;
+    border: 5px solid #ffffff;
   }
   #_5_ferrock {
     background-image: url("./images/ferrock/ferrock_1024/5_Ferrock_1024w.jpg");
@@ -971,6 +1058,15 @@ a {
     background-position: center;
     width: 1024px;
     height: 659px;
+    border: 5px solid #ffffff;
+  }
+  #_4_ferrock {
+    background-image: url("./images/ferrock/ferrock_1024/4_Maria_&_Ramsey_1024w.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1024px;
+    height: 1365px;
+    border: 5px solid #ffffff;
   }
   #_6_ferrock {
     background-image: url("./images/ferrock/ferrock_1024/6_Workshop 02.jpg");
@@ -978,6 +1074,7 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
   }
   #_7_ferrock {
     background-image: url("./images/ferrock/ferrock_1024/7_Bake_A_Cake_1024.jpg");
@@ -985,29 +1082,17 @@ a {
     background-position: center;
     width: 1024px;
     height: 1365px;
+    border: 5px solid #ffffff;
   }
 }
-@media only screen and (min-width: 2048px) {
+@media only screen and (min-width: 2068px) {
   #_1_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/1_Workshop_wide _1024.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 1024px;
     height: 768px;
-  }
-  #_3_mushroom_event_1 {
-    background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/3_Mushroom_dye_display_1024.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1024px;
-    height: 768px;
-  }
-  #_4_mushroom_event_1 {
-    background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/4_Randi_dying_action_1024.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1024px;
-    height: 1365px;
+    border: 5px solid #ffffff;
   }
   #_2_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/2_Packing_sawdust_1024.jpg");
@@ -1015,13 +1100,23 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
   }
-  #_6_mushroom_event_1 {
-    background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/6_Drilling_logs_1024.jpg");
+  #_3_mushroom_event_1 {
+    background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/3_Mushroom_dye_display_1024.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
+  }
+  #_4_mushroom_event_1 {
+    background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/4_Randi_dying_action_1024.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1024px;
+    height: 1365px;
+    border: 5px solid #ffffff;
   }
   #_5_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/5_Packing_sawdust_1024.jpg");
@@ -1029,6 +1124,15 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
+  }
+  #_6_mushroom_event_1 {
+    background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/6_Drilling_logs_1024.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1024px;
+    height: 768px;
+    border: 5px solid #ffffff;
   }
   #_7_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/7_Rich finished_log_1024.jpg");
@@ -1036,15 +1140,35 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border: 5px solid #ffffff;
+  }
+}
+@media only screen and (min-width: 240px) {
+  #Steve_solar {
+    background-image: url("./images/steve_solar/1_SteveSolar_240.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 240px;
+    height: 192px;
+    border-bottom: 5px solid #ffffff;
   }
 }
 @media only screen and (min-width: 420px) {
+  #Steve_solar {
+    background-image: url("./images/steve_solar/2_SteveSolar_480.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 480px;
+    height: 383px;
+    border-bottom: 5px solid #ffffff;
+  }
   #_1_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_420/1_EclipserMixer_420.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 420px;
     height: 315px;
+    border-bottom: 5px solid #ffffff;
   }
   #_1_ferrock {
     background-image: url("./images/ferrock/ferrock_420/1_ferrock_tiles_420w.jpg");
@@ -1052,6 +1176,7 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
+    border-bottom: 5px solid #ffffff;
   }
   #_1_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_420/1_Workshop_wide _420.jpg");
@@ -1059,15 +1184,25 @@ a {
     background-position: center;
     width: 420px;
     height: 315px;
+    border-bottom: 5px solid #ffffff;
   }
 }
 @media only screen and (min-width: 840px) {
+  #Steve_solar {
+    background-image: url("./images/steve_solar/3_SteveSolar_640.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 640px;
+    height: 511px;
+    border-bottom: 5px solid #ffffff;
+  }
   #_1_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_640/1_EclipserMixer_640.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 640px;
     height: 480px;
+    border-bottom: 5px solid #ffffff;
   }
   #_1_ferrock {
     background-image: url("./images/ferrock/ferrock_640/1_ferrock_tiles_640w.jpg");
@@ -1082,15 +1217,25 @@ a {
     background-position: center;
     width: 640px;
     height: 480px;
+    border-bottom: 5px solid #ffffff;
   }
 }
 @media only screen and (min-width: 1280px) {
+  #Steve_solar {
+    background-image: url("./images/steve_solar/4_SteveSolar_1024.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1024px;
+    height: 817px;
+    border-bottom: 5px solid #ffffff;
+  }
   #_1_eclipser-mixer {
     background-image: url("./images/eclipser-mixer/eclipser-mixer_1024/1_EclipserMixer_1024.jpg");
     background-repeat: no-repeat;
     background-position: center;
     width: 1024px;
     height: 768px;
+    border-bottom: 5px solid #ffffff;
   }
   #_1_ferrock {
     background-image: url("./images/ferrock/ferrock_1024/1_ferrock_tiles_1024w.jpg");
@@ -1098,6 +1243,7 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border-bottom: 5px solid #ffffff;
   }
   #_1_mushroom_event_1 {
     background-image: url("./images/mushroom_event_1/mushroom_event_1_1024/1_Workshop_wide _1024.jpg");
@@ -1105,6 +1251,7 @@ a {
     background-position: center;
     width: 1024px;
     height: 768px;
+    border-bottom: 5px solid #ffffff;
   }
 }
 

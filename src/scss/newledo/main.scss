@@ -14,6 +14,7 @@ html {
 }
 nav {
   background-color: transparent;
+  width: 100%;
 }
 h1,h2,h3 {
   font-family: $title-font;
@@ -90,6 +91,7 @@ a:active {
 
 @import "bg_images_1024";
 @import "../nav";
+@import "../links";
 @import "page1";
 @import "page2";
 @import "page3";

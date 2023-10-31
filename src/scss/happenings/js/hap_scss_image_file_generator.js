@@ -14,6 +14,7 @@ const scssFiles = ['images_1024.scss', 'images_640.scss',
   'images_420.scss', 'images_240.scss'/* , 'first_images.scss' */];
 const sizes = ['1024', '640', '420', '240'];
 const screens = ['2048', '1280', '840', '0'];
+const border = 5;
 
 const path = './dist/css/happenings/images/';
 
@@ -27,8 +28,8 @@ async function fileListGen() {
     let backgrounds = [];
     for (let j = 0; j < sizes.length; j++) {
       currentPath = path + events[i] + '/' + events[i] + '_' + sizes[j];
-      let screen = `@media only screen and ( min-width: ${screens[j]}px)\n`
-      if(j > 0) screen = screen + ` and ( max-width: ${screens[j-1]}px)\n`
+      let screen = `@media only screen and ( min-width: ${Number(screens[j])+Number(4*border)}px)\n`
+      if(j > 0) screen = screen + ` and ( max-width: ${Number(screens[j-1])+Number(4*border)}px)\n`
       screen = screen+`{\n`
       try { await apndFile(titles[j], screen) } catch (err) { console.log('error', err) }
       try {
@@ -49,7 +50,8 @@ async function fileListGen() {
             backgrounds[k] = '#' + '_' + (k + 1) + '_' + events[i] + '{' + '\n' + 'background-image: url("./images/' + events[i]
               + '/' + events[i] + '_' + sizes[j] + '/' + files[k] + '");\n'
               + 'background-repeat: no-repeat;\n' + 'background-position: center;\n'
-              + 'width: ' + width + 'px;\n' + 'height: ' + height + 'px;\n' 
+              + 'width: ' + width + 'px;\n' + 'height: ' + height + 'px;\n'
+              +'border: '+border+'px solid #ffffff;\n' 
               + '}\n';
           }
         }
