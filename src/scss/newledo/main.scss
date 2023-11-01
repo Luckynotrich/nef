@@ -41,6 +41,7 @@ th,
 td {
   max-width: 95%;
 }
+
 span{
   color: $primary-color;
   background-color: transparent;
@@ -52,7 +53,7 @@ a:link{
 /* — after the user has visited the link */
 a:visited {
   text-decoration: none;
-  color: $secondary-color;
+  color: $a-visted-color;
 }
 /* — when the user hovers their mouse over the link */
 a:hover {
@@ -96,6 +97,7 @@ a:active {
 @import "page2";
 @import "page3";
 @import "page4";
+@import "anchors";
 @import "bg_images_640";
 @import "bg_images_420";
 @import "bg_images_240";

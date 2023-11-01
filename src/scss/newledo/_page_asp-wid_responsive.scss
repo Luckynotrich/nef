@@ -6,7 +6,7 @@
     top: -30%;
   }
   .mission{
-    top: -35%;
+    top: -40%;
   }
   .vision{
     top: -35%;
@@ -192,6 +192,7 @@ and (max-aspect-ratio: 2/3){
     top: -25%;
   }
 }
+
 @media only screen and (min-aspect-ratio: 1/2) and (min-width: 598px) {
   .bg__1 {
     top: -20%;
@@ -219,6 +220,12 @@ and (max-aspect-ratio: 2/3){
   }
   .button_1{
     top: -19%;
+  }
+}
+@media screen and (min-aspect-ratio: 2/3 )and (min-width: 640px){
+  
+  .button_1{
+    top: -10%;
   }
 }
 
@@ -322,6 +329,22 @@ and (max-aspect-ratio: 2/3){
     top: -42%;
   }
 }
+@media screen and (min-aspect-ratio: 3/4 )and (min-width: 640px){
+  .bg__1{
+    top: -10%;
+  }
+  .mission{
+    top: -18%;
+  }
+}
+@media screen and (min-aspect-ratio: 3/4 )and (min-width: 700px){
+  .vision{
+    top: -40%;
+  }
+  .button_1{
+    top: -40%;
+  }
+}
 @media only screen and (min-aspect-ratio: 3/4) and (min-width: 800px) {
   .bg__1 {
     top: -12%;
@@ -329,6 +352,16 @@ and (max-aspect-ratio: 2/3){
   .mission {
     top: -19%;
   }
+}
+@media screen and (min-aspect-ratio: 3/4 )and (min-width: 821px){
+  .vision{top: -15%;}
+  
+}
+
+@media screen and (min-aspect-ratio: 3/4 )and (min-width: 854px){
+  .button_1{
+    top: -15%;
+    }
 }
 // @media only screen and ( min-aspect-ratio: 3/4) and (min-width: 808px){
 //   .bg__1 {
@@ -402,6 +435,15 @@ and (max-aspect-ratio: 2/3){
   .mission {
     top: -40%;
   }
+}
+@media screen and (min-aspect-ratio: 7/8 )and (min-width: 640px){
+  .bg__1{
+    top: -10%;
+  }
+  .mission{
+    top: -18%;
+  }
+
 }
 @media only screen and (min-aspect-ratio: 7/8) and (min-width: 790px){
   .bg__1{

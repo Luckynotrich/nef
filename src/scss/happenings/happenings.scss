@@ -1,8 +1,124 @@
+/* style.css */
 @import '../config';
-@import './index';
-@import '../font_responsive';
-@import './images_240';
-@import './images_420';
-@import './images_640';
- @import './images_1024';
-@import './first_images';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;800&display=swap');
+*{
+    margin: auto;
+}
+ body{
+   max-width: 1400px;
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:white;
+} 
+
+h1,h2{
+    display: inherit;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    color:#ff9900;
+}
+h1{
+    padding: 3%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 56px;
+}
+h2,p{
+    font-family: 'Poppins', sans-serif;
+}
+h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+p{
+    color: black;
+}
+section{  
+    display: inherit;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+figure {
+    flex: 1;
+    border-style: solid;
+    border-color: #ffff;
+    border: 1rem;
+    justify-content:baseline;
+    margin: 0%;
+    padding: 0% 0% 0% .2%;
+}
+article{
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 5%;
+}
+img{
+    border-style: solid;
+    border-color: #ffff;
+    border: 1rem;
+    width:100%;
+    margin: 0%;
+    padding: 0%;
+}
+hr{
+    border-bottom: 2rem solid #ffff;
+    border-top: 2rem solid #ffff;
+    height: 15px;
+    width: 100%;
+    background-color:#ff9900;
+    margin-bottom: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+p{
+    font-size: medium;
+}
+.header{
+    flex: 1;
+    margin: 0%;
+    padding: 0%;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:right;
+    align-items: end;
+    align-content: center;
+
+}
+.logo{
+    position:relative;
+    width: 30%;
+    height: auto;
+    left: 25%;
+}
+@media screen and (max-width: 1100px){
+    h2{font-size: 16px;}
+    p{font-size: 12px;}
+}
+@media screen and (max-width: 640px) {
+    section{
+        flex-direction: column;
+    }
+    p{
+        font-size: 10px;;
+    }
+    .logo{
+        width: 50%;
+        
+    }
+    @media screen and (max-width: 500px) {
+        .logo{
+            width: 70%;
+        }
+    }
+}
+@import'../font_responsive.scss'
+

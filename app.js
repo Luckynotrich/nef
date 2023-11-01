@@ -45,9 +45,6 @@ app.get('/events/',(req,res) =>{
 app.get('/contact-page.html', (req, res) => {
   res.sendFile(path.join(__dirname, './', 'dist', 'contact-page.html'))
 })
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './', 'index.html'))
-})
 
 try {
 
@@ -57,6 +54,10 @@ try {
   apndFile('a2log.err', errStrMsg);
   console.error();
 };
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, './', 'index.html'))
+})
+
 
  app.listen(PORT, 
    console.log(`Check out the references on http://localhost:${PORT}`));

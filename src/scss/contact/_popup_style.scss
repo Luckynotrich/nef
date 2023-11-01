@@ -37,7 +37,7 @@
     height: 1000px;
     width: 100%;
     max-width: 100%;
-    top: 20%;
+    top: 0%;
     left: 0%;
     margin:auto;
     color: $primary-color;
@@ -58,13 +58,14 @@
   }
   .thanks{
     color: $primary-color;
+    flex-direction: column;
   }
   
   @media screen and (max-width: 400px) {
     
     #msg{
       overflow-wrap: break-word;
-      text-align:left;
+      // text-align:left;
     }
   }
   

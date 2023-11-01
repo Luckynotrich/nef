@@ -60,7 +60,7 @@ a:link {
 /* — after the user has visited the link */
 a:visited {
   text-decoration: none;
-  color: #f1c232;
+  color: #394D95;
 }
 
 /* — when the user hovers their mouse over the link */
@@ -476,6 +476,11 @@ a:active.event {
   color: black;
   font-family: "Poppins", sans-serif;
   padding: 4% 0% 4% 0%;
+}
+
+#about {
+  position: relative;
+  top: -40%;
 }
 
 @media only screen and (max-width: 832px) {
@@ -1189,116 +1194,67 @@ h5 {
   }
 }
 
-p {
+p, a {
   font-size: 11px;
 }
 @media screen and (min-width: 300px) {
-  p {
+  p, a {
     font-size: 11px;
   }
 }
 @media screen and (min-width: 400px) {
-  p {
+  p, a {
     font-size: 11.5px;
   }
 }
 @media screen and (min-width: 512px) {
-  p {
+  p, a {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 576px) {
-  p {
+  p, a {
     font-size: 12.5px;
   }
 }
 @media screen and (min-width: 640px) {
-  p {
+  p, a {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 704px) {
-  p {
+  p, a {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
-  p {
+  p, a {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 870px) {
-  p {
+  p, a {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
-  p {
+  p, a {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 1168px) {
-  p {
+  p, a {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 1600px) {
-  p {
+  p, a {
     font-size: 19px;
   }
 }
 @media screen and (min-width: 1900px) {
-  p {
+  p, a {
     font-size: 20px;
-  }
-}
-
-a {
-  font-size: 12px;
-}
-@media screen and (min-width: 400px) {
-  a {
-    font-size: 13px;
-  }
-}
-@media screen and (min-width: 512px) {
-  a {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 704px) {
-  a {
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 768px) {
-  a {
-    font-size: 16px;
-  }
-}
-@media screen and (min-width: 870px) {
-  a {
-    font-size: 17px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  a {
-    font-size: 18px;
-  }
-}
-@media screen and (min-width: 1168px) {
-  a {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  a {
-    font-size: 24px;
-  }
-}
-@media screen and (min-width: 1900px) {
-  a {
-    font-size: 28px;
   }
 }
 
@@ -1886,7 +1842,7 @@ a {
     top: -30%;
   }
   .mission {
-    top: -35%;
+    top: -40%;
   }
   .vision {
     top: -35%;
@@ -2085,6 +2041,11 @@ a {
     top: -19%;
   }
 }
+@media screen and (min-aspect-ratio: 2/3) and (min-width: 640px) {
+  .button_1 {
+    top: -10%;
+  }
+}
 @media only screen and (min-aspect-ratio: 2/3) and (min-width: 640px) {
   .bg__1 {
     top: -3%;
@@ -2178,12 +2139,38 @@ a {
     top: -42%;
   }
 }
+@media screen and (min-aspect-ratio: 3/4) and (min-width: 640px) {
+  .bg__1 {
+    top: -10%;
+  }
+  .mission {
+    top: -18%;
+  }
+}
+@media screen and (min-aspect-ratio: 3/4) and (min-width: 700px) {
+  .vision {
+    top: -40%;
+  }
+  .button_1 {
+    top: -40%;
+  }
+}
 @media only screen and (min-aspect-ratio: 3/4) and (min-width: 800px) {
   .bg__1 {
     top: -12%;
   }
   .mission {
     top: -19%;
+  }
+}
+@media screen and (min-aspect-ratio: 3/4) and (min-width: 821px) {
+  .vision {
+    top: -15%;
+  }
+}
+@media screen and (min-aspect-ratio: 3/4) and (min-width: 854px) {
+  .button_1 {
+    top: -15%;
   }
 }
 @media only screen and (min-aspect-ratio: 3/4) and (min-width: 900px) {
@@ -2245,6 +2232,14 @@ a {
   }
   .mission {
     top: -40%;
+  }
+}
+@media screen and (min-aspect-ratio: 7/8) and (min-width: 640px) {
+  .bg__1 {
+    top: -10%;
+  }
+  .mission {
+    top: -18%;
   }
 }
 @media only screen and (min-aspect-ratio: 7/8) and (min-width: 790px) {
