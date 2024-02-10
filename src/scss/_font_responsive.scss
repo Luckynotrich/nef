@@ -89,6 +89,21 @@ $h5-font-sizes: (
   // media-1600: 30px,
   // media-1900: 36px
 );
+$h6-font-sizes: (
+  null : 12px,
+  //media-300 : 18px,
+  media-400 : 13px,
+  // media-512 : 30px,
+  // media-576 : 36px,
+  media-640 : 16px,
+  //media-704 : 20px,
+  media-768 : 17px,
+  //media-870 : 32px,
+  media-1024: 20px,
+  //media-1168: 42px
+  // media-1600: 30px,
+  // media-1900: 36px
+);
 $p-font-sizes: (
   null : 11px,
   media-300 : 11px,
@@ -162,7 +177,10 @@ h4 {
 h5 {
   @include font-size($h5-font-sizes)
 }
-p,a {
+h6 {
+  @include font-size($h6-font-sizes)
+}
+p,a,ul,li {
   @include font-size($p-font-sizes)
 }
 

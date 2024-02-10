@@ -3,7 +3,7 @@ body,
 html {
   max-width: 1400px;
   margin: auto;
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-flow: column;
   background-color: white;
@@ -65,10 +65,10 @@ form {
   display: flex;
   flex-direction: column;
   padding: 2vw;
-  width: 90%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 300px;
   border-radius: 7px;
-  margin: 0;
 }
 
 form h3 {
@@ -120,14 +120,6 @@ form button {
   margin-bottom: -10px;
 }
 
-/* .h1_a{
-  cursor: url("./images/back-arrow.png"),help; 
-}
-.hero-image3{
-  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
-/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.01)), url("images/more-mountains.png");
- }
-*/
 .credit {
   position: relative;
   top: 20%;
@@ -137,17 +129,12 @@ form button {
 }
 
 @media screen and (max-width: 935px) {
-  body {
-    width: 100%;
+  body, html {
+    max-width: 90%;
+    width: 90%;
   }
   section {
     transform: scaleX(0.9);
-  }
-  .hero-image {
-    background-position: center;
-    margin-left: -1%;
-    margin-top: -3%;
-    padding: 0%;
   }
   .hero-text h1 {
     font-size: 48px;
@@ -156,9 +143,6 @@ form button {
     font-size: large;
   }
 }
-/* @media screen and (max-width:835px) { 
-
-} */
 @media screen and (min-aspect-ratio: 8/5) and (max-aspect-ratio: 16/9) {
   .h1_a {
     margin-top: 10%;
@@ -166,9 +150,6 @@ form button {
   }
   .hero-text {
     top: 10%;
-  }
-  .container {
-    margin-top: 15%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -473,66 +454,90 @@ h5 {
   }
 }
 
-p, a {
+h6 {
+  font-size: 12px;
+}
+@media screen and (min-width: 400px) {
+  h6 {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 640px) {
+  h6 {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h6 {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h6 {
+    font-size: 20px;
+  }
+}
+
+p, a, ul, li {
   font-size: 11px;
 }
 @media screen and (min-width: 300px) {
-  p, a {
+  p, a, ul, li {
     font-size: 11px;
   }
 }
 @media screen and (min-width: 400px) {
-  p, a {
+  p, a, ul, li {
     font-size: 11.5px;
   }
 }
 @media screen and (min-width: 512px) {
-  p, a {
+  p, a, ul, li {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 576px) {
-  p, a {
+  p, a, ul, li {
     font-size: 12.5px;
   }
 }
 @media screen and (min-width: 640px) {
-  p, a {
+  p, a, ul, li {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 704px) {
-  p, a {
+  p, a, ul, li {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
-  p, a {
+  p, a, ul, li {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 870px) {
-  p, a {
+  p, a, ul, li {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
-  p, a {
+  p, a, ul, li {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 1168px) {
-  p, a {
+  p, a, ul, li {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 1600px) {
-  p, a {
+  p, a, ul, li {
     font-size: 19px;
   }
 }
 @media screen and (min-width: 1900px) {
-  p, a {
+  p, a, ul, li {
     font-size: 20px;
   }
 }

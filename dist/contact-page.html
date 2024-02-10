@@ -24,7 +24,7 @@
       </div>
    </div>
       </a>
-
+      <h3 id="inTouch" class="Get-In-Touch">Get In Touch</h3>
    </div>
    <div class="container">
       <form 
@@ -32,7 +32,7 @@
       method="POST"
       action="send"
       enctype="multipart/form-data">
-         <h3 id="inTouch" class="Get-In-Touch">Get In Touch</h3>
+         <input type="text" name="contactType" value='A New Contact From' readonly hidden >
          <label id='nameLable' class="inputLable" >*Your Name</label>
          <input id="name" class='inpt'type="text" onfocus="animateCSS('nameLable','fadeInUp')" name="name" placeholder="*Your Name" required >
          <!-- <label id='companyLable' class="inputLable" >Company</label>

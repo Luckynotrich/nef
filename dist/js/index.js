@@ -12,8 +12,7 @@ const formEvent = form.addEventListener("submit", (event) => {
 });
 
 sendMail = async (mail) =>{
-    // CHANGE TO ADDRESS MATCH VERSION http://localhost:8080/rhbackend/sendEmail
-      // axios.post('https://www.newledohub.org/newledo/sendEmail', 
+      //  axios.post('https://www.newledohub.org/newledo/sendEmail', 
       axios.post('http://localhost:5000/newledo/sendEmail', 
          mail, {
           headers: {

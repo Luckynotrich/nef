@@ -28,7 +28,7 @@ h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 56px;
 }
-h2,p{
+h2,p,li,a{
     font-family: 'Poppins', sans-serif;
 }
 h3,h4,h5,h6{
@@ -38,6 +38,7 @@ h3,h4,h5,h6{
 p{
     color: black;
 }
+
 section{  
     display: inherit;
     flex-wrap: wrap;
@@ -57,6 +58,7 @@ article{
     flex: 1;
     flex-wrap: wrap;
     margin: 5%;
+    
 }
 img{
     border-style: solid;
@@ -67,14 +69,13 @@ img{
     padding: 0%;
 }
 hr{
-    border-bottom: 2rem solid #ffff;
-    border-top: 2rem solid #ffff;
-    height: 15px;
+    border-bottom: .7rem solid transparent;
+    border-top: .7rem solid transparent;
+    height: 0px;
     width: 100%;
     background-color:#ff9900;
-    margin-bottom: 3%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 p{
