@@ -1,0 +1,137 @@
+@import "../config";
+html,
+body {
+  height: 100%;
+  // max-width: 1400;
+  margin: 0;
+  background-color: $primary-background-color;
+  font-family: $header-font;
+  padding-bottom: 5rem;
+}
+.bg__1 {
+  display: flex;
+  flex-direction: column;
+  // /home/lucky/webdev/newledo/nef/dist/css/grange-garden/images_1024/1_house_barnw1024_sky_trimed.jpg
+  background-image: url("/images_1024/1_house_barnw1024_sky_trimed.jpg");
+  /* Full height */
+  // min-height: 50rem;
+  height: 60%;
+  max-width: 100%;
+  /* Center and scale the image nicely */
+   -webkit-background-size: 100% 100%; /* Safari 3.0 */
+   -o-background-size: 100% 100%; /* Opera 9.5 */
+  align-self: bottom;
+  background-position-y: 99%;
+  flex-shrink: 1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  left: 0%;
+  top: 0%;
+  right: -1%;
+  padding: 0%;
+}
+.flex-container {
+  justify-content: center;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  padding-left: 1rem;
+  padding-top: 0%;
+  
+}
+.top{
+  display: flex;
+  padding: 0;
+  padding-left: 1rem;
+  align-items: center;
+  flex-direction:column;
+}
+.support_headers{
+  padding-left: 1rem;
+}
+h1,h2 {
+  display: flex;
+  color: $primary-color;
+}
+h5{
+  font-weight: 200;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  align-items: center;
+}
+figure {
+  flex: 32%;
+  border-style: solid;
+  border-color: #ffff;
+  border: 1rem;
+  justify-content: baseline;
+  margin: 0%;
+  padding: 0% 0% 0% 0.2%;
+}
+article {
+  flex: 1;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+img{
+  border-style: solid;
+  border-color: #ffff;
+  border: 1rem;
+  width:100%;
+  margin: 0%;
+  padding: 0%;
+}
+.supporters{
+  display: flex;
+  flex-direction: table-row;
+  flex-wrap: nowrap;
+}
+.logos img{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 35%;
+  margin-top: 25%;
+  padding:0%;
+}
+.upper{
+  // margin-top: 5%;
+  margin-left: 5%;
+}
+.lower{
+  // margin-top: 15%;
+  margin-left: 0%;
+  margin-right: 0%;
+
+}
+li{
+  width: 150%;
+  padding-left: 0rem;
+  margin-left:-30%;
+}
+#footer{
+  height: 15rem;
+}
+@media screen and (max-width: 500px){
+  .bg__1{
+    background-position-x: 40%;
+  }
+  
+}
+@media screen and (min-width: 500px){
+  .logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .lower{
+    margin-left: 2%;
+  }
+}
+@import "../font_responsive.scss";
