@@ -24,7 +24,7 @@ let reqPath = `\n${idData} path: ${req.path} \n`;
   errorPath = req.path;
   next() // calling next middleware function or handler
 })
-
+app.use(express.static( path.join(__dirname,'./', 'dist')))
 app.use(express.static( path.join(__dirname,'./', 'dist', 'js')))
 app.use(express.static(path.join(__dirname,'./dist/css/')));
 app.use(express.static(path.join(__dirname,'./dist/css/newledo')));
@@ -34,7 +34,9 @@ app.use(express.static(path.join(__dirname, './dist/css/happenings/')))
 app.use(express.static(path.join(__dirname, './dist/css/grange-garden/')))
 
 
-
+app.get('/open-call.html',(req,res) =>{
+  res.sendFile(path.join(__dirname,'./dist/open-call.html'))
+})
 app.get('/residency.html',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/residency.html'))
 })

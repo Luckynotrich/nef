@@ -11,8 +11,8 @@ body {
 .bg__1 {
   display: flex;
   flex-direction: column;
-  
-  background-image: url("/hero_images/01grangegardenWS_1024.jpg");
+  //dist/css/grange-garden/grange_garden_pics/gardenws_1024.jpg
+  background-image: url("/grange_garden_pics/gardenws_1024.jpg");
   /* Full height */
   min-height: 50rem;
   height: 85%;
@@ -21,7 +21,7 @@ body {
    -webkit-background-size: 100% 100%; /* Safari 3.0 */
    -o-background-size: 100% 100%; /* Opera 9.5 */
   align-self: bottom;
-  background-position-y: 60%;
+  background-position-y: 0%;
   flex-shrink: 1;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -117,7 +117,7 @@ li{
 @media screen and (max-width: 1600px){
   .bg__1{
     background-position-x: 70%;
-    background-position-y: -30%;
+    background-position-y: 0%;
      background-size: 1600px;
     height: 642px;
     min-height: fit-content;
@@ -127,7 +127,7 @@ li{
 @media screen and (max-width: 1370px){
   .bg__1{
     background-position-x: 70%;
-    background-position-y: -30%;
+    background-position-y: 0%;
      background-size: 1370px;
     height: 642px;
     min-height: fit-content;
