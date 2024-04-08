@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, './dist/css/happenings/')))
 app.use(express.static(path.join(__dirname, './dist/css/grange-garden/')))
 
 
-app.get('/open-call.html',(req,res) =>{
+app.get('/open-call',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/open-call.html'))
 })
 app.get('/residency.html',(req,res) =>{
@@ -64,11 +64,14 @@ try {
   apndFile('a2log.err', errStrMsg);
   console.error();
 };
-app.get('/*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './', 'index.html'))
 })
 
-
+app.get('/:id',(req,res,next) =>{
+  console.log('req.params.id',req.params.id)
+  res.sendFile(path.join(__dirname, './', req.params.id))
+})
  app.listen(PORT,/* block port for remote */ 
    console.log(`Check out the references on http://localhost:${PORT}`));
 

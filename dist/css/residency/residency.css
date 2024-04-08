@@ -394,9 +394,24 @@ h5 {
 h6 {
   font-size: 12px;
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
   h6 {
     font-size: 13px;
+  }
+}
+@media screen and (min-width: 400px) {
+  h6 {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 512px) {
+  h6 {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 576px) {
+  h6 {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 640px) {
@@ -404,9 +419,19 @@ h6 {
     font-size: 16px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 704px) {
   h6 {
     font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  h6 {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 870px) {
+  h6 {
+    font-size: 19px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -414,67 +439,82 @@ h6 {
     font-size: 20px;
   }
 }
+@media screen and (min-width: 1168px) {
+  h6 {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  h6 {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  h6 {
+    font-size: 23px;
+  }
+}
 
-p, a, ul, li {
+p, a, ul, li, div {
   font-size: 11px;
 }
 @media screen and (min-width: 300px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 11px;
   }
 }
 @media screen and (min-width: 400px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 11.5px;
   }
 }
 @media screen and (min-width: 512px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 12px;
   }
 }
 @media screen and (min-width: 576px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 12.5px;
   }
 }
 @media screen and (min-width: 640px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 13px;
   }
 }
 @media screen and (min-width: 704px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 870px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 16px;
   }
 }
 @media screen and (min-width: 1024px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 17px;
   }
 }
 @media screen and (min-width: 1168px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 18px;
   }
 }
 @media screen and (min-width: 1600px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 19px;
   }
 }
 @media screen and (min-width: 1900px) {
-  p, a, ul, li {
+  p, a, ul, li, div {
     font-size: 20px;
   }
 }

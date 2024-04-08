@@ -91,18 +91,18 @@ $h5-font-sizes: (
 );
 $h6-font-sizes: (
   null : 12px,
-  //media-300 : 18px,
-  media-400 : 13px,
-  // media-512 : 30px,
-  // media-576 : 36px,
+  media-300 : 13px,
+  media-400 : 14px,
+  media-512 : 15px,
+  media-576 : 16px,
   media-640 : 16px,
-  //media-704 : 20px,
-  media-768 : 17px,
-  //media-870 : 32px,
+  media-704 : 17px,
+  media-768 : 18px,
+  media-870 : 19px,
   media-1024: 20px,
-  //media-1168: 42px
-  // media-1600: 30px,
-  // media-1900: 36px
+  media-1168: 21px,
+  media-1600: 22px,
+  media-1900: 23px
 );
 $p-font-sizes: (
   null : 11px,
@@ -119,21 +119,7 @@ $p-font-sizes: (
   media-1600: 19px,
   media-1900: 20px
 );
-$a-font-sizes: (
-  null : 11px,
-  media-300 : 11px,
-  media-400 : 11.5px,
-  media-512 : 12px,
-  media-576 : 12.5px,
-  media-640 : 13px,
-  media-704 : 14px,
-  media-768 : 15px,
-  media-870 : 16px,
-  media-1024: 17px,
-  media-1168: 18px,
-  media-1600: 19px,
-  media-1900: 20px
-);
+
 
 
 @mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
@@ -180,7 +166,7 @@ h5 {
 h6 {
   @include font-size($h6-font-sizes)
 }
-p,a,ul,li {
+p,a,ul,li,div {
   @include font-size($p-font-sizes)
 }
 
