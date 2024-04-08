@@ -117,13 +117,12 @@ hr {
   // margin-left: 5%;
   // margin-right: 5%;
   margin: auto;
-  align-items: center;
+  align-items:start;
   font-family: "Montserrat", sans-serif;
 }
 .upEventOne {
   grid-column: 1 / 3;
   grid-row: 1;
-  padding-top: 20%;
   font-family: "Montserrat", sans-serif;
   font-weight:600;
 }

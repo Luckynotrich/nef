@@ -12,50 +12,68 @@ require('dotenv').config({ debug: true })
 const PORT = process.env.PORT || 5000;
 const app = express();
 
+app.set("views", path.join(__dirname,'views'));
+app.set('view engine', "ejs");
+
 let errorPath
 
 app.use((req, res, next) => {
   const now = new Date();
   let idData = date.format(now, 'YYYY/MM/DD HH:mm:ss');
-let reqPath = `\n${idData} path: ${req.path} \n`;
+let reqPath = `\n${idData} path: ${req.path}`;
   
+console.log(reqPath);
   apndFile('log_app.log',reqPath);
   
   errorPath = req.path;
   next() // calling next middleware function or handler
 })
-app.use(express.static( path.join(__dirname,'./', 'dist')))
-app.use(express.static( path.join(__dirname,'./', 'dist', 'js')))
+
+// only using the absolute path as the route worked
+app.get('/dist/css/happenings/:id',(req,res,next) =>{
+  let id = req.params.id;
+  console.log('id =',id)
+    res.render('index.ejs', {file: `/images/upcoming/${id}`});
+  next();
+})
+//the get above along with the root path below was the only solution that worked 
+app.use(express.static(path.join(__dirname,'./')));
+
+app.use(express.static(path.join(__dirname,'./', 'dist')));
+app.use(express.static(path.join(__dirname,'./', 'dist', 'js')));
 app.use(express.static(path.join(__dirname,'./dist/css/')));
 app.use(express.static(path.join(__dirname,'./dist/css/newledo')));
 app.use(express.static(path.join(__dirname,'./dist/css/contact')));
-app.use(express.static(path.join(__dirname,'./dist/css/residency/')))
-app.use(express.static(path.join(__dirname, './dist/css/happenings/')))
-app.use(express.static(path.join(__dirname, './dist/css/grange-garden/')))
+app.use(express.static(path.join(__dirname,'./dist/css/residency/')));
+app.use(express.static(path.join(__dirname, './dist/css/happenings/')));
+app.use(express.static(path.join(__dirname, './dist/css/grange-garden/')));
 
 
 app.get('/open-call',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/open-call.html'))
-})
+});
+
 app.get('/residency.html',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/residency.html'))
-})
+});
+
 app.get('/events/',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/happenings.html'))
-})
+});
+
 app.get('/grange-garden.html',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/grange-garden.html'))
-})
+});
 let corsOptions = {
   origin: 'https://www.newledohub.org/newledo/sendEmail',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+};
 app.get('/contact-page.html',cors(corsOptions), (req, res) => {
   res.sendFile(path.join(__dirname, './', 'dist', 'contact-page.html'))
-})
+});
 app.get('/rsvp.html',cors(corsOptions), (req, res) => {
   res.sendFile(path.join(__dirname, './', 'dist', 'rsvp.html'))
-})
+});
 try {
 
   app.use('/newledo/', require('./dist/js/send-mail.js'))
@@ -64,14 +82,11 @@ try {
   apndFile('a2log.err', errStrMsg);
   console.error();
 };
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './', 'index.html'))
-})
+});
 
-app.get('/:id',(req,res,next) =>{
-  console.log('req.params.id',req.params.id)
-  res.sendFile(path.join(__dirname, './', req.params.id))
-})
  app.listen(PORT,/* block port for remote */ 
    console.log(`Check out the references on http://localhost:${PORT}`));
 
