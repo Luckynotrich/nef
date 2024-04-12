@@ -129,7 +129,7 @@ a:active {
   overflow: hidden;
   background-color: transparent;
   max-width: 100%;
-  width: fit-content;
+  width: 100%;
   border-radius: 5px;
   position: fixed;
   z-index: 1000;
@@ -171,9 +171,9 @@ a:active {
 }
 
 .links {
-  position: absolute;
-  top: -16%;
-  left: 82%;
+  visibility: hidden;
+  margin-left: 7%;
+  margin-top: 7%;
   padding: 0px;
   background-color: transparent;
   z-index: 1000;
@@ -188,10 +188,16 @@ a:active {
   z-index: 1000;
 }
 
-img {
+.face img {
   width: 25px;
   height: 25px;
   background-color: transparent;
+}
+
+.insta img {
+  width: 27px;
+  height: 27px;
+  margin-left: 5%;
 }
 
 @media screen and (min-aspect-ratio: 1/3) and (min-width: 390px) {
@@ -462,21 +468,6 @@ a:active.event {
   margin-left: -4%;
   font-family: "Poppins", sans-serif;
   padding: 4%;
-}
-
-.phone {
-  width: 40%;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  padding: 4%;
-}
-
-.address {
-  width: 60%;
-  left: 4%;
-  color: black;
-  font-family: "Poppins", sans-serif;
-  padding: 4% 0% 4% 0%;
 }
 
 #about {
