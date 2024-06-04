@@ -26,14 +26,14 @@ h4,h5 {
   font-family: $header-font;
   font-weight: $title-font-weight;
 }
-p {
-  //color: $text-color;
+p,li {
   font-family: $paragraph-font;
   font-weight: $paragraph-font-weight;
 }
 b {
   font-weight: 600;
 }
+
 tbody,
 table,
 tr,
@@ -63,6 +63,10 @@ a:hover {
 /* needs to be last */
 a:active {
   text-decoration: none;
+}
+.res_link{
+  margin-left: $text-left;
+  font-family: $paragraph-font;
 }
 //rectangles on page 2 and page 3
 

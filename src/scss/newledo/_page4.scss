@@ -26,7 +26,10 @@
      max-width: 1000px;
     
 }
-
+ul li {
+    list-style-position: inside;
+    text-align: left;
+ }
 .contact-us {
     // font-family: $header-font;
     // font-weight: $paragraph-font-weight+50;
@@ -34,14 +37,15 @@
      left: $text-left;
      width: 87%;
      max-width: 2020px;
-     text-wrap: balance;
+     text-wrap:pretty;
     // color: $white-backed-text;
     padding: 1% 0% 1% 0%;
     padding-bottom: 20%;
 }
 
 .final {
-    width: 85%;
+    width: 100%;
+    // text-align: center;
 }
 
 .closing {

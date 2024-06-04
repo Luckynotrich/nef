@@ -39,13 +39,8 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-h4 {
-  color: #ff9900;
-}
-
 h5 {
   font-family: "Montserrat", sans-serif;
-  color: #000;
 }
 
 h6 {
@@ -120,11 +115,18 @@ hr {
   border: 2px solid white;
   border-radius: 5px;
   text-align: start;
+  align-self: center;
   padding: 2em;
   color: #F15A29;
   margin: 0%;
   padding-bottom: 0px;
   margin-bottom: 0px;
+}
+
+.project {
+  color: rgb(0, 0, 0);
+  align-self: center;
+  align-content: center;
 }
 
 .upEvents {
@@ -608,4 +610,4 @@ p, a, ul, li, div {
   }
 }
 
-/*# sourceMappingURL=happenings.css.map */
+/*# sourceMappingURL=projects.css.map */

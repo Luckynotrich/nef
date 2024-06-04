@@ -5,12 +5,13 @@
   "main": "app.js",
   "scripts": {
     "cssWatch": "sass --watch src/scss/:dist/css/",
+    "residency": "sass --watch src/scss/residency:dist/css/residency",
     "contactWatch": "sass --watch src/scss/contact:dist/css/contact",
     "happeningsWatch": "sass --watch src/scss/happenings:dist/css/happenings",
+    "projectsWatch": "sass --watch src/scss/projects:dist/css/projects",
     "gardenWatch": "sass --watch src/scss/grange-garden:dist/css/grange-garden",
     "monitor": "nodemon app.js",
     "dev": "run-p cssWatch monitor",
-    "hap": "node ./src/scss/happenings/js/hap_scss_image_file_generator.js",
     "start": "node app.js"
   },
   "keywords": [],

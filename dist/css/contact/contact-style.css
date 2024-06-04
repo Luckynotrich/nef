@@ -47,11 +47,11 @@ h2 {
 }
 
 .hero-text:visited {
-  color: #394D95;
+  color: rgb(165, 90, 15);
 }
 
 a:visited {
-  color: #394D95;
+  color: rgb(165, 90, 15);
 }
 
 .center {

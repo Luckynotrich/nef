@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;600;800&display=swap");
 * {
   margin: auto;
+  // outline: 1px solid red;
 }
 body {
   max-width: 1400px;
@@ -37,10 +38,9 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
-h4{ color: #ff9900}
+
 h5 {
   font-family: "Montserrat", sans-serif;
-  color: #000;
 }
 h6 {
   font-family: "Montserrat", sans-serif;
@@ -106,11 +106,17 @@ hr {
   border: 2px solid $primary-background-color;
   border-radius: 5px;
   text-align: start;
+  align-self: center;
   padding: 2em;
   color: $primary-color;
   margin: 0%;
   padding-bottom: 0px;
   margin-bottom: 0px;
+}
+.project {
+  color: $dark-text;
+  align-self: center;
+  align-content: center ;
 }
 .upEvents {
   display: grid;
