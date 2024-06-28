@@ -16,14 +16,27 @@ app.set("views", path.join(__dirname,'views'));
 app.set('view engine', "ejs");
 
 let errorPath
+let lastDate
+let lastPath
 
 app.use((req, res, next) => {
   const now = new Date();
-  let idData = date.format(now, 'YYYY/MM/DD HH:mm:ss');
-let reqPath = `\n${idData} path: ${req.path}`;
+  let when = date.format(now, 'YYYY/MM/DD HH:mm:ss')
+  let idData = when +'\n';
+  let where = req.path;
+
+  let reqPath = `${idData} path: ${req.path}\n`;
+  console.log(reqPath);
+
+  if(when !== lastDate) {
+    apndFile('stderr.log', idData);
+    lastDate = when;
+  }
+  if(where !== lastPath && where.endsWith('.html')){
+    apndFile('log_app.log',reqPath);
+    lastPath = where;
+  }
   
-console.log(reqPath);
-  apndFile('log_app.log',reqPath);
   
   errorPath = req.path;
   next() // calling next middleware function or handler
@@ -39,12 +52,13 @@ app.get('/dist/css/happenings/:id',(req,res,next) =>{
 //the get above along with the root path below was the only solution that worked 
 app.use(express.static(path.join(__dirname,'./')));
 
-app.use(express.static(path.join(__dirname,'./', 'dist')));
+app.use(express.static(path.join(__dirname,'./dist')));
 app.use(express.static(path.join(__dirname,'./', 'dist', 'js')));
 app.use(express.static(path.join(__dirname,'./dist/css/')));
 app.use(express.static(path.join(__dirname,'./dist/css/newledo')));
 app.use(express.static(path.join(__dirname,'./dist/css/contact')));
 app.use(express.static(path.join(__dirname,'./dist/css/residency/')));
+app.use(express.static(path.join(__dirname,'./dist/css/projects/')));
 app.use(express.static(path.join(__dirname, './dist/css/happenings/')));
 app.use(express.static(path.join(__dirname, './dist/css/grange-garden/')));
 
@@ -56,7 +70,9 @@ app.get('/open-call',(req,res) =>{
 app.get('/residency.html',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/residency.html'))
 });
-
+app.get('/projects.html',(req,res) =>{
+  res.sendFile(path.join(__dirname,'./dist/projects.html'))
+});
 app.get('/events/',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/happenings.html'))
 });
@@ -80,13 +96,10 @@ try {
 } catch (error) {
   const errStrMsg ='\n'+ error + '\n' + 'errorPath: ' + errorPath + '\n'
   apndFile('a2log.err', errStrMsg);
-  console.error();
 };
 
-app.get('/', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, './', 'index.html'))
 });
 
- app.listen(PORT,/* block port for remote */ 
-   console.log(`Check out the references on http://localhost:${PORT}`));
-
+ app.listen(PORT);
