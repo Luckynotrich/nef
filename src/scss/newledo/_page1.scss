@@ -7,7 +7,7 @@
   border-top-right-radius: 20px 25%; 
 }
 .mission{
-  top: -28%;
+   top: -28%;
   left: $header-left;
   font-family: $title-font;
   max-width: 1920px;
@@ -24,7 +24,7 @@
 }
 .vision{
   position: relative;
-  top: -28%;
+   top: -28%;
   left: $text-left;
   display: flex;
   flex-flow: column;
@@ -35,13 +35,14 @@
 .button_1 {
   position: relative;
   flex: 2 1 auto;
-  top: -28%;
+  flex-direction: row;
+   top: -28%;
   left: calc( 50% - 6rem);
   background: transparent;
   text-align: center;
   vertical-align: middle;
   max-width: 80%;
-  width: 10%;
+  width: 20%;
   max-height: 10%;
   height: 2rem;
   border-style: solid;
