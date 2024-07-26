@@ -24,18 +24,15 @@
 </head>
 
 <body id="bg" style="height: 100%;background-color: white;">
-  <!-- <div style="position:absolute;z-index: 5;">[<span id="width"></span>,<span id="length"></span>]</div> -->
   <div id="topNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <nav class="overlay-content">
+    <nav class="overlay-content" style="z-index: 3;">
       <a href="#about" accesskey="a" onclick="closeNav()">ABOUT</a>
       <a href="residency.html" accesskey="r" onclick="closeNav()">RESIDENCY</a>
       <a href="/events" accesskey="e" onclick="closeNav()">HAPPENINGS</a>
       <a href="/projects.html" accesskey="p" onclick="closeNav()">PROJECTS</a>
       <a href="/grange-garden.html" accesskey="g" onclick="closeNav()">THE GARDEN</a>
       <a href="contact-page.html" accesskey="c" onclick="closeNav()">CONTACT</a>
-
-      <!-- <a href="https://www.facebook.com/"><img style="background-color: aquamarine;" src="./fb_icons/fb_35.png"></img></a> -->
     </nav>
 
   </div>
@@ -45,57 +42,58 @@
     <h1 id="span">
       <span onclick="openNav()">&#9776;</span>
     </h1>
-    <div class="logo"></div>
+    <div style="z-index: 5;" class="logo"></div>
 
   </div>
   <a id="about" accesskey="h" href="#home">Home</a>
 
 
   <div class="mission">
+    <div class="top-header">
     <h1 id="newledo">
       Newledo</h1>
     <h5 class="sub-header"> Newledo Exploration Hub’s mission is to transform an old dairy farm into a regenerative
       education center,
       a residency for makers and growers and a community hub.</h5>
+    </div>
 
-  </div>
-  <div style="visibility: hidden;"> This line should be hidden</div>
+    <div style="visibility: hidden;"> This line should be hidden</div>
 
-  <div class="vision">
-    <p>Our vision is to provide space for the community to gather, connect and immerse themselves in a broad range of
-      regenerative
-      activities dispersed across the 18-acre site.
+    <div class="vision">
+      <p>Our vision is to provide space for the community to gather, connect and immerse themselves in a broad range of
+        regenerative
+        activities dispersed across the 18-acre site.
+      </p>
+      <div style="visibility: hidden;">This line should be invisible</div>
+      <p>Our range of public focused activities will include immersive educational experiences, presentations, hands on
+        workshops, and inventors’ demonstrations. Events, such as farm to table dinners, community gatherings, and
+        cultural activities will be ongoing.</p>
+    </div>
+    <p class="button_1">
+      <a id="join" href="contact-page.html" accesskey="j"><b>JOIN US</b></a>
     </p>
-    <div style="visibility: hidden;">This line should be invisible</div>
-    <p>Our range of public focused activities will include immersive educational experiences, presentations, hands on
-      workshops, and inventors’ demonstrations. Events, such as farm to table dinners, community gatherings, and
-      cultural activities will be ongoing.</p>
   </div>
-  <p class="button_1">
-    <a id="join" href="contact-page.html" accesskey="j"><b>JOIN US</b></a>
-  </p>
   <div class="bg__2" alt="image of house and barn">
   </div>
 
   <!--************************************************* end second image***************************************  -->
   <!--********************************************** Page 2 ***********************************************-->
-  <h2 class="rect_page_title">community hub</h2>
+
 
   <seciton class="rect_1">
-
+    <h2 class="rect_page_title">community hub</h2>
     <p class="engaged"> Our vision is to provide space for the community to gather, connect and immerse themselves in a
       broad range of regenerative activities dispersed across the 18-acre site.
-    </p><br>
+    </p>
     <p style="visibility: hidden;">This line should be</p>
     <p class="engaged">
       Our range of public focused activities include immersive educational experiences, presentations, hands on
       workshops, and inventors’ demonstrations. Events, such as farm to table dinners, community gatherings, and
       cultural activities will be ongoing.
     </p><br>
-  </seciton>
-  <!-- *********************************************************Page 3 ************************************ -->
-  <h2 class="share_block_title">share</h2>
-  <seciton class="rect_1" id="rect_1_2">
+    <!-- *********************************************************Page 3 ************************************ -->
+    <!--  -->
+    <h2 class="share_block_title">share</h2>
     <p class="third_p"><span class="bring">Bring your project to the farm.</span>
       Stay the night or longer. Our residency program offers onsite housing and fabrication opportunities to
       regenerative practitioners and farmers working on early stage innovations or long term endeavors.
@@ -106,14 +104,15 @@
     </p>
     <br>
   </seciton>
+  <!-- <div class="page_3"> -->
   <div class="bg__3" alt="image of field, forest and rainbow">
 
   </div>
   <!--********************************************************* end third image **********************************-->
-  <h2 class="rect_page_title_2">land</h2>
+
   <div class="rect_2">
 
-
+    <h2 class="rect_page_title_2">land</h2>
     <p class="pastures"><span class="acerage">
         Newledo is an 18 acre farm on the Oregon Coast,</span>
       situated between the Pacific Ocean and the Coast Range.
@@ -140,34 +139,40 @@
 
 
   </div>
-  <h2 class="who_block_title">
-    who are we?
-  </h2>
-  <div class="whose">
-    <article>
-      <p class="who">
-        <b>Nicole Cousino</b> is a regenerative and creative practioner, entrepreneur, systems thinker and strategist.
-        Her
-        background includes mission based startups, documentary film, industrial design, permaculture and sustainable
-        sanitation. Nicole collaborated on a ground breaking waste grease-to-biodiesel project in the mid 90s. This led
-        to
-        being the lead researcher on a trap grease-to-biodiesel startup in Philadelphia. Her creative work in video and
-        installation has shown domestically and internationally, including at the Museum of Modern Art, in NY and Madrid
-        Abierto in Spain. In 2015, she launched Nature Commode, the first portable compost toilet company in the US.
-        She’s
-        passionate about meaningful impact in response to our climate and environmental crisis.
-      </p>
-    </article>
-    <article>
-      <p class="who">
-        <b>Richard Haskell</b>
-        Chief Technical Officer
-        Richard is a web developer, industrial designer, machinist, fabricator and the network tech here at Newledo. His
-        work is informed by his ongoing interest in physics, AI, appropriate technology and clean energy innovation. He
-        is
-        an advocate for alternative transit, an avid bicyclist and outdoor adventurer.
-        Current projects include:
-      <ul class="who"">
+  <section id="page_4">
+    <h2 class="who_block_title">
+      who are we?
+    </h2>
+    <div class="whose">
+      <article>
+        <p class="who">
+          <b>Nicole Cousino</b> is a regenerative and creative practioner, entrepreneur, systems thinker and strategist.
+          Her
+          background includes mission based startups, documentary film, industrial design, permaculture and sustainable
+          sanitation. Nicole collaborated on a ground breaking waste grease-to-biodiesel project in the mid 90s. This
+          led
+          to
+          being the lead researcher on a trap grease-to-biodiesel startup in Philadelphia. Her creative work in video
+          and
+          installation has shown domestically and internationally, including at the Museum of Modern Art, in NY and
+          Madrid
+          Abierto in Spain. In 2015, she launched Nature Commode, the first portable compost toilet company in the US.
+          She’s
+          passionate about meaningful impact in response to our climate and environmental crisis.
+        </p>
+      </article>
+      <article>
+        <p class="who">
+          <b>Richard Haskell</b>
+          Chief Technical Officer
+          Richard is a web developer, industrial designer, machinist, fabricator and the network tech here at Newledo.
+          His
+          work is informed by his ongoing interest in physics, AI, appropriate technology and clean energy innovation.
+          He
+          is
+          an advocate for alternative transit, an avid bicyclist and outdoor adventurer.
+          Current projects include:
+        <ul class="who"">
         <li>
           Mastering the use of a simple kiln he built for turning wood chips into Bio-char, a soil supplement.
         </li>
@@ -183,76 +188,77 @@
   </div>
 
   <footer class=" contact-us">
-        <h4 class="final">Contact us to learn more about our various events and workshops, joining our collaboration as
-          a
-          partner, or to submit a proposal to become a resident inventor, maker, grower or artist.
-        </h4>
+          <h4 class="final">Contact us to learn more about our various events and workshops, joining our collaboration
+            as
+            a
+            partner, or to submit a proposal to become a resident inventor, maker, grower or artist.
+          </h4>
 
-        <div class="closing">
-          <p> <a href="contact-page.html" id="button_2" class="email" target="_blank">nicole@NewledoHub.org</a>
-            <a class='face' href="https://m.facebook.com/groups/787333860068861/" target="_blank"><img
-                src="./fb_icons/face.png"></img></a>
-            <a class='insta' href="https://www.instagram.com/newledohub/" target="_blank"><img
-                src="./instagram/insta.png"></img></a>
+          <div class="closing">
+            <p> <a href="contact-page.html" id="button_2" class="email" target="_blank">nicole@NewledoHub.org</a>
+              <a class='face' href="https://m.facebook.com/groups/787333860068861/" target="_blank"><img
+                  src="./fb_icons/face.png"></img></a>
+              <a class='insta' href="https://www.instagram.com/newledohub/" target="_blank"><img
+                  src="./instagram/insta.png"></img></a>
 
-            <br><br>
-            88 Fruitvale Road Newport Oregon 97365
-          </p>
+              <br><br>
+              88 Fruitvale Road Newport Oregon 97365
+            </p>
 
-        </div>
-        <div class="links">
-          <p>instagram by Aulia Nurfadilah</p>
-          <p>Facebook by Mert Güler, </p>
-          <div> both from <a href="https://thenounproject.com/browse/icons/term/instagram/" target="_blank"
-              title="instagram Icons">Noun Project</a> (CC BY 3.0)</div>
-        </div>
-        </footer>
+          </div>
+          <div class="links">
+            <p>instagram by Aulia Nurfadilah</p>
+            <p>Facebook by Mert Güler, </p>
+            <div> both from <a href="https://thenounproject.com/browse/icons/term/instagram/" target="_blank"
+                title="instagram Icons">Noun Project</a> (CC BY 3.0)</div>
+          </div>
+          </footer>
+  </section>
+  <script>
+    function openNav() {
+      document.getElementById("topNav").style.height = "100%";
+      document.querySelector('*').style.background = "black";
+    }
+    function resize() {
+      let width = screen.width;
+      let height = screen.availHeight
+      document.getElementById("width").innerHTML = width;
+      document.getElementById("length").innerHTML = height;
+    }
+    function closeNav() {
+      let width = screen.width;
 
-        <script>
-          function openNav() {
-            document.getElementById("topNav").style.height = "100%";
-            document.querySelector('*').style.background = "black";
-          }
-          function resize() {
-            let width = screen.width;
-            let height = screen.availHeight
-            document.getElementById("width").innerHTML = width;
-            document.getElementById("length").innerHTML = height;
-          }
-          function closeNav() {
-            let width = screen.width;
-
-            if (width < 601) {
-              document.getElementById("topNav").style.height = "0%";
-              location.reload();
-              document.querySelector('*').style.height = "100%";
-            }
-            window.location.reload();
-          }
-          document.querySelector('*').style.height = "100%";
-
-
-          const events = ["pagehide", "pageshow", "unload", "load","resize"];
-
-          const eventLogger = (event) => {
-            switch (event.type) {
-              case "resize": resize()
-              case "pageshow": {
-                let isPersisted = event.persisted ? "persisted" : "not persisted";
-                console.log(`Event: ${event.type} - ${isPersisted}`);
-                //window.location.reload();
-                break;
-              }
-              default:
-                console.log(`Event: ${event.type}`);
-                break;
-            }
-          };
-
-          events.forEach((eventName) => window.addEventListener(eventName, eventLogger));
+      if (width < 601) {
+        document.getElementById("topNav").style.height = "0%";
+        location.reload();
+        document.querySelector('*').style.height = "100%";
+      }
+      window.location.reload();
+    }
+    document.querySelector('*').style.height = "100%";
 
 
-        </script>
+    const events = ["pagehide", "pageshow", "unload", "load", "resize"];
+
+    const eventLogger = (event) => {
+      switch (event.type) {
+        case "resize": resize()
+        case "pageshow": {
+          let isPersisted = event.persisted ? "persisted" : "not persisted";
+          console.log(`Event: ${event.type} - ${isPersisted}`);
+          //window.location.reload();
+          break;
+        }
+        default:
+          console.log(`Event: ${event.type}`);
+          break;
+      }
+    };
+
+    events.forEach((eventName) => window.addEventListener(eventName, eventLogger));
+
+
+  </script>
 
 </body>
 

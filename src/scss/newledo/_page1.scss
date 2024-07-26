@@ -3,29 +3,28 @@
   background-color: $primary-background-color;
   
 }
-#newledo{
-  border-top-right-radius: 20px 25%; 
-}
+
 .mission{
-   top: -28%;
   left: $header-left;
   font-family: $title-font;
   max-width: 1920px;
-  width: 85%/* calc(100% - $text-left*3) */;
+  width: 87%/* calc(100% - $text-left*3) */;
   padding:.5rem;
   padding-left: 4%;
   text-wrap: balance; 
-  border-top-left-radius: 20px 25%;
-  border-top-right-radius: 20px 25%; 
+  border-top-left-radius: 2rem 4%;
+  border-top-right-radius: 2rem 4%;
+  z-index: 1;
 }
 .sub-header{
+  padding-top: 3%;
   color: $primary-color;
   letter-spacing: .1ch;
 }
 .vision{
   position: relative;
    top: -28%;
-  left: $text-left;
+  left: -3%;
   display: flex;
   flex-flow: column;
   flex: 2 1 auto;

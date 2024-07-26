@@ -1,0 +1,216 @@
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:04:02
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:04:31
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:06:07 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:06:09 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:06:42 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:07:332023/06/07 12:07:52 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:08:25 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:09:32
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:14:15
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:15:54
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:16:35
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:16:53
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:16:55
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:16:57
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:17:01
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+2023/06/07 12:17:272023/06/07 12:18:302023/06/07 12:18:40 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+2023/06/07 12:20:31 
+Error: Cannot find module './a2-sendmail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/dist/js/send-mail.js
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+
+Error: Cannot find module '../../a2-sendmail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/dist/js/send-mail.js
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+transporter verified
+2023/11/01 14:35:30
+transporter verified
+2023/11/01 14:37:46
+
+SyntaxError: Unexpected template string
+errorPath: undefined
+transporter verified
+2024/01/19 13:03:22
+transporter verified
+2024/01/19 13:19:41
+2024/04/08 09:50:11 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+2024/04/08 09:50:11 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+2024/04/08 09:50:58 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+2024/04/08 09:52:34 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+2024/04/08 09:52:34 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
+2024/04/08 10:29:26 
+Error: Cannot find module './dist/js/send-mail.js'
+Require stack:
+- /home/lucky/webdev/newledo/nef/app.js
+errorPath: undefined
+
