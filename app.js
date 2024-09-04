@@ -61,6 +61,7 @@ app.use(express.static(path.join(__dirname,'./dist/css/residency/')));
 app.use(express.static(path.join(__dirname,'./dist/css/projects/')));
 app.use(express.static(path.join(__dirname, './dist/css/happenings/')));
 app.use(express.static(path.join(__dirname, './dist/css/grange-garden/')));
+app.use(express.static(path.join(__dirname, './dist/css/waterwise/')));
 
 
 app.get('/open-call',(req,res) =>{
@@ -80,6 +81,10 @@ app.get('/events/',(req,res) =>{
 app.get('/grange-garden.html',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/grange-garden.html'))
 });
+app.get('/waterwise',(req,res) =>{
+  res.sendFile(path.join(__dirname,'./dist/waterwise.html'))
+});
+
 let corsOptions = {
   origin: 'https://www.newledohub.org/newledo/sendEmail',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204

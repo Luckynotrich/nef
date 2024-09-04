@@ -10,6 +10,7 @@
     "happeningsWatch": "sass --watch src/scss/happenings:dist/css/happenings",
     "projectsWatch": "sass --watch src/scss/projects:dist/css/projects",
     "gardenWatch": "sass --watch src/scss/grange-garden:dist/css/grange-garden",
+    "waterwise": "sass --watch src/scss/waterwise:dist/css/waterwise",
     "monitor": "nodemon app.js",
     "dev": "run-p cssWatch monitor",
     "start": "node app.js"
