@@ -51,7 +51,7 @@ async function fileListGen(path, file, size, test) {
       
       listFile = listFile + url + imagePath + '/' + files[i] + bg_end;
       if (!test) { listFile = listFile + backset; }
-      if (num === 420) { listFile = listFile + backSet240; }
+      if (num === 431) { listFile = listFile + backSet240; }
       if (num === 640) { listFile = listFile + backSet420; }
       listFile = listFile + '}\n';
       console.log(listFile);
@@ -64,5 +64,5 @@ async function fileListGen(path, file, size, test) {
 }
 fileListGen('./dist/css/newledo/images_1024', './src/scss/newledo/_bg_images_1024.scss', '0', false);
 fileListGen('./dist/css/newledo/images_640', './src/scss/newledo/_bg_images_640.scss', '832', true)
-fileListGen('./dist/css/newledo/images_420', './src/scss/newledo/_bg_images_420.scss', '420', true);
+fileListGen('./dist/css/newledo/images_420', './src/scss/newledo/_bg_images_420.scss', '431', true);
 fileListGen('./dist/css/newledo/images_240', './src/scss/newledo/_bg_images_240.scss', '320', true);

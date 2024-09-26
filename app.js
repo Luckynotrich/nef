@@ -62,6 +62,7 @@ app.use(express.static(path.join(__dirname,'./dist/css/projects/')));
 app.use(express.static(path.join(__dirname, './dist/css/happenings/')));
 app.use(express.static(path.join(__dirname, './dist/css/grange-garden/')));
 app.use(express.static(path.join(__dirname, './dist/css/waterwise/')));
+app.use(express.static(path.join(__dirname, './dist/css/fluxscape/')));
 
 
 app.get('/open-call',(req,res) =>{
@@ -83,6 +84,9 @@ app.get('/grange-garden.html',(req,res) =>{
 });
 app.get('/waterwise',(req,res) =>{
   res.sendFile(path.join(__dirname,'./dist/waterwise.html'))
+});
+app.get('/fluxscape',(req,res) =>{
+  res.sendFile(path.join(__dirname,'./dist/fluxscape.html'))
 });
 
 let corsOptions = {

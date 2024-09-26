@@ -1,0 +1,194 @@
+@import "../config";
+html,
+body {
+  height: 100%;
+  // max-width: 1024px;
+  margin: 0%;
+  background-color: $primary-background-color;
+  font-family: $header-font;
+  padding-bottom: 5rem;
+}
+.bg__1 {
+  display: flex;
+  flex-direction: column;
+  //dist/css/grange-garden/grange_garden_pics/gardenws_1024.jpg
+  // background-image: url();
+  /* Full height */
+  min-height: 50rem;
+  height: 85%;
+  max-width: 100%;
+  /* Center and scale the image nicely */
+   -webkit-background-size: 100% 100%; /* Safari 3.0 */
+   -o-background-size: 100% 100%; /* Opera 9.5 */
+  align-self: bottom;
+  background-position-y: 0%;
+  flex-shrink: 1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.flex-container {
+  justify-content: center;
+  max-width: 2800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 2rem;
+  padding-top: 0%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+.top{
+  display: flex;
+  padding: 0;
+  padding-left: 1rem;
+  align-items: center;
+  flex-direction:column;
+}
+.support_headers{
+  flex-direction: column;
+  max-width: 90%;
+  padding-left: 5%;
+}
+h1,h2 {
+  display: flex;
+  color: $primary-color;
+}
+h5{
+  font-weight: 200;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  // align-items: center;
+}
+figure {
+  flex: 32%;
+  border-style: solid;
+  border-color: $light-border;
+  border: 1rem;
+  justify-content: baseline;
+  margin: 0%;
+  padding: 0% 0% 0% 0.2%;
+}
+article {
+  flex: 1;
+  flex-wrap: wrap;
+  // margin: 0%;
+}
+img{
+  border-style: solid;
+  border-color: $light-border;
+  border: 1rem;
+  width:100%;
+  margin: 0%;
+  padding: 0%;
+}
+li{
+  text-wrap: nowrap;
+}
+
+.supporters{
+  display: flex;
+  flex-direction: table-row;
+  flex-wrap: wrap;
+  padding-left: 0%;
+  
+}
+
+
+
+#footer{
+  height: 15rem;
+}
+@media screen and (max-width: 1920px){
+  .bg__1{
+    background-position-x: 70%;
+    background-position-y: 0%;
+     background-size: 1920px;
+    height: 90%;
+    min-height: fit-content;
+  }
+  .flex-container{
+    width:75%;
+  }
+}
+@media screen and (max-width: 1600px){
+  .bg__1{
+    background-position-x: 70%;
+    background-position-y: 0%;
+     background-size: 1600px;
+    height: 642px;
+    min-height: fit-content;
+  }
+
+}
+@media screen and (max-width: 1370px){
+  .bg__1{
+    background-position-x: 70%;
+    background-position-y: 0%;
+     background-size: 1370px;
+    height: 642px;
+    min-height: fit-content;
+  }
+
+}
+@media screen and (max-width: 1281px){
+  .bg__1{
+    background-position-x: 70%;
+    background-position-y: 0%;
+     background-size: 1281px;
+    height: 642px;
+    min-height: fit-content;
+  }
+
+}
+@media screen and (max-width: 1024px){
+  .bg__1{
+    background-position-x: 70%;
+    background-position-y: 0%;
+     background-size: 1024px;
+    height: 642px;
+    min-height: fit-content;
+  }
+  
+}
+@media screen and (max-width: 640px){
+  .bg__1{
+    background-position-x: 70%;
+    background-position-y: 0%;
+     background-size: 640px;
+    height: 400px;
+    min-height: fit-content;
+  }
+  
+}
+@media screen and (min-width: 500px){
+  .logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .lower{
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 420px){
+  .bg__1{
+     background-position-x: 70%;
+     background-position-y: 0%;
+     background-size: 420px;
+  height: 263px;
+  min-height: fit-content;
+  } 
+  .support_headers{
+    max-width: 90%;
+  }
+  .flex-container{
+    margin-left: 9%;
+  }
+}
+
+@import "../font_responsive.scss";

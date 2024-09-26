@@ -94,8 +94,8 @@ a:active {
   right: 0%;
 }
 
-.bg__3 {
-  background-image: url("/images_1024/3_RainbowPasture1024.jpg");
+.bg__2 {
+  background-image: url("/images_1024/2_house_barn_W1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -110,8 +110,8 @@ a:active {
   right: 0%;
 }
 
-.bg__2 {
-  background-image: url("/images_1024/2_house_barn_W1024.jpg");
+.bg__3 {
+  background-image: url("/images_1024/3_RainbowPasture1024.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -220,8 +220,8 @@ a:active {
   font-family: "Montserrat", sans-serif;
   max-width: 1920px;
   width: 87%;
-  padding: 0.5rem;
-  padding-left: 4%;
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
+  padding-left: 8%;
   text-wrap: balance;
   border-top-left-radius: 2rem 4%;
   border-top-right-radius: 2rem 4%;
@@ -237,7 +237,7 @@ a:active {
 .vision {
   position: relative;
   top: -28%;
-  left: -3%;
+  left: 0%;
   display: flex;
   flex-flow: column;
   flex: 2 1 auto;
@@ -281,7 +281,7 @@ a:active {
   flex-flow: column;
   height: fit-content;
   width: 87%;
-  left: 6%;
+  left: 8%;
   background-color: white;
   font-family: "Poppins", sans-serif;
   top: -10%;
@@ -408,8 +408,9 @@ a:active.event {
 }
 
 .pastures {
+  background: transparent;
   position: relative;
-  padding-top: 0.5rem;
+  padding-top: 1rem;
   left: 4%;
   width: 87%;
   color: black;
@@ -510,7 +511,7 @@ ul li {
     background-image: url("/images_640/3_RainbowPasture640.jpg");
   }
 }
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 431px) {
   .bg__1 {
     background-image: url("/images_420/1_bunny_480.jpg");
     height: 50%;
@@ -807,12 +808,13 @@ ul li {
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 940px) {
   .logo {
     top: 6%;
+    background-size: 63%;
   }
 }
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 1024px) {
   .logo {
     top: 42%;
-    background-size: 64%;
+    background-size: 58%;
   }
 }
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 1128px) {
@@ -910,6 +912,11 @@ ul li {
 @media only screen and (min-aspect-ratio: 2/1) and (min-width: 740px) {
   .logo {
     top: 13%;
+  }
+}
+@media only screen and (min-aspect-ratio: 2/1) and (min-width: 844px) {
+  .logo {
+    background-size: 51%;
   }
 }
 @media screen and (min-aspect-ratio: 2/1) and (min-width: 2687px) {
@@ -1637,6 +1644,14 @@ p, a, ul, li, div {
     top: -25%;
   }
 }
+@media screen and (min-aspect-ratio: 2/3) and (min-width: 480px) {
+  .mission {
+    top: -41%;
+  }
+  .rect_2 {
+    top: -41%;
+  }
+}
 @media screen and (min-aspect-ratio: 2/3) and (min-width: 533px) {
   .bg__1 {
     top: -40%;
@@ -1772,6 +1787,11 @@ p, a, ul, li, div {
   }
   .button_1 {
     font-size: x-small;
+  }
+}
+@media screen and (min-aspect-ratio: 3/4) and (min-width: 480px) {
+  .rect_2 {
+    top: -41%;
   }
 }
 @media only screen and (min-aspect-ratio: 3/4) and (min-width: 506px) {
@@ -1916,7 +1936,7 @@ p, a, ul, li, div {
     top: -53%;
   }
   .rect_2 {
-    top: -56%;
+    top: -55%;
   }
 }
 @media only screen and (min-aspect-ratio: 7/8) and (min-width: 599px) {
@@ -1925,6 +1945,9 @@ p, a, ul, li, div {
   }
   .mission {
     top: -36%;
+  }
+  .rect_2 {
+    top: -15%;
   }
 }
 @media screen and (min-aspect-ratio: 7/8) and (min-width: 626px) {
@@ -1963,6 +1986,11 @@ p, a, ul, li, div {
 @media only screen and (min-aspect-ratio: 7/8) and (min-width: 887px) {
   .mission {
     top: -27%;
+  }
+}
+@media only screen and (min-aspect-ratio: 7/8) and (min-width: 904px) {
+  .rect_2 {
+    top: -16%;
   }
 }
 @media only screen and (min-aspect-ratio: 7/8) and (min-width: 948px) {
@@ -2012,6 +2040,9 @@ p, a, ul, li, div {
   .bg__3 {
     top: -10%;
   }
+  .rect_2 {
+    top: -13%;
+  }
 }
 @media only screen and (min-aspect-ratio: 1/1) and (min-width: 640px) {
   .mission {
@@ -2035,7 +2066,7 @@ p, a, ul, li, div {
 }
 @media only screen and (min-aspect-ratio: 1/1) and (min-width: 708px) {
   .mission {
-    top: -15%;
+    top: -34%;
   }
   .button_1 {
     top: -10%;
@@ -2059,10 +2090,10 @@ p, a, ul, li, div {
     top: -20%;
   }
   .rect_1 {
-    top: -19%;
+    top: -14%;
   }
   .bg__2 {
-    top: -11%;
+    top: -6%;
   }
   .bg__3 {
     top: -10%;
@@ -2092,7 +2123,7 @@ p, a, ul, li, div {
 }
 @media only screen and (min-aspect-ratio: 14/9) and (min-width: 1024px) {
   .mission {
-    top: -34%;
+    top: -22%;
   }
   .rect_2 {
     top: -9%;
@@ -2125,7 +2156,7 @@ p, a, ul, li, div {
     top: 0%;
   }
   .mission {
-    top: -7%;
+    top: -10%;
   }
   .vision {
     top: 0%;
@@ -2134,7 +2165,10 @@ p, a, ul, li, div {
     top: 0%;
   }
   .rect_1 {
-    top: 5%;
+    top: -12%;
+  }
+  .rect_2 {
+    top: -16%;
   }
 }
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 1024px) {
@@ -2145,7 +2179,10 @@ p, a, ul, li, div {
     top: -40%;
   }
   .rect_1 {
-    top: -22%;
+    top: -13%;
+  }
+  .rect_2 {
+    top: -9%;
   }
 }
 @media screen and (min-aspect-ratio: 5/3) and (min-width: 1364px) {
@@ -2201,10 +2238,10 @@ p, a, ul, li, div {
 }
 @media only screen and (min-aspect-ratio: 16/9) and (min-width: 1024px) {
   .rect_1 {
-    top: -3%;
+    top: -13%;
   }
   .rect_2 {
-    top: 5%;
+    top: -8%;
   }
   .share_block_title {
     top: -1%;
@@ -2302,6 +2339,17 @@ p, a, ul, li, div {
   }
   .share_block_title {
     top: -6%;
+  }
+}
+@media screen and (min-aspect-ratio: 2/1) and (min-width: 844px) {
+  .mission {
+    top: -15%;
+  }
+  .rect_1 {
+    top: -20%;
+  }
+  .rect_2 {
+    top: -12%;
   }
 }
 @media only screen and (min-aspect-ratio: 2/1) and (min-width: 1161px) {

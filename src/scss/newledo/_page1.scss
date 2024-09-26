@@ -9,9 +9,9 @@
   font-family: $title-font;
   max-width: 1920px;
   width: 87%/* calc(100% - $text-left*3) */;
-  padding:.5rem;
-  padding-left: 4%;
-  text-wrap: balance; 
+  padding:.5rem .5rem 0rem .5rem;
+  padding-left: 8%;
+  text-wrap:balance; 
   border-top-left-radius: 2rem 4%;
   border-top-right-radius: 2rem 4%;
   z-index: 1;
@@ -24,7 +24,7 @@
 .vision{
   position: relative;
    top: -28%;
-  left: -3%;
+  left: 0%;
   display: flex;
   flex-flow: column;
   flex: 2 1 auto;

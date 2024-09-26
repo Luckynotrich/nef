@@ -233,12 +233,14 @@ and (min-width: 1600px){
   }
 }
 @media screen and (min-aspect-ratio: 5/3 )and (min-width: 940px){
-  .logo{top: 6%;}
+  .logo{top: 6%;
+    background-size: 63%;
+  }
 }
 @media screen and (min-aspect-ratio: 5 / 3) and (min-width: 1024px){
     .logo{
         top: 42%;
-        background-size: 64%;
+        background-size: 58%;
     }
   }
 @media screen and (min-aspect-ratio: 5/3 )and (min-width: 1128px){
@@ -339,8 +341,10 @@ background-size: 52%;
 @media only screen and (min-aspect-ratio: 2/1) and (min-width: 740px) {
   .logo{
     top: 13%;
-  }
-  
+  }  
+}
+@media only screen and (min-aspect-ratio: 2 / 1) and (min-width: 844px) {
+  .logo{background-size: 51%;}
 }
 @media screen and (min-aspect-ratio: 2/1) and (min-width: 2687px){
     .logo{
