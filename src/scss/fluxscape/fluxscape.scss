@@ -15,12 +15,12 @@ body {
   // background-image: url();
   /* Full height */
   min-height: 50rem;
-  height: 85%;
+  // height: 85%;
   max-width: 100%;
   /* Center and scale the image nicely */
-   -webkit-background-size: 100% 100%; /* Safari 3.0 */
-   -o-background-size: 100% 100%; /* Opera 9.5 */
-  align-self: bottom;
+  //  -webkit-background-size: 100% 100%; /* Safari 3.0 */
+  //  -o-background-size: 100% 100%; /* Opera 9.5 */
+  align-self:flex-start;
   background-position-y: 0%;
   flex-shrink: 1;
   background-repeat: no-repeat;
@@ -108,7 +108,6 @@ li{
     background-position-x: 70%;
     background-position-y: 0%;
      background-size: 1920px;
-    height: 90%;
     min-height: fit-content;
   }
   .flex-container{
@@ -120,7 +119,6 @@ li{
     background-position-x: 70%;
     background-position-y: 0%;
      background-size: 1600px;
-    height: 642px;
     min-height: fit-content;
   }
 
@@ -130,7 +128,6 @@ li{
     background-position-x: 70%;
     background-position-y: 0%;
      background-size: 1370px;
-    height: 642px;
     min-height: fit-content;
   }
 
@@ -140,7 +137,6 @@ li{
     background-position-x: 70%;
     background-position-y: 0%;
      background-size: 1281px;
-    height: 642px;
     min-height: fit-content;
   }
 
@@ -150,7 +146,6 @@ li{
     background-position-x: 70%;
     background-position-y: 0%;
      background-size: 1024px;
-    height: 642px;
     min-height: fit-content;
   }
   
@@ -160,7 +155,6 @@ li{
     background-position-x: 70%;
     background-position-y: 0%;
      background-size: 640px;
-    height: 400px;
     min-height: fit-content;
   }
   
@@ -180,7 +174,6 @@ li{
      background-position-x: 70%;
      background-position-y: 0%;
      background-size: 420px;
-  height: 263px;
   min-height: fit-content;
   } 
   .support_headers{
