@@ -309,7 +309,7 @@ a:active {
   left: 6%;
   border-top-left-radius: 20px 3%;
   border-top-right-radius: 20px 3%;
-  padding: 3% 6% 6% 4%;
+  padding: 2% 6% 1% 4%;
 }
 
 .engaged {
@@ -319,6 +319,8 @@ a:active {
   width: 87%;
   max-width: 1300px;
   color: black;
+  padding: 2%;
+  padding-top: 0%;
 }
 
 #about {
@@ -347,13 +349,17 @@ a:active.event {
   text-decoration: underline;
 }
 
+.flexBlock {
+  display: flex;
+  flex-flow: row;
+}
+
 .share_block_title {
   background-color: white !important;
   color: #F15A29;
   width: fit-content;
   height: fit-content;
   left: 6%;
-  top: -3%;
   padding-left: 4%;
   padding-bottom: 3%;
 }
@@ -410,7 +416,6 @@ a:active.event {
 .pastures {
   background: transparent;
   position: relative;
-  padding-top: 1rem;
   left: 4%;
   width: 87%;
   color: black;
@@ -475,6 +480,7 @@ ul li {
 
 .final {
   width: 100%;
+  padding: 3%;
 }
 
 .closing {
@@ -2129,7 +2135,7 @@ p, a, ul, li, div {
     top: -9%;
   }
   .pastures {
-    margin-top: 5%;
+    margin-top: 2%;
   }
   #page_4 {
     top: 0%;

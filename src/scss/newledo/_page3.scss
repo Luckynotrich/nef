@@ -1,10 +1,15 @@
+.flexBlock{
+  display: flex;
+  flex-flow: row;
+}
 .share_block_title {
   background-color: $primary-background-color !important;
   color: $primary-color;
   width: fit-content;
   height: fit-content;
   left: $header-left;
-  top: -3%;
+  // top: -1%;
+  // padding-top: 3%;
   padding-left: 4%;
   padding-bottom: 3%;
 }
@@ -63,10 +68,11 @@
 .pastures {
   background: transparent;
   position: relative;
-  padding-top: 1rem;
+  // padding-top: 1rem;
   left: $text-left;
   width: 87%;
   color: $white-backed-text;
+  
   //outline: 3px solid red;
 }
 .restoration {

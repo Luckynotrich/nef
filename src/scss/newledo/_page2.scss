@@ -35,7 +35,7 @@
   left: $header-left;
   border-top-left-radius: 20px 3%;
   border-top-right-radius: 20px 3%;
-  padding: 3% 6% 6% 4%;
+  padding: 2% 6% 1% 4%;
   // outline: 2px solid red;
 }
 .engaged {
@@ -45,6 +45,8 @@
   width: 87%;
   max-width: 1300px;
   color: $white-backed-text;
+  padding: 2%;
+  padding-top: 0%;
   //outline: 3px solid red;
 }
 
