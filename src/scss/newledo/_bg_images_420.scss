@@ -1,15 +1,16 @@
+@use "../mixins" as mixins;
 @media only screen and ( max-width: 431px)
 {
 .bg__1{
 background-image: url("/images_420/1_bunny_480.jpg");
-@include backSet240;
+@include mixins.backSet240;
 }
 .bg__2{
 background-image: url("/images_420/2_house_barn_W480.jpg");
-@include backSet240;
+@include mixins.backSet240;
 }
 .bg__3{
 background-image: url("/images_420/3_RainbowPasture420_150.jpg");
-@include backSet240;
+@include mixins.backSet240;
 }
 }

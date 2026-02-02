@@ -1,12 +1,13 @@
+@use "../mixins" as mixins;
 .bg__1{
 background-image: url("/images_1024/1_bunny_1024.jpg");
-@include backSet;
+@include mixins.backSet;
 }
 .bg__2{
 background-image: url("/images_1024/2_house_barn_W1024.jpg");
-@include backSet;
+@include mixins.backSet;
 }
 .bg__3{
 background-image: url("/images_1024/3_RainbowPasture1024.jpg");
-@include backSet;
+@include mixins.backSet;
 }

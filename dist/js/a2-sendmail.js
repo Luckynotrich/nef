@@ -5,7 +5,7 @@ const formDataLogFormat = require('./form-data-log-format')
 const date = require('date-and-time')
 
 function a2SendMail(subject, text, html) {
-  
+  console.log("a2SendMail")
     const now = new Date();
     let idData = date.format(now, 'YYYY/MM/DD HH:mm:ss');
 
@@ -31,8 +31,8 @@ function a2SendMail(subject, text, html) {
     transporter = nodemailer.createTransport({
       host: process.env.MAIL_SERVER,
       //pool: true,
-      port: 587,
-      secure: false, // true for 465, false for other ports
+      port: process.env.MAIL_PORT,
+      secure: true, // true for 465, false for other ports
       auth: {
         user: process.env.MAIL_USER,
         pass: process.env.PASSWORD,

@@ -1,115 +1,20 @@
-@import "../config";
-* {
-  box-sizing: border-box;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  outline: transparent; //2px solid red;//  use for debugging overflow
-  max-width: 100%;
-}
-
-body,
-html {
-  background-color: $primary-background-color;
-}
-nav {
-  background-color: transparent;
-  width: 100%;
-}
-h1,h2,h3 {
-  font-family: $title-font;
-  color: $primary-color;
-  font-weight: $title-font-weight;
-}
-
-h4,h5 {
-  font-family: $header-font;
-  font-weight: $title-font-weight;
-}
-p,li {
-  font-family: $paragraph-font;
-  font-weight: $paragraph-font-weight;
-}
-b {
-  font-weight: 600;
-}
-
-tbody,
-table,
-tr,
-th,
-td {
-  max-width: 95%;
-}
-
-span{
-  color: $primary-color;
-  background-color: transparent;
-}
-
-/*  — when the user has not visited, hovered, or clicked on a link */
-a:link{
-  color: $primary-color;
-}
-/* — after the user has visited the link */
-a:visited {
-  text-decoration: none;
-  color: $a-visted-color;
-}
-/* — when the user hovers their mouse over the link */
-a:hover {
-  text-decoration: none;
-}
-/* needs to be last */
-a:active {
-  text-decoration: none;
-}
-.res_link{
-  margin-left: $text-left;
-  font-family: $paragraph-font;
-}
-//rectangles on page 2 and page 3
-
-@mixin backSet {
-  
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  width: 100%;
-  -webkit-background-size: 100% 100%; /* Safari 3.0 */
-  -moz-background-size: 100% 100%; /* Gecko 1.9.2 (Firefox 3.6) */
-  -o-background-size: 100% 100%; /* Opera 9.5 */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 102%;
-  right: 0%;
-}
-
-@mixin backSet240 {
-  height: 50%;
-}
-@mixin backSet420 {
-  height: 80%;
-}
-
-
-
-@import "bg_images_1024";
-@import "../nav";
-@import "../links";
-@import "page1";
-@import "page2";
-@import "page3";
-@import "page4";
-@import "anchors";
-@import "bg_images_640";
-@import "bg_images_420";
-@import "bg_images_240";
-@import "../logo";
-@import "../logo_size";
-@import "../logo_responsive";
-@import "../nav_responsive";
-@import "../font_responsive";
-//  @import "page_aspect_responsive";
- @import "page_asp-wid_responsive";
+@use "../config" as config;
+@use "../_mixins" as mixins;
+@use "./general";
+@use "bg_images_1024";
+@use "../nav";
+@use "../links";
+@use "page1";
+@use "page2";
+@use "page3";
+@use "page4";
+@use "anchors";
+@use "bg_images_640";
+@use "bg_images_420";
+@use "bg_images_240";
+@use "../logo";
+@use "../logo_size";
+@use "../logo_responsive";
+@use "../nav_responsive";
+@use "../font_responsive";
+@use "page_asp-wid_responsive";

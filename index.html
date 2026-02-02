@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -15,44 +16,45 @@
       "name": "Newledo",
       "url":"https://newledohub.org",
       "description": "A community hub dedicated to exploration and impact",
-      "open": "Please call for appointment",
-      "telephone": "+1(541)351-8616",
       "address": "88 Fruitvale rd, Newport Oregon, 97365, USA"
     }
     </script>
+    <!-- <script  type="module" src="window-resize.js"></script> -->
   <title>Newledo</title>
 </head>
 
 <body id="bg" style="height: 100%;background-color: white;">
+   <div id="windowSize"></div>
   <div id="topNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <nav class="overlay-content" style="z-index: 3;">
       <a href="#about" accesskey="a" onclick="closeNav()">ABOUT</a>
-      <a href="residency.html" accesskey="r" onclick="closeNav()">RESIDENCY</a>
-      <a href="/events" accesskey="e" onclick="closeNav()">HAPPENINGS</a>
+      <a href="/site-vision.html" onclick="closeNav()">SITE & VISION</a>
       <a href="/projects.html" accesskey="p" onclick="closeNav()">PROJECTS</a>
-      <a href="/grange-garden.html" accesskey="g" onclick="closeNav()">THE GARDEN</a>
-      <a href="contact-page.html" accesskey="c" onclick="closeNav()">CONTACT</a>
+      <!-- <a href="residency.html" accesskey="r" onclick="closeNav()">RESIDENCY</a> -->
+      <a href="https://greenthecoast.com" rel="noopener noreferrer" target="_blank" style="margin-bottom: 4rem;">GREEN THE COAST</a>
+      <a href="contact-page.html" accesskey="c" target="_self" onclick="closeNav()">CONTACT</a>
     </nav>
 
   </div>
   <!--************************************************* top image *****************************  -->
-  <div id="home" class="bg__1" alt="image of rabbit statue on bridge next to barn">
-
-    <h1 id="span">
+  <div id="home" class="bg__1" style="z-index: 0;" alt="image of rabbit statue on bridge next to barn">
+<div id="span_con" style="position:relative;z-index: 30;background: transparent;">
+  <h1 id="span" style="z-index: 30;" >
       <span onclick="openNav()">&#9776;</span>
     </h1>
-    <div style="z-index: 5;" class="logo"></div>
-
+</div>
+<div  class="logo"></div>
   </div>
+  
   <a id="about" accesskey="h" href="#home">Home</a>
 
 
   <div class="mission">
-    <div class="top-header">
+    <div id="top-header">
       <h1 id="newledo">
         Newledo</h1>
-      <h5 class="sub-header"> Newledo Exploration Hub is transforming a former dairy farm into a community center for
+      <h5 id="sub-header"> Newledo Exploration Hub is transforming a former dairy farm into a community center for
         experiments in regenerative, climate smart living solutions</h5>
     </div>
 
@@ -61,6 +63,7 @@
     <p class="button_1">
       <a id="join" href="contact-page.html" accesskey="j"><b>JOIN US</b></a>
     </p>
+    
   </div>
   <div class="bg__2" alt="image of house and barn">
   </div>
@@ -68,44 +71,26 @@
   <!--************************************************* end second image***************************************  -->
   <!--********************************************** Page 2 ***********************************************-->
   <section class="rect_1">
-    <h2 class="rect_page_title">regenerative exploration center</h2>
+    <h2 class="rect_page_title" style="text-wrap: nowrap;">regenerative exploration center</h2>
     <p class="engaged"> For us, regenerative means creating thriving, resilient ecosystems and communities. Newledo
       provides space for a diverse range of regenerative practices, from transforming degraded pastures and riparian
       zones into healthy habitats for native flora and fauna, to R&D experiments and low tech demonstrations in farming
       and food production, waste-to-value, clean energy, and natural building materials.
     </p>
-    <p style="visibility: hidden;">This line should be invisible</p>
+    
     <p class="engaged">
       Our range of immersive experiences includes co-learning experiments, collective-based activities, hands-on
       workshops, presentations and inventors’ demonstrations.
-    </p><br><br>
+    </p><br>
     <!-- *********************************************************Page 3 ************************************ -->
     <!--  -->
     <h2 class="rect_page_title">community hub</h2>
     <p class="engaged"> Building community together is at the core of our mission. We aim to do so through welcoming
       collaboration in our projects, donating use of our land to other projects that create community through collective
       involvement and partnering with other organizations to drive momentum, for community, throughout the region.
-    </p><br><br>
-    <div class="rect_page_title">
-      <h2>share: residency for makers and growers</h2>
-    </div>
-    <p class="engaged"><span class="bring">Bring your project to the farm.</span>
-      Stay the night or longer. Our residency program offers onsite housing and fabrication opportunities to
-      regenerative practitioners and farmers working on early stage innovations or long term endeavors.
     </p>
-    
-    <p>
-      <a class="res_link" href="residency.html">Click here for more on our residency opportunities</a>
-    </p>
+      </section>
 
-  </section>
-
-  <!-- <section class="rect_1"> -->
-
-    <!-- <p style="visibility: hidden;">This line should be invisible</p>
-    <br><br> -->
-  <!-- </section> -->
-  <!-- <div class="page_3"> -->
   <div class="bg__3" alt="image of field, forest and rainbow">
 
   </div>
@@ -153,11 +138,11 @@
     <div class="whose">
       <article>
         <p class="who">
-          <b>Nicole Cousino</b> Nicole Cousino is a regenerative and creative practioner, entrepreneur, systems thinker
+          <b>Nicole Cousino</b>&nbsp;&nbsp;&nbsp; Director <br>
+          Nicole is a regenerative and creative practioner, entrepreneur, systems thinker
           and strategist. Her background includes mission-based startups, documentary film, industrial design,
           permaculture and sustainable sanitation. Nicole collaborated on a ground breaking waste grease-to-biodiesel
-          project in the mid 90s. This led to being the lead researcher on a trap grease-to-biodiesel startup in
-          Philadelphia. In 2015, she launched Nature Commode, the first portable compost toilet company in the US. Her
+          project in the mid 90s. In 2015, she launched Nature Commode, the first portable compost toilet company in the US. Her
           creative work in video and installation has shown domestically and internationally, including at the Museum of
           Modern Art, in NY and Madrid Abierto in Spain. She holds a Masters in Fine Art and Landscape Architecture.
           She is passionate about meaningful impact in response to our climate and environmental crisis.
@@ -165,8 +150,7 @@
       </article>
       <article>
         <p class="who">
-          <b>Richard Haskell</b>
-          Chief Technical Officer
+          <b>Richard Haskell</b>&nbsp;&nbsp;&nbsp; Chief Technical Officer<br>
           Richard is a web developer, industrial designer, machinist, fabricator and the network tech here at Newledo.
           His
           work is informed by his ongoing interest in physics, AI, appropriate technology and clean energy innovation.
@@ -174,15 +158,15 @@
           is
           an advocate for alternative transit, an avid bicyclist and outdoor adventurer.
           Current projects include:
-        <ul class="who"">
+        <ul class="who">
         <li>
-          Mastering the use of a simple kiln he built for turning wood chips into Bio-char, a soil supplement.
+          Mastering the use of a simple kiln he built for turning wood chips into biochar, a soil supplement.
         </li>
         <li>
           Procuring and expanding the use of distributed energy systems at Newledo.
         </li>
         <li>
-          Finishing the roll out of version 1.0 of a web application newledo is developing for regenerative events and involvement.
+          Finishing the roll out of version 1.0 of a web application Newledo is developing for regenerative events and involvement.
         </li>
       </ul>
       </p>
@@ -205,13 +189,7 @@
             </p>
 
           </div>
-          <!-- <div class="links">
-            <p>instagram by Aulia Nurfadilah</p>
-            <p>Facebook by Mert Güler, </p>
-            <div> both from <a href="https://thenounproject.com/browse/icons/term/instagram/" target="_blank"
-                title="instagram Icons">Noun Project</a> (CC BY 3.0)</div>
-          </div>
-          </footer> -->
+         
   </section>
   <script>
     function openNav() {
@@ -232,7 +210,7 @@
         location.reload();
         document.querySelector('*').style.height = "100%";
       }
-      window.location.reload();
+      // window.location.reload();
     }
     document.querySelector('*').style.height = "100%";
 
@@ -241,7 +219,7 @@
 
     const eventLogger = (event) => {
       switch (event.type) {
-        case "resize": resize()
+        // case "resize": resize()
         case "pageshow": {
           let isPersisted = event.persisted ? "persisted" : "not persisted";
           console.log(`Event: ${event.type} - ${isPersisted}`);

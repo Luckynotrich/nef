@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $breakpoints: (
   media-300 : 300px,
   media-400 : 400px,
@@ -149,8 +151,8 @@ $p-font-sizes: (
 
       // If $fs-font-size is a key that exists in
       // $fs-breakpoints, use the value
-      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
-        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      @if map.has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map.get($fs-breakpoints, $fs-breakpoint);
       }
 
       @media screen and (min-width: $fs-breakpoint) {

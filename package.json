@@ -1,47 +1,35 @@
 {
   "name": "nef",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
     "cssWatch": "sass --watch src/scss/:dist/css/",
-    "residency": "sass --watch src/scss/residency:dist/css/residency",
-    "contactWatch": "sass --watch src/scss/contact:dist/css/contact",
-    "happeningsWatch": "sass --watch src/scss/happenings:dist/css/happenings",
-    "projectsWatch": "sass --watch src/scss/projects:dist/css/projects",
-    "gardenWatch": "sass --watch src/scss/grange-garden:dist/css/grange-garden",
-    "waterwise": "sass --watch src/scss/waterwise:dist/css/waterwise",
-    "fluxscape": "sass --watch src/scss/fluxscape:dist/css/fluxscape",
+    "residency": "sass --watch src/scss/residency:dist/css/residency --quiet-deps",
+    "contactWatch": "sass --watch src/scss/contact:dist/css/contact --quiet-deps",
+    "happeningsWatch": "sass --watch src/scss/happenings:dist/css/happenings --quiet-deps",
+    "projectsWatch": "sass --watch src/scss/projects:dist/css/projects --quiet-deps",
+    "gardenWatch": "sass --watch src/scss/grange-garden:dist/css/grange-garden --quiet-deps",
+    "waterwise": "sass --watch src/scss/waterwise:dist/css/waterwise --quiet-deps",
+    "fluxscape": "sass --watch src/scss/fluxscape:dist/css/fluxscape --quiet-deps",
     "monitor": "nodemon app.js",
     "dev": "run-p cssWatch monitor",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "./build.sh"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "date-and-time": "^2.4.2",
-    "dotenv": "^16.0.3",
-    "ejs": "^3.1.9",
-    "express": "^4.18.2",
+    "date-and-time": "^4.0.4",
+    "dompurify": "^3.2.6",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "fs": "^0.0.1-security",
+    "jsdom": "^26.1.0",
     "multiparty": "^4.2.3",
-    "nodemailer": "^6.9.1"
+    "nodemailer": "^7.0.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^9.1.2",
-    "css-loader": "^6.7.3",
-    "fs": "^0.0.1-security",
-    "html-webpack-plugin": "^5.5.0",
-    "image-size": "^1.0.2",
-    "nodemon": "^3.0.1",
+    "nodemon": "^3.1.10",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.57.1",
-    "sass-loader": "^13.2.0",
-    "style-loader": "^3.3.1",
-    "webpack": "^5.76.1",
-    "webpack-cli": "^5.0.1"
+    "sass": "^1.91.0"
   }
 }

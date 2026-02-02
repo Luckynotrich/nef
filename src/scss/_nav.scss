@@ -1,8 +1,8 @@
-
+@use "./config" as config;
 // Note: The following code is a modified version of the code found at https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 .overlay {
     // position: relative;
-    top: 5%;
+    top: 7%;
     left: 0%;
     margin: 0;
     padding: 0;
@@ -19,10 +19,10 @@
     padding: 20px;
     padding-left: 30px;
     background-color: transparent;
-    color:$primary-color;
-    font-family: $title-font;
-    left: $text-left;
-    font-weight: $header-font-weight;
+    color:config.$primary-color;
+    font-family: config.$title-font;
+    left: config.$text-left;
+    font-weight: config.$header-font-weight;
   }
   .overlay-content a:link {
     text-decoration: none;
@@ -43,9 +43,9 @@
   
   #span{
     position: relative;
-    color: $primary-color;
+    color: config.$primary-color;
     display: none;
     cursor:pointer;
-      top: 10%;
+      top: 20%;
     // z-index: 4;
   }

@@ -26,7 +26,8 @@ h2 {
   color: #ff9900;
 }
 
-h1, h3,
+h1,
+h3,
 h4 {
   padding: 3%;
   font-family: "Montserrat", sans-serif;
@@ -65,7 +66,6 @@ figure {
   border-style: solid;
   border-color: white;
   border: 1rem;
-  justify-content: baseline;
   margin: 0%;
   padding: 0% 0% 0% 0.2%;
 }
@@ -86,7 +86,7 @@ img {
   border-color: white;
   border: 1rem;
   width: 100%;
-  margin: 0%;
+  margin: 0% 0% 0% 0%;
   padding: 0%;
 }
 
@@ -102,16 +102,8 @@ hr {
 #first {
   border-bottom: 0.2rem solid transparent;
   border-top: 0.2rem solid transparent;
-  margin-top: 0%;
+  margin-top: 3%;
   margin-bottom: 0%;
-}
-
-#upcoming {
-  margin-left: 5%;
-}
-
-.side-group {
-  flex-direction: column;
 }
 
 .text-right {
@@ -136,12 +128,9 @@ hr {
   align-content: center;
 }
 
-.upEventTwo.event.past {
-  color: #ff9900;
-}
-
 .header {
   flex: 1;
+  flex-direction: row;
   margin: 0%;
   padding: 0%;
   height: 15%;
@@ -149,17 +138,48 @@ hr {
   display: flex;
   flex-wrap: nowrap;
   justify-content: right;
-  align-items: end;
+  align-items: center;
   align-content: center;
 }
 
 .logo {
+  display: block;
   position: relative;
-  width: 30%;
-  height: auto;
-  left: 25%;
+  max-width: 30%;
+  width: 25%;
+  height: 100%;
+  left: 2%;
+  margin: 0% 0% 0% 5%;
 }
 
+#page_title {
+  display: block;
+  text-wrap: nowrap;
+  width: 90%;
+  align-self: center;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 5%;
+}
+
+.thumb {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+@media screen and (width > 1100) {
+  .thumb {
+    width: 300px;
+  }
+  .inner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #thumb {
+    min-width: 300px;
+  }
+}
 @media screen and (max-width: 1100px) {
   h2 {
     font-size: 16px;
@@ -168,44 +188,17 @@ hr {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 1020) {
+  #thumb {
+    width: 150px;
+  }
+}
 @media screen and (min-width: 812px) {
   #flux {
     flex-direction: row !important;
   }
 }
 @media screen and (min-width: 641px) {
-  .upEvents {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    width: 1200px;
-    margin: auto;
-    align-items: start;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-  .upEventOne {
-    grid-column: 1/3;
-    grid-row: 1;
-    font-weight: 600;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-  .upEventTwo {
-    grid-column: 3/6;
-    grid-row: 1;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
-  .upEventThree {
-    grid-column: 6/8;
-    grid-row: 1;
-    margin-right: 10px;
-    padding: 10px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-  }
   #flux {
     flex-direction: column;
   }
@@ -214,33 +207,8 @@ hr {
   section {
     flex-direction: row;
   }
-  .upEvents {
-    display: grid;
-    grid-template-columns: 5fr 200px;
-    grid-template-rows: masonry;
-    grid-auto-rows: min-content(50px);
-  }
-  .upEventOne {
-    align-items: start;
-    padding: 0;
-    margin-top: 0%;
-    grid-column: 1/span 4;
-    grid-row: 1;
-  }
-  .upEventTwo {
-    align-items: start;
-    grid-column: 1/span 3;
-    grid-row: 2;
-  }
-  .upEventThree {
-    grid-column: 4;
-    grid-row-end: span 1;
-  }
-  .upEventThree img {
-    width: 100px;
-    padding-right: 1rem;
-  }
-  #flux, #biochar {
+  #flux,
+  #biochar {
     flex-direction: column;
   }
 }
@@ -250,42 +218,8 @@ hr {
   }
 }
 @media screen and (max-width: 385px) {
-  .upEvents {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 3;
-    align-items: start;
-  }
-  .upEventOne {
-    align-items: start;
-    padding-top: 3%;
-    margin-top: 0%;
-    grid-column: 1/span 3;
-    grid-row: 1;
-    max-width: 100%;
-    text-wrap: nowrap !important;
-  }
-  .upEventTwo {
-    align-items: normal;
-    grid-column: 1/span 3;
-    grid-auto-flow: row;
-  }
-  .upEventThree {
-    grid-column: 2;
-    grid-row-end: span 1;
-  }
-  .upEventThree img {
-    width: 100px;
-  }
   section.inner-break {
     flex-direction: column;
-  }
-}
-@media scree and (max-width: 300px) {
-  .upEvents {
-    grid-template-columns: 1fr 1fr 100px;
-    grid-template-rows: masonry;
-    padding-bottom: 10%;
   }
 }
 h1 {

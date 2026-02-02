@@ -1,0 +1,64 @@
+@use "../config" as config;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: ransparent; // 2px solitd red;// use for debugging overflow
+}
+
+body,
+html {
+  background-color: config.$primary-background-color;
+}
+nav {
+  background-color: transparent;
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: config.$title-font;
+  color: config.$primary-color;
+  font-weight: config.$title-font-weight;
+}
+
+h4,
+h5 {
+  font-family: config.$header-font;
+  font-weight: config.$title-font-weight;
+}
+p,
+li {
+  font-family: config.$paragraph-font;
+  font-weight: config.$paragraph-font-weight;
+}
+b {
+  font-weight: 600;
+}
+
+span {
+  color: config.$primary-color;
+  background-color: transparent;
+}
+
+/*  — when the user has not visited, hovered, or clicked on a link */
+a:link {
+  color: config.$primary-color;
+}
+/* — after the user has visited the link */
+a:visited {
+  text-decoration: none;
+  color: config.$a-visted-color;
+}
+/* — when the user hovers their mouse over the link */
+a:hover {
+  text-decoration: none;
+}
+/* needs to be last */
+a:active {
+  text-decoration: none;
+}
+.res_link {
+  margin-left: config.$text-left;
+  font-family: config.$paragraph-font;
+}

@@ -1,0 +1,159 @@
+/*# sourceMappingURL=site-vision.css.map */
+@import "../config";
+* {
+  margin: auto;
+  // outline: 1px solid red;
+}
+body {
+  max-width: 1000px;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+h1,
+h2 {
+  // display: inherit;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  color: $tersiary-color;
+}
+h2,
+p,
+li,
+a {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h3,
+h4 {
+  padding: 3%;
+  font-family: "Montserrat", sans-serif;
+  color: $primary-color;
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  color: black;
+  font-size: medium;
+}
+
+section {
+  display: inherit;
+  flex-shrink: 3;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+figure {
+  flex: 1;
+  border-style: solid;
+  border-color: #ffff;
+  border: 1rem;
+  justify-content: center;
+  margin: 0%;
+  margin-top: 15px;
+  padding: 0% 0% 0% 0.2%;
+}
+article {
+  flex: 1;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+section.inner-break {
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+img {
+  border-style: solid;
+  border-color: #ffff;
+  border: 1rem;
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+hr {
+  border-bottom: 0.7rem solid transparent;
+  border-top: 0.7rem solid transparent;
+  height: 0px;
+  width: 100%;
+  background-color: #ff9900;
+  // margin-bottom: 5%;
+  margin-top: 5%;
+}
+.header {
+  flex: 1;
+  flex-direction: row;
+  margin-top: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: right;
+  align-items: center;
+  align-content: center;
+  // width:50%;
+}
+
+.logo {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  margin: 0%;
+  left: 3%;
+}
+#page_title{
+  display: block;
+  text-wrap: nowrap;
+  width: 90%;
+  align-self: center;
+  padding: 0%;
+  margin: 0%;
+  margin-left: 4%;
+}
+.lead_section {
+    padding: 7px;
+  h4 {
+    color: $dark-text;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+  p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  align-content: start;
+}
+
+@media screen and (width > 1000px) {
+.lead_section {
+  h4 {
+    margin-left: 0px;
+    margin-bottom: -12px;
+    padding-left: 0px;
+  }
+  p{
+    margin-top: -12px;
+    margin-bottom: 20px;
+  }
+   .legend{
+    column-gap: 20px;
+   }
+   
+}
+}
+@import "../font_responsive.scss";

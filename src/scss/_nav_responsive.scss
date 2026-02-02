@@ -1,6 +1,8 @@
 
+@use "./config" as config;
 @media screen and (max-width:1140px){
   .overlay-content{
+    
     display: grid;
     grid-template-columns: repeat(7,1fr);
     gap: 10px;
@@ -51,7 +53,7 @@
   z-index: 1000;
 }
 .overlay::after{
-  background-color: $primary-background-color;
+  background-color: config.$primary-background-color;
 }
 
 .overlay-content {
@@ -97,8 +99,8 @@
     padding-right: .1rem;
     display: flex;
     margin-top: 8rem;
-    left: $text-left;
-    color: $primary-color;
+    left: config.$text-left;
+    color: config.$primary-color;
     background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
     background-color: transparent;
     border-radius: .5rem;
@@ -118,7 +120,7 @@
     top: 3rem;
     right: 2rem;
 
-    color: $primary-color;
+    color: config.$primary-color;
     background: linear-gradient(rgba(238, 236, 236, 0.3), rgba(255, 254, 254, 0.3)) !important;
   }
 }
@@ -126,9 +128,13 @@
 and (max-width: 600px) 
 {
   #span{
-    top: 5rem;
+    top: 8rem;
     left: 2rem;
   }
+}
+@media only screen and (max-aspect-ratio: 2/3)
+and (max-width: 390px){
+  #span{top: 5rem;}
 }
 @media only screen and (max-aspect-ratio: 2/3) 
 and (max-width: 319px) 
@@ -138,9 +144,21 @@ and (max-width: 319px)
     left: 2rem;
   }
 }
+@media only screen and (min-aspect-ratio: 2/3) and (min-width:470px){
+  #span_con{
+    top: 12rem;
+    left: 2.5rem;
+  }
+}
 @media only screen and (min-aspect-ratio: 3/4) and (min-width: 240px) {
   #span{
     top: 3rem;
     left: 10%;
+  }
+
+}
+@media only screen and (min-aspect-ratio: 3/4) and (min-width: 534px){
+  #span_con{
+    top: 2rem;
   }
 }

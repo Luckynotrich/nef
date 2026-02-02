@@ -1,0 +1,18 @@
+// Shared mixins for background settings
+@mixin backSet {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 102%;
+  right: 0%;
+}
+
+@mixin backSet240 {
+  height: 50%;
+}
+
+@mixin backSet420 {
+  height: 80%;
+}

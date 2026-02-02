@@ -1,24 +1,35 @@
+@use "../config" as config;
 * {
   max-width: 100%;
-  background-color: $primary-background-color;
+  background-color: config.$primary-background-color;
   
 }
 
 .mission{
-  left: $header-left;
-  font-family: $title-font;
+  position: relative;
+  left: config.$header-left;
+  font-family: config.$title-font;
   max-width: 1920px;
   width: 87%/* calc(100% - $text-left*3) */;
-  padding:.5rem .5rem 0rem .5rem;
+  padding:.5rem .5rem 1rem .5rem;
   padding-left: 8%;
   text-wrap:balance; 
-  border-top-left-radius: 2rem 4%;
-  border-top-right-radius: 2rem 4%;
+  border-radius: 1rem;
+  // border-top-right-radius: 2rem 4%;
   z-index: 1;
 }
-.sub-header{
+#top-header{
+  max-width: max-content;
+  border-top-right-radius: 4rem 4%;
+}
+#newledo{
+  max-width: max-content;
+}
+#sub-header{
+  max-width: max-content;
   padding-top: 3%;
-  color: $primary-color;
+  margin-right: 4rem;
+  color: config.$primary-color;
   letter-spacing: .1ch;
 }
 .vision{
@@ -47,11 +58,11 @@
   border-style: solid;
   border-width: 3px;
   border-radius: .8rem;
-  border-width: $button-border-width;
-  border-color: $dark-border;
-  color: $primary-color;
+  border-width: config.$button-border-width;
+  border-color: config.$dark-border;
+  color: config.$primary-color;
   box-sizing: content-box;
-  padding: 1rem 1rem;/*  1.2rem; */
+  padding: 1rem 1rem  1.2rem;
   margin: 1.5rem 1.5rem 0%;
 }
 #join{

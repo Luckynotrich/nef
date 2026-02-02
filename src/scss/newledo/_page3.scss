@@ -1,13 +1,14 @@
+@use "../config" as config;
 .flexBlock{
   display: flex;
   flex-flow: row;
 }
 .share_block_title {
-  background-color: $primary-background-color !important;
-  color: $primary-color;
+  background-color: config.$primary-background-color !important;
+  color: config.$primary-color;
   width: fit-content;
   height: fit-content;
-  left: $header-left;
+  left: config.$header-left;
   // top: -1%;
   // padding-top: 3%;
   padding-left: 4%;
@@ -18,25 +19,26 @@
   // width: 70%;
   // top: 4%;
   // left: $text-left;
-  font-weight: $header-font-weight;
-  color: $primary-color;
+  font-weight: config.$header-font-weight;
+  color: config.$primary-color;
   // padding-bottom: 3%;
 }
 
 .third_p {
   top: 4%;
-  left: $text-left;
+  left: config.$text-left;
   width: 85%;
   max-width: 1300px;
-  color: $white-backed-text;
+  color: config.$white-backed-text;
   text-align: left;
 }
 .rect_2 {
+  position: relative;
   display: flex;
   flex-flow: column;
   height: fit-content;
-  background-color: $primary-background-color;
-  font-family: $header-font;
+  background-color: config.$primary-background-color;
+  font-family: config.$header-font;
   max-width: 2020px;
   width: 87%;
   top: -40%;
@@ -49,29 +51,29 @@
   display: block;
   max-width: 1920px;
   position: relative;
-  color: $primary-color;
+  color: config.$primary-color;
   height: 2rem;
   width: 85%;
   top: 0%;
-  left: $header-left;
-  background-color: $primary-background-color;
+  left: config.$header-left;
+  background-color: config.$primary-background-color;
   border-top-left-radius: 20px 3%;
   border-top-right-radius: 20px 3%;
   padding: 3% 6% 0% 4%;
 }
 
 .acerage {
-  font-weight: $header-font-weight;
-  color: $primary-color;
+  font-weight: config.$header-font-weight;
+  color: config.$primary-color;
 }
 
 .pastures {
   background: transparent;
   position: relative;
   // padding-top: 1rem;
-  left: $text-left;
+  left: config.$text-left;
   width: 87%;
-  color: $white-backed-text;
+  color: config.$white-backed-text;
   
   //outline: 3px solid red;
 }
@@ -80,6 +82,6 @@
   //left: $text-left;
   width: 85%;
   height: 20%;
-  color: $white-backed-text;
+  color: config.$white-backed-text;
   max-width: 1300px;
 }

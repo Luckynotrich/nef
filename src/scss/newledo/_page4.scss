@@ -1,30 +1,36 @@
+@use "../config" as config;
 #page_4{
+    max-width: 90%;
+    width:auto;
+    position:relative;
     top: -37%;
+    left: config.$header-left;
 }
 .who_block_title {
     display: block;
     margin-top: 3%;
     margin-bottom: 3%;
     width: 85%;
-    left: $header-left;
+    left: config.$header-left;
     padding-left: 4%;
-    color: $primary-color;
+    color: config.$primary-color;
     top: 3%;
     letter-spacing: normal;
 }
 .whose{
     display: flex;
     flex-flow: row wrap;
-    left: $text-left;
+    left: config.$text-left;
     top: 4%;
     width: 90%;
     padding-bottom: 1rem;
 }
 
 .who {
+    position: relative;
     margin-bottom: 3%;
-     margin-right: $text-left;
-     margin-left: $text-left;
+     margin-right: config.$text-left;
+     margin-left: config.$text-left;
      text-align: left;
      width: 87%;
      max-width: 1000px;
@@ -38,7 +44,7 @@ ul li {
     // font-family: $header-font;
     // font-weight: $paragraph-font-weight+50;
      top: 5%;
-     left: $text-left;
+     left: config.$text-left;
      width: 87%;
      max-width: 2020px;
      text-wrap:pretty;
@@ -54,38 +60,18 @@ ul li {
 
 .closing {
     display: flex;
-    margin-left: $text-left+8%;
-    width: 95%;
-    height: 50%;
+    margin-left: config.$text-left+8%;
     //outline: 2px solid red;
     margin-top: 8%;
-    color: $white-backed-text;
+    color: config.$white-backed-text;
 }
 
 .email {
-    color: $white-backed-text;
+    color: config.$white-backed-text;
     text-decoration: underline;
     width: 40%;
     margin-left: -4%;
-    font-family: $paragraph-font;
+    font-family: config.$paragraph-font;
     padding: 4%;
 }
 
-// .phone {
-//     //top:10%;
-//     //justify-self: center;
-//     width: 40%;
-//     color: $white-backed-text;
-//     font-family: $paragraph-font;
-//     padding: 4%;
-// }
-
-// .address {
-//     //top: 15%;
-//     //left: 18%;
-//     width: 60%;
-//     left: $text-left;
-//     color: $white-backed-text;
-//     font-family: $paragraph-font;
-//     padding: 4% 0% 4% 0%;
-// }
