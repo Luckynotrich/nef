@@ -4,32 +4,31 @@
   "version": "0.0.0",
   "scripts": {
     "cssWatch": "sass --watch src/scss/:dist/css/",
-    "residency": "sass --watch src/scss/residency:dist/css/residency --quiet-deps",
     "contactWatch": "sass --watch src/scss/contact:dist/css/contact --quiet-deps",
-    "happeningsWatch": "sass --watch src/scss/happenings:dist/css/happenings --quiet-deps",
     "projectsWatch": "sass --watch src/scss/projects:dist/css/projects --quiet-deps",
-    "gardenWatch": "sass --watch src/scss/grange-garden:dist/css/grange-garden --quiet-deps",
-    "waterwise": "sass --watch src/scss/waterwise:dist/css/waterwise --quiet-deps",
     "fluxscape": "sass --watch src/scss/fluxscape:dist/css/fluxscape --quiet-deps",
+    "site-vision": "sass --watch src/scss/site-vision:dist/css/site-vision --quiet-deps",
     "monitor": "nodemon app.js",
     "dev": "run-p cssWatch monitor",
     "start": "node app.js",
-    "build": "./build.sh"
+    "buildA": "./buildAll.sh",
+    "buildC": "./buildCode.sh",
+    "update": "ncu --interactive --format group"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "date-and-time": "^4.0.4",
-    "dompurify": "^3.2.6",
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
+    "cors": "^2.8.6",
+    "date-and-time": "^4.4.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.2",
     "fs": "^0.0.1-security",
-    "jsdom": "^26.1.0",
+    "morgan": "^1.10.1",
     "multiparty": "^4.2.3",
-    "nodemailer": "^7.0.6"
+    "nodemailer": "^8.0.5"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10",
+    "nodemon": "^3.1.14",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.91.0"
+    "sass": "^1.99.0"
   }
 }
